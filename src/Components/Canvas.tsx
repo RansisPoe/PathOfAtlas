@@ -68,7 +68,7 @@ const wheelFunc = (e: any) => {
   stage.position(newPos);
 };
 
-// TODO: add zoom with scroll/pinch
+// TODO: add zoom with pinch
 
 export default function CanvasExample() {
   // TODO: make x and y dynamic based on the image
