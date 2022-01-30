@@ -1,6 +1,6 @@
 import { Stage, Layer } from "react-konva";
 
-import SkillCircle from "./SkillCircle";
+import SkillTree from "./SkillTree";
 import TreeImage from "./TreeImage";
 
 const scaleBy = 1.1;
@@ -82,7 +82,7 @@ export default function CanvasExample() {
         onWheel={wheelFunc}
       >
         <TreeImage src="./tree.png" />
-        <SkillCircle></SkillCircle>
+        <SkillTree></SkillTree>
       </Layer>
     </Stage>
   );
