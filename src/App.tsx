@@ -1,7 +1,7 @@
 // import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import CanvasExample from "./Canvas";
+import CanvasExample from "./Components/Canvas";
 
 function App() {
   return (
