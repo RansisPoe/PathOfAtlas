@@ -6,4 +6,6 @@
 
   color: white;
   background: rgb(25, 25, 25);
+
+  border-right: 5px solid gray;
 }
