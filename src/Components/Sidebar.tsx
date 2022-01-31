@@ -5,6 +5,7 @@ import _ from "lodash";
 
 interface SidebarProps {
   toggles: boolean[];
+  resetToggles: any;
 }
 
 class Sidebar extends React.Component<SidebarProps> {
@@ -29,6 +30,17 @@ class Sidebar extends React.Component<SidebarProps> {
     return (
       <div className="sidebar">
         <h3>{_.sum(this.props.toggles)} / 132</h3>
+        <button
+          onClick={() => {
+            if (
+              window.confirm("Are you sure you wish to reset your entire tree?")
+            ) {
+              this.props.resetToggles();
+            }
+          }}
+        >
+          Reset all points
+        </button>
         <h3>Total Stats</h3>
         <div>
           {this.passives().map(([modType, amount]) => (

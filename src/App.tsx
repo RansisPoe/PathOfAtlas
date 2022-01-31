@@ -20,10 +20,17 @@ class App extends React.Component<any, AppState> {
     this.setState({ toggles });
   }
 
+  resetToggles() {
+    this.setState({ toggles: skillList.map((skill) => false) });
+  }
+
   render() {
     return (
       <div className="App">
-        <Sidebar toggles={this.state.toggles}></Sidebar>
+        <Sidebar
+          toggles={this.state.toggles}
+          resetToggles={this.resetToggles.bind(this)}
+        ></Sidebar>
         <CanvasTree
           toggles={this.state.toggles}
           toggleIndex={this.toggleIndex.bind(this)}
