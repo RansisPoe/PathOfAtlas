@@ -1,14 +1,36 @@
-// import React from "react";
-// import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import CanvasExample from "./Components/Canvas";
+import CanvasTree from "./Components/Canvas";
+import Sidebar from "./Components/Sidebar";
+import { skillList } from "./utils";
 
-function App() {
-  return (
-    <div className="App">
-      <CanvasExample></CanvasExample>
-    </div>
-  );
+interface AppState {
+  toggles: boolean[];
+}
+
+class App extends React.Component<any, AppState> {
+  state = {
+    toggles: skillList.map((skill) => false),
+  };
+
+  toggleIndex(index: number) {
+    const toggles = [...this.state.toggles];
+    toggles[index] = !toggles[index];
+
+    this.setState({ toggles });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Sidebar toggles={this.state.toggles}></Sidebar>
+        <CanvasTree
+          toggles={this.state.toggles}
+          toggleIndex={this.toggleIndex.bind(this)}
+        ></CanvasTree>
+      </div>
+    );
+  }
 }
 
 export default App;

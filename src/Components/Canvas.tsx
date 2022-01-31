@@ -1,3 +1,4 @@
+import React from "react";
 import { Stage, Layer } from "react-konva";
 
 import SkillTree from "./SkillTree";
@@ -68,22 +69,33 @@ const wheelFunc = (e: any) => {
   stage.position(newPos);
 };
 
+interface CanvasTreeProps {
+  toggles: boolean[];
+  toggleIndex: any;
+}
+
 // TODO: add zoom with pinch
 
-export default function CanvasExample() {
-  // TODO: make x and y dynamic based on the image
-  return (
-    <Stage width={window.innerWidth} height={window.innerHeight}>
-      <Layer
-        draggable
-        x={-1200}
-        y={-2100}
-        dragBoundFunc={dragBound}
-        onWheel={wheelFunc}
-      >
-        <TreeImage src="./tree.png" />
-        <SkillTree></SkillTree>
-      </Layer>
-    </Stage>
-  );
+class CanvasTree extends React.Component<CanvasTreeProps> {
+  render() {
+    // TODO: make x and y dynamic based on the image
+    return (
+      <Stage width={window.innerWidth} height={window.innerHeight}>
+        <Layer
+          draggable
+          x={-1200}
+          y={-2100}
+          dragBoundFunc={dragBound}
+          onWheel={wheelFunc}
+        >
+          <TreeImage src="./tree.png" />
+          <SkillTree
+            toggles={this.props.toggles}
+            toggleIndex={this.props.toggleIndex}
+          ></SkillTree>
+        </Layer>
+      </Stage>
+    );
+  }
 }
+export default CanvasTree;
