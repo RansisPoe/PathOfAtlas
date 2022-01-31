@@ -33,7 +33,7 @@ class Sidebar extends React.Component<SidebarProps> {
         <div>
           {this.passives().map(([modType, amount]) => (
             <div key={modType}>
-              {modType}: <span>+{amount}</span>
+              {modType}: <span>+{amount}%</span>
             </div>
           ))}
         </div>

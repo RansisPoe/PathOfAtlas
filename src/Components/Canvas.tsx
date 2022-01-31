@@ -3,6 +3,7 @@ import { Stage, Layer } from "react-konva";
 
 import SkillTree from "./SkillTree";
 import TreeImage from "./TreeImage";
+import ToolTip from "./Tooltip";
 
 const scaleBy = 1.1;
 var currentScale = 1;
@@ -17,7 +18,7 @@ const dragBound = (pos: any) => {
   // TODO: somehow make this dynamic based on loaded image size
   return {
     x: Math.max(
-      Math.min(pos.x, 0),
+      Math.min(pos.x, 240),
       -width * currentScale * overflowBounds + window.innerWidth
     ),
     y: Math.max(
@@ -51,7 +52,6 @@ const wheelFunc = (e: any) => {
 
   const newScale = direction > 0 ? oldScale * scaleBy : oldScale / scaleBy;
   currentScale = newScale;
-  console.log("newScale", newScale);
 
   if (width * newScale < window.innerWidth) {
     return;
@@ -73,10 +73,24 @@ interface CanvasTreeProps {
   toggles: boolean[];
   toggleIndex: any;
 }
+interface TooltipData {
+  x: number;
+  y: number;
+  name: string;
+  value: string;
+}
+
+interface CanvasTreeState {
+  tooltip?: TooltipData;
+}
 
 // TODO: add zoom with pinch
 
-class CanvasTree extends React.Component<CanvasTreeProps> {
+class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
+  setTooltip(tooltip?: TooltipData) {
+    this.setState({ tooltip });
+  }
+
   render() {
     // TODO: make x and y dynamic based on the image
     return (
@@ -92,7 +106,9 @@ class CanvasTree extends React.Component<CanvasTreeProps> {
           <SkillTree
             toggles={this.props.toggles}
             toggleIndex={this.props.toggleIndex}
+            setTooltip={this.setTooltip.bind(this)}
           ></SkillTree>
+          {this.state?.tooltip && <ToolTip data={this.state.tooltip} />}
         </Layer>
       </Stage>
     );
