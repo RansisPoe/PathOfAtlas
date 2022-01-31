@@ -20,6 +20,13 @@ export const skillList: SkillNode[] = [
     mods: [{ modType: "Increased map quantity", amount: 5 }],
   },
   {
+    x: 1981,
+    y: 2736,
+    name: "Map Quantity",
+    description: "+5% increased map quantity",
+    mods: [{ modType: "Increased map quantity", amount: 5 }],
+  },
+  {
     x: 1855,
     y: 3021,
     name: "Master Missions",
