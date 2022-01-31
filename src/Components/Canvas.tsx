@@ -42,7 +42,7 @@ const wheelFunc = (e: any) => {
   };
 
   // how to scale? Zoom in? Or zoom out?
-  let direction = e.evt.deltaY > 0 ? 1 : -1;
+  let direction = e.evt.deltaY > 0 ? -1 : 1;
 
   // when we zoom on trackpad, e.evt.ctrlKey is true
   // in that case lets revert direction
@@ -50,8 +50,10 @@ const wheelFunc = (e: any) => {
     direction = -direction;
   }
 
-  const newScale = direction > 0 ? oldScale * scaleBy : oldScale / scaleBy;
-  currentScale = newScale;
+  const newScale = Math.min(
+    direction > 0 ? oldScale * scaleBy : oldScale / scaleBy,
+    2
+  );
 
   if (width * newScale < window.innerWidth) {
     return;
@@ -59,6 +61,8 @@ const wheelFunc = (e: any) => {
   if (height * newScale < window.innerHeight) {
     return;
   }
+
+  currentScale = newScale;
 
   stage.scale({ x: newScale, y: newScale });
 
