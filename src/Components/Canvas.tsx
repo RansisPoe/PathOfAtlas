@@ -4,6 +4,7 @@ import { Stage, Layer } from "react-konva";
 import SkillTree from "./SkillTree";
 import TreeImage from "./TreeImage";
 import ToolTip from "./Tooltip";
+import { skillList, findShortestPath } from "../utils";
 
 const scaleBy = 1.1;
 
@@ -25,18 +26,25 @@ interface TooltipData {
 
 interface CanvasTreeState {
   tooltip?: TooltipData;
-  currentScale?: number;
+  currentScale: number;
+  hoveredList: boolean[];
+  hoveredIndex?: number;
 }
+
+const emptyHoverList = skillList.map((skill) => false);
 
 // TODO: add zoom with pinch
 
 class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
-  setTooltip(tooltip?: TooltipData) {
-    this.setState({ tooltip });
-  }
+  state = {
+    currentScale: 1,
+    hoveredList: [...emptyHoverList],
+    hoveredIndex: undefined,
+    tooltip: undefined,
+  };
 
   getCurrentScale() {
-    return this.state?.currentScale || 1;
+    return this.state.currentScale;
   }
 
   dragBound(pos: any) {
@@ -52,6 +60,29 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
         -height * this.getCurrentScale() * overflowBounds + window.innerHeight
       ),
     };
+  }
+
+  setHover(index?: number) {
+    if (index) {
+      const tooltip = {
+        x: skillList[index].x,
+        y: skillList[index].y,
+        name: skillList[index].name,
+        value: skillList[index].description,
+      };
+
+      const hoveredList = [...this.state.hoveredList];
+      if (!this.props.toggles[index]) {
+        const minPath = findShortestPath(this.props.toggles, index);
+
+        minPath.forEach((pathIndex: any) => {
+          hoveredList[pathIndex] = true;
+        });
+      }
+      this.setState({ tooltip, hoveredList });
+    } else {
+      this.setState({ tooltip: undefined, hoveredList: [...emptyHoverList] });
+    }
   }
 
   wheelFunc(e: any) {
@@ -114,7 +145,8 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
           <SkillTree
             toggles={this.props.toggles}
             toggleIndex={this.props.toggleIndex}
-            setTooltip={this.setTooltip.bind(this)}
+            setHover={this.setHover.bind(this)}
+            hoveredList={this.state.hoveredList}
           ></SkillTree>
           {this.state?.tooltip && (
             <ToolTip

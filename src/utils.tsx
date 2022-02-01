@@ -1,4 +1,5 @@
 import Graph from "node-dijkstra";
+import _ from "lodash";
 
 export interface PassiveMod {
   modType: string;
@@ -98,3 +99,19 @@ skillList.forEach((skill, index) => {
   });
   skillGraph.addNode(index.toString(), children);
 });
+
+export function findShortestPath(toggles: boolean[], index: number) {
+  const paths: any[] = [];
+
+  // toggling it to enabled, find minPath
+  paths.push(skillGraph.path("root", index + ""));
+  toggles.forEach((toggle, subIndex) => {
+    if (toggle) {
+      paths.push(skillGraph.path(subIndex + "", index + ""));
+    }
+  });
+
+  const minPath = _.minBy(paths, "length");
+
+  return minPath;
+}

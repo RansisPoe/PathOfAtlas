@@ -6,8 +6,9 @@ import { Group } from "react-konva";
 
 interface SkillTreeProps {
   toggles: boolean[];
+  hoveredList: boolean[];
   toggleIndex: any;
-  setTooltip: any;
+  setHover: any;
 }
 
 class SkillTree extends React.Component<SkillTreeProps> {
@@ -23,13 +24,14 @@ class SkillTree extends React.Component<SkillTreeProps> {
             <Group key={`g${index}`}>
               <SkillCircle
                 key={index}
+                index={index}
                 x={skillList[index].x}
                 y={skillList[index].y}
                 name={skillList[index].name}
                 value={skillList[index].description}
                 toggled={toggle}
                 onClick={this.toggleIndex.bind(this, index)}
-                setTooltip={this.props.setTooltip}
+                setHover={this.props.setHover}
               ></SkillCircle>
               {skillList[index].neighbors.map((neighbor) => (
                 <SkillLine
@@ -39,6 +41,10 @@ class SkillTree extends React.Component<SkillTreeProps> {
                   neighborX={skillList[neighbor].x}
                   neighborY={skillList[neighbor].y}
                   toggled={toggle && this.props.toggles[neighbor]}
+                  hovered={
+                    this.props.hoveredList[index] &&
+                    this.props.hoveredList[neighbor]
+                  }
                 />
               ))}
             </Group>

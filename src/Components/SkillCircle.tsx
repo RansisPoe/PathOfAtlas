@@ -8,7 +8,8 @@ interface SkillCircleProps {
   value: string;
   toggled: boolean;
   onClick: any;
-  setTooltip: any;
+  setHover: any;
+  index: number;
 }
 
 class SkillCircle extends React.Component<SkillCircleProps> {
@@ -28,18 +29,13 @@ class SkillCircle extends React.Component<SkillCircleProps> {
           const container = e.target.getStage().container();
           container.style.cursor = "pointer";
 
-          this.props.setTooltip({
-            x: this.props.x,
-            y: this.props.y,
-            name: this.props.name,
-            value: this.props.value,
-          });
+          this.props.setHover(this.props.index);
         }}
         onMouseLeave={(e: any) => {
           const container = e.target.getStage().container();
           container.style.cursor = "default";
 
-          this.props.setTooltip(null);
+          this.props.setHover(null);
         }}
       />
     );

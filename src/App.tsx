@@ -1,9 +1,8 @@
-import _ from "lodash";
 import React from "react";
 import "./App.css";
 import CanvasTree from "./Components/Canvas";
 import Sidebar from "./Components/Sidebar";
-import { skillList, skillGraph } from "./utils";
+import { skillList, findShortestPath } from "./utils";
 
 interface AppState {
   toggles: boolean[];
@@ -46,17 +45,7 @@ class App extends React.Component<any, AppState> {
   toggleIndex(index: number) {
     const toggles = [...this.state.toggles];
     if (!this.state.toggles[index]) {
-      const paths: any[] = [];
-
-      // toggling it to enabled, find minPath
-      paths.push(skillGraph.path("root", index + ""));
-      toggles.forEach((toggle, subIndex) => {
-        if (toggle) {
-          paths.push(skillGraph.path(subIndex + "", index + ""));
-        }
-      });
-
-      const minPath = _.minBy(paths, "length");
+      const minPath = findShortestPath(toggles, index);
 
       minPath.forEach((pathIndex: any) => {
         toggles[pathIndex] = true;
@@ -99,6 +88,7 @@ class App extends React.Component<any, AppState> {
       this.setState({ toggles, history, redoHistory });
     }
   }
+
   handleKeyPress(event: any) {
     if (event.ctrlKey && event.key === "z") {
       this.undo();
@@ -109,7 +99,16 @@ class App extends React.Component<any, AppState> {
   }
 
   resetToggles() {
-    this.setState({ toggles: skillList.map((skill) => false) });
+    const history = [...this.state.history];
+    history.push([...this.state.toggles]);
+
+    const redoHistory: boolean[][] = [];
+
+    this.setState({
+      toggles: skillList.map((skill) => false),
+      history,
+      redoHistory,
+    });
   }
 
   render() {
