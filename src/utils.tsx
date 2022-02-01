@@ -115,3 +115,32 @@ export function findShortestPath(toggles: boolean[], index: number) {
 
   return minPath;
 }
+
+function disconnectedSearchHelper(
+  index: number,
+  toggles: boolean[],
+  connected: boolean[],
+  visited: boolean[]
+) {
+  if (!toggles[index]) return;
+  if (visited[index]) return;
+
+  visited[index] = true;
+  connected[index] = true;
+
+  skillList[index].neighbors.forEach((neighborIndex) => {
+    disconnectedSearchHelper(neighborIndex, toggles, connected, visited);
+  });
+}
+
+export function disconnectedSearch(toggles: boolean[]): boolean[] {
+  const connected = skillList.map((skill) => false);
+  const visited = skillList.map((skill) => false);
+  disconnectedSearchHelper(0, toggles, connected, visited);
+  disconnectedSearchHelper(1, toggles, connected, visited);
+  disconnectedSearchHelper(2, toggles, connected, visited);
+  disconnectedSearchHelper(3, toggles, connected, visited);
+  disconnectedSearchHelper(4, toggles, connected, visited);
+
+  return connected;
+}

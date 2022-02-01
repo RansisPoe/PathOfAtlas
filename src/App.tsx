@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import CanvasTree from "./Components/Canvas";
 import Sidebar from "./Components/Sidebar";
-import { skillList, findShortestPath } from "./utils";
+import { skillList, findShortestPath, disconnectedSearch } from "./utils";
 
 interface AppState {
   toggles: boolean[];
@@ -47,7 +47,7 @@ class App extends React.Component<any, AppState> {
   }
 
   toggleIndex(index: number) {
-    const toggles = [...this.state.toggles];
+    var toggles = [...this.state.toggles];
     if (!this.state.toggles[index]) {
       const minPath = findShortestPath(toggles, index);
 
@@ -56,6 +56,8 @@ class App extends React.Component<any, AppState> {
       });
     } else {
       toggles[index] = !toggles[index];
+
+      toggles = disconnectedSearch(toggles);
     }
 
     const history = [...this.state.history];
