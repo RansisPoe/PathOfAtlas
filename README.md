@@ -10,7 +10,8 @@ This is a Path of Building like tool for exploring the new Atlas passives. It cu
 - [x] sidebar with sum of stats
 - [ ] build sharing
 - [ ] undo/redo
-- [ ] allocate/unallocate multiple connected nodes with a single click
+- [x] allocate multiple connected nodes with a single click
+- [ ] unallocate multiple connected nodes with a single click
 
 ## Local Development
 
