@@ -99,4 +99,3 @@ skillList.forEach((skill, index) => {
   });
   skillGraph.addNode(index.toString(), children);
 });
-console.log('skillGraph.path(1 + "", 6 + "")', skillGraph.path(1 + "", 6 + ""));

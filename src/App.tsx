@@ -14,6 +14,18 @@ class App extends React.Component<any, AppState> {
     toggles: skillList.map((skill) => false),
   };
 
+  componentDidMount() {
+    const toggles = [...this.state.toggles];
+    if (window.location.hash && window.location.hash.length > 1) {
+      window.location.hash
+        .slice(1)
+        .split(",")
+        .forEach((elem, index) => (toggles[index] = elem === "1"));
+
+      this.setState({ toggles });
+    }
+  }
+
   toggleIndex(index: number) {
     const toggles = [...this.state.toggles];
     if (!this.state.toggles[index]) {
@@ -36,6 +48,11 @@ class App extends React.Component<any, AppState> {
     } else {
       toggles[index] = !toggles[index];
     }
+    window.history.replaceState(
+      null,
+      "",
+      "#" + toggles.map((toggle) => (toggle ? 1 : 0)).join(",")
+    );
     this.setState({ toggles });
   }
 

@@ -20,7 +20,7 @@ class SkillTree extends React.Component<SkillTreeProps> {
       <Group>
         {this.props.toggles.map((toggle, index) => {
           return (
-            <Group>
+            <Group key={`g${index}`}>
               <SkillCircle
                 key={index}
                 x={skillList[index].x}
