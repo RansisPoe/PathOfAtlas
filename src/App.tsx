@@ -31,7 +31,11 @@ class App extends React.Component<any, AppState> {
       this.setState({ toggles });
     }
 
-    document.addEventListener("keydown", this.handleKeyPress.bind(this));
+    document.addEventListener("keydown", this.handleKeyPress);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleKeyPress);
   }
 
   setUrl(toggles: boolean[]) {
@@ -89,14 +93,14 @@ class App extends React.Component<any, AppState> {
     }
   }
 
-  handleKeyPress(event: any) {
+  handleKeyPress = (event: any) => {
     if (event.ctrlKey && event.key === "z") {
       this.undo();
     }
     if (event.ctrlKey && event.key === "y") {
       this.redo();
     }
-  }
+  };
 
   resetToggles() {
     const history = [...this.state.history];
