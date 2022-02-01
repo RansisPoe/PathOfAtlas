@@ -30,7 +30,7 @@ export const skillList: SkillNode[] = [
     name: "Master Missions",
     description: "+5% increased master missions",
     mods: [{ modType: "Increased master missions", amount: 5 }],
-    neighbors: [],
+    neighbors: [7],
   },
   {
     x: 1981,
@@ -78,7 +78,7 @@ export const skillList: SkillNode[] = [
     name: "Essence Chance",
     description: "+5% increased essence spawn chance",
     mods: [{ modType: "Increased essence spawn chance", amount: 20 }],
-    neighbors: [6, 8],
+    neighbors: [1, 6, 8],
   },
   {
     x: 1898,
@@ -91,7 +91,7 @@ export const skillList: SkillNode[] = [
 ];
 
 export const skillGraph = new Graph();
-skillGraph.addNode("root", { 0: 1, 2: 1 });
+skillGraph.addNode("root", { 0: 1, 1: 1, 2: 1, 3: 1, 4: 1 });
 skillList.forEach((skill, index) => {
   const children: any = {};
   skill.neighbors.forEach((neighbor) => {
@@ -99,3 +99,4 @@ skillList.forEach((skill, index) => {
   });
   skillGraph.addNode(index.toString(), children);
 });
+console.log('skillGraph.path(1 + "", 6 + "")', skillGraph.path(1 + "", 6 + ""));

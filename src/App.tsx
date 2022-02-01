@@ -15,40 +15,28 @@ class App extends React.Component<any, AppState> {
   };
 
   toggleIndex(index: number) {
-    const paths: any[] = [];
+    const toggles = [...this.state.toggles];
     if (!this.state.toggles[index]) {
+      const paths: any[] = [];
+
       // toggling it to enabled, find minPath
       paths.push(skillGraph.path("root", index + ""));
-      this.state.toggles.forEach((toggle, subIndex) => {
+      toggles.forEach((toggle, subIndex) => {
         if (toggle) {
-          paths.push(skillGraph.path("root", subIndex + ""));
+          paths.push(skillGraph.path(subIndex + "", index + ""));
         }
       });
 
       const minPath = _.minBy(paths, "length");
+      console.log("minPath", minPath);
 
-      const toggles = [...this.state.toggles];
       minPath.forEach((pathIndex: any) => {
-        toggles[pathIndex] = !toggles[pathIndex];
+        toggles[pathIndex] = true;
       });
-      this.setState({ toggles });
     } else {
-      const toggles = [...this.state.toggles];
       toggles[index] = !toggles[index];
-      this.state.toggles.forEach((toggle, subIndex) => {
-        if (subIndex < 5) return;
-        if (toggle) {
-          const skillNode = skillList[subIndex];
-          const isConnected = _.sum(
-            skillNode.neighbors.map((neighbor) => toggles[neighbor])
-          );
-          if (!isConnected) {
-            toggles[subIndex] = !toggles[subIndex];
-          }
-        }
-      });
-      this.setState({ toggles });
     }
+    this.setState({ toggles });
   }
 
   resetToggles() {
