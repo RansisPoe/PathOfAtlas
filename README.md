@@ -12,6 +12,7 @@ This is a Path of Building like tool for exploring the new Atlas passives. It cu
 - [ ] undo/redo
 - [x] allocate multiple connected nodes with a single click
 - [ ] unallocate multiple connected nodes with a single click
+- [ ] highlight shortest path to nodes on mouseover
 
 ## Local Development
 
