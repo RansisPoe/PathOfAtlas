@@ -8,7 +8,7 @@ This is a Path of Building like tool for exploring the new Atlas passives. It cu
 - [x] zooming/panning
   - [ ] mobile support
 - [x] sidebar with sum of stats
-- [ ] build sharing
+- [x] build sharing
 - [ ] undo/redo
 - [x] allocate multiple connected nodes with a single click
 - [ ] unallocate multiple connected nodes with a single click

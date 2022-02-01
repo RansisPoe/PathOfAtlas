@@ -9,3 +9,7 @@
 
   border-right: 5px solid gray;
 }
+
+.sidebar button {
+  margin-bottom: 10px;
+}

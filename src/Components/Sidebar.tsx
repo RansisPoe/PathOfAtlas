@@ -1,6 +1,7 @@
 import "./Sidebar.css";
 import React from "react";
 import { skillList } from "../utils";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import _ from "lodash";
 
 interface SidebarProps {
@@ -8,7 +9,11 @@ interface SidebarProps {
   resetToggles: any;
 }
 
-class Sidebar extends React.Component<SidebarProps> {
+interface SidebarState {
+  copied: boolean;
+}
+
+class Sidebar extends React.Component<SidebarProps, SidebarState> {
   passives() {
     const passives: { [key: string]: number } = {};
     this.props.toggles.forEach((toggle, index) => {
@@ -41,6 +46,21 @@ class Sidebar extends React.Component<SidebarProps> {
         >
           Reset all points
         </button>
+        <CopyToClipboard
+          text={window.location + ""}
+          onCopy={() => {
+            this.setState({ copied: true });
+            window.setTimeout(() => {
+              this.setState({ copied: false });
+            }, 2000);
+          }}
+        >
+          <button>Copy build to clipboard</button>
+        </CopyToClipboard>
+
+        {this.state?.copied ? (
+          <span style={{ color: "red" }}>Copied.</span>
+        ) : null}
         <h3>Total Stats</h3>
         <div>
           {this.passives().map(([modType, amount]) => (
