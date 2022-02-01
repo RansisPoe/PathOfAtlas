@@ -22,6 +22,7 @@ class SkillLine extends React.Component<SkillLineProps> {
         strokeWidth={5}
         opacity={this.props.toggled ? 0.6 : 0.1}
         stroke="yellow"
+        listening={false}
       />
     );
   }
