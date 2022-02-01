@@ -1,10 +1,17 @@
 {
     "root": true,
     "extends": ["prettier", "standard"],
-    "plugins": ["prettier"],
+    "plugins": ["prettier", "jest"],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true
+    },
     "rules": {
       "prettier/prettier": ["error"],
       "space-before-function-paren": "off"
+    },
+    "globals": {
+        "test": true
     }
   }
   

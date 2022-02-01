@@ -1,15 +1,15 @@
-import React from "react";
-import { Circle } from "react-konva";
+import React from 'react'
+import { Circle } from 'react-konva'
 
 interface SkillCircleProps {
-  x: number;
-  y: number;
-  name: string;
-  value: string;
-  toggled: boolean;
-  onClick: any;
-  setHover: any;
-  index: number;
+  x: number
+  y: number
+  name: string
+  value: string
+  toggled: boolean
+  onClick: any
+  setHover: any
+  index: number
 }
 
 class SkillCircle extends React.Component<SkillCircleProps> {
@@ -20,26 +20,26 @@ class SkillCircle extends React.Component<SkillCircleProps> {
         y={this.props.y}
         width={30}
         height={30}
-        fill={this.props.toggled ? "yellow" : "black"}
+        fill={this.props.toggled ? 'yellow' : 'black'}
         opacity={this.props.toggled ? 0.3 : 0.6}
         shadowBlur={5}
         onClick={this.props.onClick}
         onMouseEnter={(e: any) => {
           // style stage container:
-          const container = e.target.getStage().container();
-          container.style.cursor = "pointer";
+          const container = e.target.getStage().container()
+          container.style.cursor = 'pointer'
 
-          this.props.setHover(this.props.index);
+          this.props.setHover(this.props.index)
         }}
         onMouseLeave={(e: any) => {
-          const container = e.target.getStage().container();
-          container.style.cursor = "default";
+          const container = e.target.getStage().container()
+          container.style.cursor = 'default'
 
-          this.props.setHover(null);
+          this.props.setHover(null)
         }}
       />
-    );
+    )
   }
 }
 
-export default SkillCircle;
+export default SkillCircle

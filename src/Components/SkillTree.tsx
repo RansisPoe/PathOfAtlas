@@ -1,19 +1,19 @@
-import React from "react";
-import SkillCircle from "./SkillCircle";
-import SkillLine from "./SkillLine";
-import { skillList } from "../utils";
-import { Group } from "react-konva";
+import React from 'react'
+import SkillCircle from './SkillCircle'
+import SkillLine from './SkillLine'
+import { skillList } from '../utils'
+import { Group } from 'react-konva'
 
 interface SkillTreeProps {
-  toggles: boolean[];
-  hoveredList: boolean[];
-  toggleIndex: any;
-  setHover: any;
+  toggles: boolean[]
+  hoveredList: boolean[]
+  toggleIndex: any
+  setHover: any
 }
 
 class SkillTree extends React.Component<SkillTreeProps> {
   toggleIndex(index: number) {
-    this.props.toggleIndex(index);
+    this.props.toggleIndex(index)
   }
 
   render() {
@@ -41,18 +41,15 @@ class SkillTree extends React.Component<SkillTreeProps> {
                   neighborX={skillList[neighbor].x}
                   neighborY={skillList[neighbor].y}
                   toggled={toggle && this.props.toggles[neighbor]}
-                  hovered={
-                    this.props.hoveredList[index] &&
-                    this.props.hoveredList[neighbor]
-                  }
+                  hovered={this.props.hoveredList[index] && this.props.hoveredList[neighbor]}
                 />
               ))}
             </Group>
-          );
+          )
         })}
       </Group>
-    );
+    )
   }
 }
 
-export default SkillTree;
+export default SkillTree
