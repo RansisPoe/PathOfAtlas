@@ -1,5 +1,4 @@
 import Graph from "node-dijkstra";
-import _ from "lodash";
 
 export interface PassiveMod {
   modType: string;
