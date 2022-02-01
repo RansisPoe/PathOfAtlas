@@ -6,72 +6,11 @@ import TreeImage from "./TreeImage";
 import ToolTip from "./Tooltip";
 
 const scaleBy = 1.1;
-var currentScale = 1;
 
 const width = 3956;
 const height = 3654;
 
 const overflowBounds = 1.2;
-
-const dragBound = (pos: any) => {
-  // This limits how much you can drag the image
-  // TODO: somehow make this dynamic based on loaded image size
-  return {
-    x: Math.max(
-      Math.min(pos.x, 240),
-      -width * currentScale * overflowBounds + window.innerWidth
-    ),
-    y: Math.max(
-      Math.min(pos.y, 0),
-      -height * currentScale * overflowBounds + window.innerHeight
-    ),
-  };
-};
-
-const wheelFunc = (e: any) => {
-  // stop default scrolling
-  e.evt.preventDefault();
-
-  const stage = e.target.getStage();
-  const oldScale = stage.scaleX();
-  const pointer = stage.getPointerPosition();
-
-  const mousePointTo = {
-    x: (pointer.x - stage.x()) / oldScale,
-    y: (pointer.y - stage.y()) / oldScale,
-  };
-
-  // how to scale? Zoom in? Or zoom out?
-  let direction = e.evt.deltaY > 0 ? -1 : 1;
-
-  // when we zoom on trackpad, e.evt.ctrlKey is true
-  // in that case lets revert direction
-  if (e.evt.ctrlKey) {
-    direction = -direction;
-  }
-
-  const newScale = Math.min(
-    direction > 0 ? oldScale * scaleBy : oldScale / scaleBy,
-    2
-  );
-
-  if (width * newScale < window.innerWidth) {
-    return;
-  }
-  if (height * newScale < window.innerHeight) {
-    return;
-  }
-
-  currentScale = newScale;
-
-  stage.scale({ x: newScale, y: newScale });
-
-  const newPos = {
-    x: pointer.x - mousePointTo.x * newScale,
-    y: pointer.y - mousePointTo.y * newScale,
-  };
-  stage.position(newPos);
-};
 
 interface CanvasTreeProps {
   toggles: boolean[];
@@ -86,6 +25,7 @@ interface TooltipData {
 
 interface CanvasTreeState {
   tooltip?: TooltipData;
+  currentScale?: number;
 }
 
 // TODO: add zoom with pinch
@@ -93,6 +33,70 @@ interface CanvasTreeState {
 class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
   setTooltip(tooltip?: TooltipData) {
     this.setState({ tooltip });
+  }
+
+  getCurrentScale() {
+    return this.state?.currentScale || 1;
+  }
+
+  dragBound(pos: any) {
+    // This limits how much you can drag the image
+    // TODO: somehow make this dynamic based on loaded image size
+    return {
+      x: Math.max(
+        Math.min(pos.x, 240),
+        -width * this.getCurrentScale() * overflowBounds + window.innerWidth
+      ),
+      y: Math.max(
+        Math.min(pos.y, 0),
+        -height * this.getCurrentScale() * overflowBounds + window.innerHeight
+      ),
+    };
+  }
+
+  wheelFunc(e: any) {
+    // stop default scrolling
+    e.evt.preventDefault();
+
+    const stage = e.target.getStage();
+    const oldScale = stage.scaleX();
+    const pointer = stage.getPointerPosition();
+
+    const mousePointTo = {
+      x: (pointer.x - stage.x()) / oldScale,
+      y: (pointer.y - stage.y()) / oldScale,
+    };
+
+    // how to scale? Zoom in? Or zoom out?
+    let direction = e.evt.deltaY > 0 ? -1 : 1;
+
+    // when we zoom on trackpad, e.evt.ctrlKey is true
+    // in that case lets revert direction
+    if (e.evt.ctrlKey) {
+      direction = -direction;
+    }
+
+    const newScale = Math.min(
+      direction > 0 ? oldScale * scaleBy : oldScale / scaleBy,
+      2
+    );
+
+    if (width * newScale < window.innerWidth) {
+      return;
+    }
+    if (height * newScale < window.innerHeight) {
+      return;
+    }
+
+    this.setState({ currentScale: newScale });
+
+    stage.scale({ x: newScale, y: newScale });
+
+    const newPos = {
+      x: pointer.x - mousePointTo.x * newScale,
+      y: pointer.y - mousePointTo.y * newScale,
+    };
+    stage.position(newPos);
   }
 
   render() {
@@ -103,8 +107,8 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
           draggable
           x={-1200}
           y={-2100}
-          dragBoundFunc={dragBound}
-          onWheel={wheelFunc}
+          dragBoundFunc={this.dragBound.bind(this)}
+          onWheel={this.wheelFunc.bind(this)}
         >
           <TreeImage src="./tree.png" />
           <SkillTree
@@ -112,7 +116,12 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
             toggleIndex={this.props.toggleIndex}
             setTooltip={this.setTooltip.bind(this)}
           ></SkillTree>
-          {this.state?.tooltip && <ToolTip data={this.state.tooltip} />}
+          {this.state?.tooltip && (
+            <ToolTip
+              data={this.state.tooltip}
+              currentScale={1 / this.getCurrentScale()}
+            />
+          )}
         </Layer>
       </Stage>
     );

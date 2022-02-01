@@ -29,7 +29,7 @@ class SkillCircle extends React.Component<SkillCircleProps> {
           container.style.cursor = "pointer";
 
           this.props.setTooltip({
-            x: this.props.x + 10,
+            x: this.props.x,
             y: this.props.y,
             name: this.props.name,
             value: this.props.value,
