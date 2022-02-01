@@ -1,4 +1,5 @@
 import Graph from "node-dijkstra";
+import { Buffer } from "buffer";
 import _ from "lodash";
 
 export interface PassiveMod {
@@ -143,4 +144,39 @@ export function disconnectedSearch(toggles: boolean[]): boolean[] {
   disconnectedSearchHelper(4, toggles, connected, visited);
 
   return connected;
+}
+
+function bitGet(num: number, bit: number): number {
+  return num & (1 << bit);
+}
+function bitSet(num: number, bit: number): number {
+  return num | (1 << bit);
+}
+
+export function encodeBitList(bitlist: boolean[]): string {
+  const u8Length = Math.floor(bitlist.length / 8) + 1;
+  const u8Arr = new Uint8Array(u8Length);
+
+  bitlist.forEach((bit, index) => {
+    const u8Index = Math.floor(index / 8);
+    if (bit) {
+      u8Arr[u8Index] = bitSet(u8Arr[u8Index], index % 8);
+    }
+  });
+
+  return Buffer.from(u8Arr).toString("base64");
+}
+
+export function parseBitList(encodedBitList: string): boolean[] {
+  const buf = Buffer.from(encodedBitList, "base64");
+
+  const bitList = [] as boolean[];
+
+  buf.forEach((num, index) => {
+    for (let i = 0; i < 8; i++) {
+      bitList[index * 8 + i] = !!bitGet(num, i);
+    }
+  });
+
+  return bitList.slice(0, skillList.length);
 }

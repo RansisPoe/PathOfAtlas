@@ -2,7 +2,13 @@ import React from "react";
 import "./App.css";
 import CanvasTree from "./Components/Canvas";
 import Sidebar from "./Components/Sidebar";
-import { skillList, findShortestPath, disconnectedSearch } from "./utils";
+import {
+  skillList,
+  findShortestPath,
+  disconnectedSearch,
+  encodeBitList,
+  parseBitList,
+} from "./utils";
 
 interface AppState {
   toggles: boolean[];
@@ -21,14 +27,13 @@ class App extends React.Component<any, AppState> {
   };
 
   componentDidMount() {
-    const toggles = [...this.state.toggles];
     if (window.location.hash && window.location.hash.length > 1) {
-      window.location.hash
-        .slice(1)
-        .split(",")
-        .forEach((elem, index) => (toggles[index] = elem === "1"));
-
-      this.setState({ toggles });
+      try {
+        const bitList = window.location.hash.slice(1);
+        this.setState({ toggles: parseBitList(bitList) });
+      } catch (err) {
+        console.log("failed to parse build", err);
+      }
     }
 
     document.addEventListener("keydown", this.handleKeyPress);
@@ -39,11 +44,7 @@ class App extends React.Component<any, AppState> {
   }
 
   setUrl(toggles: boolean[]) {
-    window.history.replaceState(
-      null,
-      "",
-      "#" + toggles.map((toggle) => (toggle ? 1 : 0)).join(",")
-    );
+    window.history.replaceState(null, "", "#" + encodeBitList(toggles));
   }
 
   toggleIndex(index: number) {
