@@ -19,8 +19,8 @@ class SkillCircle extends React.Component<SkillCircleProps> {
         y={this.props.y}
         width={30}
         height={30}
-        fill={"black"}
-        opacity={this.props.toggled ? 0.1 : 0.6}
+        fill={this.props.toggled ? "yellow" : "black"}
+        opacity={this.props.toggled ? 0.3 : 0.6}
         shadowBlur={5}
         onClick={this.props.onClick}
         onMouseEnter={(e: any) => {

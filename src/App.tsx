@@ -1,8 +1,9 @@
+import _ from "lodash";
 import React from "react";
 import "./App.css";
 import CanvasTree from "./Components/Canvas";
 import Sidebar from "./Components/Sidebar";
-import { skillList } from "./utils";
+import { skillList, skillGraph } from "./utils";
 
 interface AppState {
   toggles: boolean[];
@@ -14,10 +15,40 @@ class App extends React.Component<any, AppState> {
   };
 
   toggleIndex(index: number) {
-    const toggles = [...this.state.toggles];
-    toggles[index] = !toggles[index];
+    const paths: any[] = [];
+    if (!this.state.toggles[index]) {
+      // toggling it to enabled, find minPath
+      paths.push(skillGraph.path("root", index + ""));
+      this.state.toggles.forEach((toggle, subIndex) => {
+        if (toggle) {
+          paths.push(skillGraph.path("root", subIndex + ""));
+        }
+      });
 
-    this.setState({ toggles });
+      const minPath = _.minBy(paths, "length");
+
+      const toggles = [...this.state.toggles];
+      minPath.forEach((pathIndex: any) => {
+        toggles[pathIndex] = !toggles[pathIndex];
+      });
+      this.setState({ toggles });
+    } else {
+      const toggles = [...this.state.toggles];
+      toggles[index] = !toggles[index];
+      this.state.toggles.forEach((toggle, subIndex) => {
+        if (subIndex < 5) return;
+        if (toggle) {
+          const skillNode = skillList[subIndex];
+          const isConnected = _.sum(
+            skillNode.neighbors.map((neighbor) => toggles[neighbor])
+          );
+          if (!isConnected) {
+            toggles[subIndex] = !toggles[subIndex];
+          }
+        }
+      });
+      this.setState({ toggles });
+    }
   }
 
   resetToggles() {
