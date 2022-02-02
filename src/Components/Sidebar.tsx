@@ -58,7 +58,7 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
               <h3 key={modGroup}>{modGroup}</h3>
               {passives[modGroup].map(({ modType, amount }) => (
                 <div className="stat" key={modType}>
-                  {modType.replace('$AMOUNT', `${amount}%`)}
+                  {modType.replace('$AMOUNT', `${amount}`)}
                 </div>
               ))}
             </div>
