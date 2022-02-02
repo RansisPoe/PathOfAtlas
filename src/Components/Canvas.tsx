@@ -161,7 +161,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
         scaleY={0.9}
       >
         <Layer draggable x={-1400} y={-3500} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
-          <TreeImage src="./tree.png" />
+          <TreeImage src="./tree.jpg" />
           <SkillTree
             toggles={this.props.toggles}
             searched={this.props.searched}
