@@ -26,6 +26,7 @@ class SkillCircle extends React.Component<SkillCircleProps> {
         onClick={this.props.onClick}
         hitStrokeWidth={0}
         shadowForStrokeEnabled={false}
+        onTouchStart={this.props.onClick}
         onMouseEnter={(e: any) => {
           // style stage container:
           const container = e.target.getStage().container()

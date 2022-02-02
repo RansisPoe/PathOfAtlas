@@ -6,15 +6,15 @@ This is a Path of Building like tool for exploring the new Atlas passives. It cu
 
 - [x] basic skill tree UI
 - [x] zooming/panning
-  - [ ] mobile support
+  - [ ] mobile support for zoom
 - [x] sidebar with sum of stats
 - [x] build sharing
 - [x] undo/redo
 - [x] allocate/unallocate multiple connected nodes with a single click
 - [x] highlight shortest path to nodes on mouseover
 - [x] grouping of passives by mastery
-- [ ] search
-- [ ] optimize performance
+- [x] search
+- [ ] optimize zoom performance
 
 ## Local Development
 
