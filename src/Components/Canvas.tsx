@@ -78,7 +78,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
   }
 
   setHover(index?: number) {
-    if (index) {
+    if (index || index === 0) {
       const tooltip = {
         x: skillList[index].x,
         y: skillList[index].y,
