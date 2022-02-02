@@ -1227,13 +1227,13 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Atlas Scouting Reports found in Areas',
         amount: 20,
         description: '20% increased Atlas Scouting Reports found in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       },
       {
         modType: '$AMOUNT% chance for Scouting Reports in Areas to drop as Comprehensive Scouting Reports instead',
         amount: 20,
         description: '20% chance for Scouting Reports in Areas to drop as Comprehensive Scouting Reports instead',
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [81]
@@ -3919,7 +3919,7 @@ export const skillList: SkillNode[] = [
         modType: 'Oils found in Areas have $AMOUNT% chance to be 1 tier higher',
         amount: 25,
         description: 'Oils found in Areas have 25% chance to be 1 tier higher',
-        modGroup: 'Maps'
+        modGroup: 'Blight'
       },
       {
         modType: 'Blight Encounters in Areas contain up to $AMOUNT additional Blight Boss',
@@ -5112,19 +5112,19 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% chance for Scouting Reports in Areas to drop as Blighted Scouting Reports instead',
         amount: 5,
         description: '5% chance for Scouting Reports in Areas to drop as Blighted Scouting Reports instead',
-        modGroup: 'Blight'
+        modGroup: 'Kirac'
       },
       {
         modType: '$AMOUNT% chance for Scouting Reports in Areas to drop as Delirious Scouting Reports instead',
         amount: 5,
         description: '5% chance for Scouting Reports in Areas to drop as Delirious Scouting Reports instead',
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       },
       {
         modType: '$AMOUNT% chance for Scouting Reports in Areas to drop as Otherworldly Scouting Reports instead',
         amount: 5,
         description: '5% chance for Scouting Reports in Areas to drop as Otherworldly Scouting Reports instead',
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [340, 343]
@@ -5138,7 +5138,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Atlas Scouting Reports found in Areas',
         amount: 60,
         description: '60% increased Atlas Scouting Reports found in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [338, 337]
@@ -7790,7 +7790,7 @@ export const skillList: SkillNode[] = [
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT% chance to drop as Timeless Emblems instead',
         amount: 0.2,
         description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead',
-        modGroup: 'Maps'
+        modGroup: 'Legion'
       }
     ],
     neighbors: [532, 531]
@@ -7858,7 +7858,7 @@ export const skillList: SkillNode[] = [
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT% chance to drop as Timeless Emblems instead',
         amount: 0.6,
         description: 'Timeless Splinters dropped in Areas have 0.6% chance to drop as Timeless Emblems instead',
-        modGroup: 'Maps'
+        modGroup: 'Legion'
       }
     ],
     neighbors: [523, 525, 527, 571, 573]
@@ -7900,7 +7900,7 @@ export const skillList: SkillNode[] = [
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT% chance to drop as Timeless Emblems instead',
         amount: 0.2,
         description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead',
-        modGroup: 'Maps'
+        modGroup: 'Legion'
       }
     ],
     neighbors: [524, 529]
@@ -8646,13 +8646,13 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Atlas Scouting Reports found in Areas',
         amount: 20,
         description: '20% increased Atlas Scouting Reports found in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       },
       {
         modType: "$AMOUNT% chance for Scouting Reports in Areas to drop as Operative's Scouting Reports instead",
         amount: 10,
         description: "10% chance for Scouting Reports in Areas to drop as Operative's Scouting Reports instead",
-        modGroup: 'Maps'
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [576]
