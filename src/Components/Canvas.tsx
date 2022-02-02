@@ -63,7 +63,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
         x: skillList[index].x,
         y: skillList[index].y,
         name: skillList[index].name,
-        value: skillList[index].stats.join(',')
+        value: skillList[index].stats.map((skill) => skill.description).join(',')
       }
 
       const hoveredList = [...this.state.hoveredList]

@@ -43,5 +43,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Special Thanks
 
 - [Openarl](https://github.com/Openarl) for the original Path of Building which is a heavy inspiration for this tool
-- Tequila (discord: Tequila#5575) for helping plan out a lot of the basic features and doing a bunch of early QA
+- Tequila (discord: Tequila#5575) for helping plan out a lot of the early features, doing a bunch of QA, and creating the final stitched image for the tree
 - [thewelcomematt](https://old.reddit.com/user/thewelcomematt) for creating the original stitched image of the new atlas tree and inspiring me to start this project once I saw it
