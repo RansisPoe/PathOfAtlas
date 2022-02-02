@@ -8,12 +8,12 @@ import ToolTip from './Tooltip'
 import { findShortestPath } from '../utils'
 import { skillList } from '../tree'
 
-const scaleBy = 1.1
+const scaleBy = 1.3
 
 const width = 5000
 const height = 5000
 
-const overflowBounds = 1.2
+const overflowBounds = 1.1
 
 interface CanvasTreeProps {
   toggles: boolean[]
@@ -144,7 +144,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
       direction = -direction
     }
 
-    const newScale = Math.min(direction > 0 ? oldScale * scaleBy : oldScale / scaleBy, 2)
+    const newScale = Math.min(direction > 0 ? oldScale * scaleBy : oldScale / scaleBy, 1.5)
     this.setScale(stage, newScale)
   }
 
