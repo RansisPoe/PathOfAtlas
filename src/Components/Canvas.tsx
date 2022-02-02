@@ -30,6 +30,8 @@ interface CanvasTreeState {
   currentScale: number
   hoveredList: boolean[]
   hoveredIndex?: number
+  windowWidth: number
+  windowHeight: number
 }
 
 const emptyHoverList = skillList.map((skill) => false)
@@ -41,7 +43,21 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
     currentScale: 1,
     hoveredList: [...emptyHoverList],
     hoveredIndex: undefined,
-    tooltip: undefined
+    tooltip: undefined,
+    windowWidth: window.innerWidth,
+    windowHeight: window.innerHeight
+  }
+
+  handleResize = () => {
+    this.setState({ windowWidth: window.innerWidth, windowHeight: window.innerHeight })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
   }
 
   getCurrentScale() {

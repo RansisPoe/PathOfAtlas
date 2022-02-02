@@ -19,6 +19,8 @@ class SkillLine extends React.Component<SkillLineProps> {
         opacity={this.props.toggled ? 1 : this.props.hovered ? 0.3 : 0}
         stroke="#cac1a6"
         listening={false}
+        hitStrokeWidth={0}
+        shadowForStrokeEnabled={false}
       />
     )
   }
