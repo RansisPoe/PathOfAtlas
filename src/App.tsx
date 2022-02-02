@@ -96,6 +96,10 @@ class App extends React.Component<any, AppState> {
 
   search(e: any) {
     const searched = skillList.map((skill) => false)
+    if (e.target.value === '' || e.target.value === ' ') {
+      this.setState({ searched })
+      return
+    }
     const regEx = new RegExp(e.target.value, 'i')
 
     skillList.forEach((skill, index) => {
