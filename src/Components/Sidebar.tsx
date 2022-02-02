@@ -14,7 +14,7 @@ interface SidebarState {
 
 class Sidebar extends React.Component<SidebarProps, SidebarState> {
   passives() {
-    const passives: { [key: string]: number } = {}
+    const passives: { [key: string]: number | null } = {}
     this.props.toggles.forEach((toggle, index) => {
       if (!toggle) return
       const skill = skillList[index]
@@ -22,6 +22,8 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
       skill.stats.forEach((mod) => {
         if (mod.amount) {
           passives[mod.modType] = (passives[mod.modType] || 0) + mod.amount
+        } else {
+          passives[mod.modType] = null
         }
       })
     })
@@ -37,7 +39,7 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
   render() {
     return (
       <div className="sidebar">
-        <h3>{_.sum(this.props.toggles)} / 132</h3>
+        <h3>{_.sum(this.props.toggles)} / 128</h3>
         <CopyToClipboard
           text={window.location + ''}
           onCopy={() => {

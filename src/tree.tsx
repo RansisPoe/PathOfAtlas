@@ -447,7 +447,7 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [93, 95, 25, 37, 35, 86]
   },
@@ -456,7 +456,7 @@ export const skillList: SkillNode[] = [
     y: -4564.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [5, 37, 48, 40]
   },
@@ -491,7 +491,7 @@ export const skillList: SkillNode[] = [
     y: -4316.412336883819,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [33, 34]
   },
@@ -513,7 +513,7 @@ export const skillList: SkillNode[] = [
     y: -5743.46,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [40, 38, 64, 10]
   },
@@ -522,7 +522,7 @@ export const skillList: SkillNode[] = [
     y: -5149.71,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [34, 39]
   },
@@ -906,8 +906,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -921,8 +921,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -936,8 +936,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -951,8 +951,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -966,8 +966,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -981,8 +981,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -996,8 +996,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -1011,8 +1011,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -1026,8 +1026,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.$AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
       }
@@ -1062,7 +1062,7 @@ export const skillList: SkillNode[] = [
     y: -6164.44,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [122, 38]
   },
@@ -1265,7 +1265,7 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [216, 33]
   },
@@ -1653,7 +1653,7 @@ export const skillList: SkillNode[] = [
     y: -5743.46,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [66, 114, 141, 123, 78, 160]
   },
@@ -1902,7 +1902,7 @@ export const skillList: SkillNode[] = [
     y: -5320.0,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [192, 122]
   },
@@ -2355,8 +2355,8 @@ export const skillList: SkillNode[] = [
     name: 'Neural Pathways',
     stats: [
       {
-        modType: '+0.$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
-        amount: 5,
+        modType: '+$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
+        amount: 0.5,
         description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)'
       },
       {
@@ -2382,8 +2382,8 @@ export const skillList: SkillNode[] = [
     name: 'Vivid Memories',
     stats: [
       {
-        modType: '+0.$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
-        amount: 5,
+        modType: '+$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
+        amount: 0.5,
         description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)'
       },
       {
@@ -2400,8 +2400,8 @@ export const skillList: SkillNode[] = [
     name: 'Synaptic Impulses',
     stats: [
       {
-        modType: '+0.$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
-        amount: 5,
+        modType: '+$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
+        amount: 0.5,
         description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)'
       },
       {
@@ -2554,7 +2554,7 @@ export const skillList: SkillNode[] = [
     y: -4900.09,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [154, 186, 217, 258, 264, 141]
   },
@@ -2848,7 +2848,7 @@ export const skillList: SkillNode[] = [
     y: -6164.76,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [310, 159]
   },
@@ -2857,7 +2857,7 @@ export const skillList: SkillNode[] = [
     y: -7846.53,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [243, 204]
   },
@@ -2866,7 +2866,7 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [221, 227, 217, 93]
   },
@@ -2875,7 +2875,7 @@ export const skillList: SkillNode[] = [
     y: -4141.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [193, 216, 192, 89]
   },
@@ -3219,7 +3219,7 @@ export const skillList: SkillNode[] = [
     y: -7454.59,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [207, 311, 215, 268]
   },
@@ -3497,7 +3497,7 @@ export const skillList: SkillNode[] = [
     y: -4476.9,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [194, 285, 286, 192]
   },
@@ -3777,7 +3777,7 @@ export const skillList: SkillNode[] = [
     y: -4278.31,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [339, 264]
   },
@@ -3786,7 +3786,7 @@ export const skillList: SkillNode[] = [
     y: -5101.15,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [297, 321, 264]
   },
@@ -4484,7 +4484,7 @@ export const skillList: SkillNode[] = [
     y: -4053.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [336, 342, 344, 331, 285, 379]
   },
@@ -5012,7 +5012,7 @@ export const skillList: SkillNode[] = [
     y: -5101.15,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [299, 321, 400]
   },
@@ -5021,7 +5021,7 @@ export const skillList: SkillNode[] = [
     y: -4270.92,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [339, 400]
   },
@@ -5218,8 +5218,8 @@ export const skillList: SkillNode[] = [
     name: 'Unique Map Chance',
     stats: [
       {
-        modType: 'Map Items have a 0.$AMOUNT chance to drop as a random Unique Map instead in Areas',
-        amount: 2,
+        modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
+        amount: 0.2,
         description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
       }
     ],
@@ -5231,8 +5231,8 @@ export const skillList: SkillNode[] = [
     name: 'Unique Map Chance',
     stats: [
       {
-        modType: 'Map Items have a 0.$AMOUNT chance to drop as a random Unique Map instead in Areas',
-        amount: 2,
+        modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
+        amount: 0.2,
         description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
       }
     ],
@@ -5251,8 +5251,8 @@ export const skillList: SkillNode[] = [
     name: 'Unique Map Chance',
     stats: [
       {
-        modType: 'Map Items have a 0.$AMOUNT chance to drop as a random Unique Map instead in Areas',
-        amount: 2,
+        modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
+        amount: 0.2,
         description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
       }
     ],
@@ -5264,8 +5264,8 @@ export const skillList: SkillNode[] = [
     name: 'Unique Map Chance',
     stats: [
       {
-        modType: 'Map Items have a 0.$AMOUNT chance to drop as a random Unique Map instead in Areas',
-        amount: 2,
+        modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
+        amount: 0.2,
         description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
       }
     ],
@@ -5276,7 +5276,7 @@ export const skillList: SkillNode[] = [
     y: -4476.83,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [378, 379, 455, 448]
   },
@@ -5459,7 +5459,7 @@ export const skillList: SkillNode[] = [
     y: -7453.38,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [398, 466, 312, 442]
   },
@@ -5717,7 +5717,7 @@ export const skillList: SkillNode[] = [
     y: -4141.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [434, 454, 448, 557]
   },
@@ -5726,7 +5726,7 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [424, 435, 554, 433]
   },
@@ -5826,7 +5826,7 @@ export const skillList: SkillNode[] = [
     y: -7847.71,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [414, 465]
   },
@@ -5897,7 +5897,7 @@ export const skillList: SkillNode[] = [
     y: -6163.88,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [313, 497]
   },
@@ -5906,7 +5906,7 @@ export const skillList: SkillNode[] = [
     y: -4893.25,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [400, 402, 433, 502, 514, 453]
   },
@@ -6770,7 +6770,7 @@ export const skillList: SkillNode[] = [
     y: -5320.0,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [448, 534]
   },
@@ -6903,8 +6903,8 @@ export const skillList: SkillNode[] = [
     name: 'Legion Timeless Emblem Chance',
     stats: [
       {
-        modType: 'Timeless Splinters dropped in Areas have 0.$AMOUNT chance to drop as Timeless Emblems instead',
-        amount: 2,
+        modType: 'Timeless Splinters dropped in Areas have $AMOUNT chance to drop as Timeless Emblems instead',
+        amount: 0.2,
         description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead'
       }
     ],
@@ -6965,8 +6965,8 @@ export const skillList: SkillNode[] = [
     name: 'Emblematic',
     stats: [
       {
-        modType: 'Timeless Splinters dropped in Areas have 0.$AMOUNT chance to drop as Timeless Emblems instead',
-        amount: 6,
+        modType: 'Timeless Splinters dropped in Areas have $AMOUNT chance to drop as Timeless Emblems instead',
+        amount: 0.6,
         description: 'Timeless Splinters dropped in Areas have 0.6% chance to drop as Timeless Emblems instead'
       }
     ],
@@ -7004,8 +7004,8 @@ export const skillList: SkillNode[] = [
     name: 'Legion Timeless Emblem Chance',
     stats: [
       {
-        modType: 'Timeless Splinters dropped in Areas have 0.$AMOUNT chance to drop as Timeless Emblems instead',
-        amount: 2,
+        modType: 'Timeless Splinters dropped in Areas have $AMOUNT chance to drop as Timeless Emblems instead',
+        amount: 0.2,
         description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead'
       }
     ],
@@ -7047,7 +7047,7 @@ export const skillList: SkillNode[] = [
     y: -5740.5,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [498, 514, 526, 581, 585, 540]
   },
@@ -7336,7 +7336,7 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [617, 434]
   },
@@ -7674,8 +7674,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7772,7 +7772,7 @@ export const skillList: SkillNode[] = [
     y: -6164.44,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [534, 614]
   },
@@ -7783,8 +7783,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7798,8 +7798,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7813,8 +7813,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7828,8 +7828,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7843,8 +7843,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7858,8 +7858,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -7873,8 +7873,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -8033,8 +8033,8 @@ export const skillList: SkillNode[] = [
     stats: [
       {
         modType:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.$AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
-        amount: 2,
+          'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
+        amount: 0.2,
         description:
           'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
       }
@@ -8187,7 +8187,7 @@ export const skillList: SkillNode[] = [
     y: -5740.52,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [583, 614, 616, 635]
   },
@@ -8196,7 +8196,7 @@ export const skillList: SkillNode[] = [
     y: -5149.71,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [618, 615]
   },
@@ -8205,7 +8205,7 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [556, 567, 620, 623, 554, 621]
   },
@@ -8214,7 +8214,7 @@ export const skillList: SkillNode[] = [
     y: -4564.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [621, 638, 609, 616]
   },
@@ -8249,7 +8249,7 @@ export const skillList: SkillNode[] = [
     y: -4316.412336883819,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '0.$AMOUNT chance for Map Drops to be Duplicated', amount: 5, description: '0.5% chance for Map Drops to be Duplicated' }
+      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
     ],
     neighbors: [617, 618]
   },

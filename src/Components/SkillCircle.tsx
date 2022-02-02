@@ -25,7 +25,6 @@ class SkillCircle extends React.Component<SkillCircleProps> {
         shadowBlur={5}
         onClick={this.props.onClick}
         onMouseEnter={(e: any) => {
-          console.log('index hover', this.props.index)
           // style stage container:
           const container = e.target.getStage().container()
           container.style.cursor = 'pointer'

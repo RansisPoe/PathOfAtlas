@@ -61,7 +61,7 @@ class App extends React.Component<any, AppState> {
 
     const redoHistory: boolean[][] = []
 
-    // this.setUrl(toggles)
+    this.setUrl(toggles)
     this.setState({ toggles, history, redoHistory })
   }
 
