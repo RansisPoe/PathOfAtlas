@@ -4816,7 +4816,7 @@ export const skillList: SkillNode[] = [
         modType: 'Rogue Exiles in Areas have $AMOUNT% chance to be Possessed by a Tormented Spirit',
         amount: 100,
         description: 'Rogue Exiles in Areas have 100% chance to be Possessed by a Tormented Spirit',
-        modGroup: 'Torment'
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [323]
@@ -8042,7 +8042,7 @@ export const skillList: SkillNode[] = [
         modType: 'Abyssal Depths in Areas have $AMOUNT% more Rare Monsters',
         amount: 100,
         description: 'Abyssal Depths in Areas have 100% more Rare Monsters',
-        modGroup: 'Rare Monsters'
+        modGroup: 'Abyss'
       },
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT% increased Pack Size',
