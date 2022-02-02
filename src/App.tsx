@@ -2,11 +2,13 @@ import React from 'react'
 import './App.css'
 import CanvasTree from './Components/Canvas'
 import Sidebar from './Components/Sidebar'
+import Searchbar from './Components/Searchbar'
 import { findShortestPath, disconnectedSearch, encodeBitList, parseBitList } from './utils'
 import { skillList } from './tree'
 
 interface AppState {
   toggles: boolean[]
+  searched: boolean[]
   history: boolean[][]
   redoHistory: boolean[][]
 }
@@ -17,6 +19,7 @@ const _redoHistory: boolean[][] = []
 class App extends React.Component<any, AppState> {
   state = {
     toggles: skillList.map((skill) => false),
+    searched: skillList.map((skill) => false),
     history: _history,
     redoHistory: _redoHistory
   }
@@ -27,7 +30,7 @@ class App extends React.Component<any, AppState> {
         const bitList = window.location.hash.slice(1)
         this.setState({ toggles: parseBitList(bitList) })
       } catch (err) {
-        console.log('failed to parse build', err)
+        console.error('failed to parse build', err)
       }
     }
 
@@ -91,6 +94,25 @@ class App extends React.Component<any, AppState> {
     }
   }
 
+  search(e: any) {
+    const searched = skillList.map((skill) => false)
+    const regEx = new RegExp(e.target.value, 'i')
+
+    skillList.forEach((skill, index) => {
+      if (skill.name.match(regEx)) {
+        searched[index] = true
+      } else {
+        skill.stats.forEach((stat) => {
+          if (stat.description.match(regEx)) {
+            searched[index] = true
+          }
+        })
+      }
+    })
+
+    this.setState({ searched })
+  }
+
   handleKeyPress = (event: any) => {
     if (event.ctrlKey && event.key === 'z') {
       this.undo()
@@ -104,7 +126,8 @@ class App extends React.Component<any, AppState> {
     return (
       <div className="App">
         <Sidebar toggles={this.state.toggles}></Sidebar>
-        <CanvasTree toggles={this.state.toggles} toggleIndex={this.toggleIndex.bind(this)}></CanvasTree>
+        <Searchbar setSearch={this.search.bind(this)}></Searchbar>
+        <CanvasTree toggles={this.state.toggles} searched={this.state.searched} toggleIndex={this.toggleIndex.bind(this)}></CanvasTree>
       </div>
     )
   }

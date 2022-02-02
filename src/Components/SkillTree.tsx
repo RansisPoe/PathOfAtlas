@@ -6,6 +6,7 @@ import { Group } from 'react-konva'
 
 interface SkillTreeProps {
   toggles: boolean[]
+  searched: boolean[]
   hoveredList: boolean[]
   toggleIndex: any
   setHover: any
@@ -41,6 +42,7 @@ class SkillTree extends React.Component<SkillTreeProps> {
                 name={skillList[index].name}
                 value={skillList[index].stats.join(',')}
                 toggled={toggle}
+                searched={this.props.searched[index]}
                 onClick={this.toggleIndex.bind(this, index)}
                 setHover={this.props.setHover}
               ></SkillCircle>

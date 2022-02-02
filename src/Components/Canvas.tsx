@@ -1,4 +1,5 @@
 import React from 'react'
+import Konva from 'konva'
 import { Stage, Layer } from 'react-konva'
 
 import SkillTree from './SkillTree'
@@ -16,6 +17,7 @@ const overflowBounds = 1.2
 
 interface CanvasTreeProps {
   toggles: boolean[]
+  searched: boolean[]
   toggleIndex: any
 }
 interface TooltipData {
@@ -39,6 +41,8 @@ const emptyHoverList = skillList.map((skill) => false)
 // TODO: add zoom with pinch
 
 class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
+  stage: Konva.Stage | null = null
+
   state = {
     currentScale: 1,
     hoveredList: [...emptyHoverList],
@@ -96,18 +100,40 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
     }
   }
 
+  setScale(stage: Konva.Stage, newScale: number) {
+    if (width * newScale < window.innerWidth) {
+      return
+    }
+    if (height * newScale < window.innerHeight) {
+      return
+    }
+    const pointer = stage.getPointerPosition()
+    const oldScale = stage.scaleX()
+
+    this.setState({ currentScale: newScale })
+
+    stage.scale({ x: newScale, y: newScale })
+
+    if (pointer) {
+      const mousePointTo = {
+        x: (pointer.x - stage.x()) / oldScale,
+        y: (pointer.y - stage.y()) / oldScale
+      }
+
+      const newPos = {
+        x: pointer.x - mousePointTo.x * newScale,
+        y: pointer.y - mousePointTo.y * newScale
+      }
+      stage.position(newPos)
+    }
+  }
+
   wheelFunc(e: any) {
     // stop default scrolling
     e.evt.preventDefault()
 
     const stage = e.target.getStage()
     const oldScale = stage.scaleX()
-    const pointer = stage.getPointerPosition()
-
-    const mousePointTo = {
-      x: (pointer.x - stage.x()) / oldScale,
-      y: (pointer.y - stage.y()) / oldScale
-    }
 
     // how to scale? Zoom in? Or zoom out?
     let direction = e.evt.deltaY > 0 ? -1 : 1
@@ -119,33 +145,26 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
     }
 
     const newScale = Math.min(direction > 0 ? oldScale * scaleBy : oldScale / scaleBy, 2)
-
-    if (width * newScale < window.innerWidth) {
-      return
-    }
-    if (height * newScale < window.innerHeight) {
-      return
-    }
-
-    this.setState({ currentScale: newScale })
-
-    stage.scale({ x: newScale, y: newScale })
-
-    const newPos = {
-      x: pointer.x - mousePointTo.x * newScale,
-      y: pointer.y - mousePointTo.y * newScale
-    }
-    stage.position(newPos)
+    this.setScale(stage, newScale)
   }
 
   render() {
     // TODO: make x and y dynamic based on the image
     return (
-      <Stage width={window.innerWidth} height={window.innerHeight}>
-        <Layer draggable x={-1900} y={-3500} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
+      <Stage
+        ref={(node) => {
+          this.stage = node
+        }}
+        width={window.innerWidth}
+        height={window.innerHeight}
+        scaleX={0.8}
+        scaleY={0.8}
+      >
+        <Layer draggable x={-1500} y={-3500} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
           <TreeImage src="./tree.png" />
           <SkillTree
             toggles={this.props.toggles}
+            searched={this.props.searched}
             toggleIndex={this.props.toggleIndex}
             setHover={this.setHover.bind(this)}
             hoveredList={this.state.hoveredList}

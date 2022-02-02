@@ -1,0 +1,19 @@
+.searchbar {
+  position: fixed;
+  z-index: 1;
+  height: 20px;
+  width: 120px;
+  bottom: 10px;
+  left: 340px;
+}
+
+.searchbar input {
+  color: #beb698;
+  background-color: #262626;
+  border: 3px solid #393939;
+  outline: none;
+}
+
+.searchbar input:focus {
+  border: 3px solid #82653b;
+}
