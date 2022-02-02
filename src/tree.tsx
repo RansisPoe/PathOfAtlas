@@ -7790,7 +7790,7 @@ export const skillList: SkillNode[] = [
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT% chance to drop as Timeless Emblems instead',
         amount: 0.2,
         description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead',
-        modGroup: 'Maps'
+        modGroup: 'Legion'
       }
     ],
     neighbors: [532, 531]
@@ -7858,7 +7858,7 @@ export const skillList: SkillNode[] = [
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT% chance to drop as Timeless Emblems instead',
         amount: 0.6,
         description: 'Timeless Splinters dropped in Areas have 0.6% chance to drop as Timeless Emblems instead',
-        modGroup: 'Maps'
+        modGroup: 'Legion'
       }
     ],
     neighbors: [523, 525, 527, 571, 573]
@@ -7900,7 +7900,7 @@ export const skillList: SkillNode[] = [
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT% chance to drop as Timeless Emblems instead',
         amount: 0.2,
         description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead',
-        modGroup: 'Maps'
+        modGroup: 'Legion'
       }
     ],
     neighbors: [524, 529]
