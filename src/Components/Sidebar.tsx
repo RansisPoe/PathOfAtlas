@@ -39,8 +39,9 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
       <div className="sidebar">
         <h3>{_.sum(this.props.toggles)} / 128</h3>
         <CopyToClipboard
-          text={window.location + ''}
+          text={window.location.href}
           onCopy={() => {
+            navigator.clipboard.writeText(window.location.href)
             this.setState({ copied: true })
             window.setTimeout(() => {
               this.setState({ copied: false })
