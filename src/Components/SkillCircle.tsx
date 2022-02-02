@@ -22,7 +22,6 @@ class SkillCircle extends React.Component<SkillCircleProps> {
         height={30}
         fill={this.props.toggled ? 'yellow' : 'black'}
         opacity={this.props.toggled ? 0.1 : 0}
-        shadowBlur={5}
         onClick={this.props.onClick}
         hitStrokeWidth={0}
         shadowForStrokeEnabled={false}
