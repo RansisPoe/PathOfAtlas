@@ -188,8 +188,8 @@ export const skillList: SkillNode[] = [
     name: 'Seance',
     stats: [
       {
-        modType: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched',
-        amount: null,
+        modType: 'Up to $AMOUNT Rare Monsters in Areas are Possessed and their Minions are Touched',
+        amount: 5,
         description: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched',
         modGroup: 'Torment'
       }
@@ -776,8 +776,8 @@ export const skillList: SkillNode[] = [
     name: 'Torn Veil',
     stats: [
       {
-        modType: 'Powerful Beyond Demons require 1 fewer Portal to summon in Areas',
-        amount: null,
+        modType: 'Powerful Beyond Demons require $AMOUNT fewer Portal to summon in Areas',
+        amount: 1,
         description: 'Powerful Beyond Demons require 1 fewer Portal to summon in Areas',
         modGroup: 'Beyond'
       },
@@ -796,8 +796,8 @@ export const skillList: SkillNode[] = [
     name: 'Bestiary Yellow Beast Amount',
     stats: [
       {
-        modType: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
-        amount: null,
+        modType: 'Areas that contain capturable Beasts have $AMOUNT additional Yellow Beast',
+        amount: 1,
         description: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
         modGroup: 'Bestiary'
       }
@@ -810,8 +810,8 @@ export const skillList: SkillNode[] = [
     name: 'Bestiary Yellow Beast Amount',
     stats: [
       {
-        modType: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
-        amount: null,
+        modType: 'Areas that contain capturable Beasts have $AMOUNT additional Yellow Beast',
+        amount: 1,
         description: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
         modGroup: 'Bestiary'
       }
@@ -1332,8 +1332,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       },
       {
-        modType: 'Delirium Fog in Areas lasts 10 additional seconds before dissipating',
-        amount: null,
+        modType: 'Delirium Fog in Areas lasts $AMOUNT additional seconds before dissipating',
+        amount: 10,
         description: 'Delirium Fog in Areas lasts 10 additional seconds before dissipating',
         modGroup: 'Delirium'
       }
@@ -1882,8 +1882,8 @@ export const skillList: SkillNode[] = [
     name: 'Profitable Prayers',
     stats: [
       {
-        modType: 'Ritual Altars in Areas allow rerolling Favours 2 additional times',
-        amount: null,
+        modType: 'Ritual Altars in Areas allow rerolling Favours $AMOUNT additional times',
+        amount: 2,
         description: 'Ritual Altars in Areas allow rerolling Favours 2 additional times',
         modGroup: 'Ritual'
       }
@@ -2202,8 +2202,8 @@ export const skillList: SkillNode[] = [
     name: 'Lucky Blight Chests',
     stats: [
       {
-        modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
-        amount: null,
+        modType: 'Varieties of Items contained in $AMOUNT Blight Chest in Areas are Lucky',
+        amount: 1,
         description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         modGroup: 'Blight'
       }
@@ -2216,8 +2216,8 @@ export const skillList: SkillNode[] = [
     name: 'Lucky Blight Chests',
     stats: [
       {
-        modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
-        amount: null,
+        modType: 'Varieties of Items contained in $AMOUNT Blight Chest in Areas are Lucky',
+        amount: 1,
         description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         modGroup: 'Blight'
       }
@@ -2244,8 +2244,8 @@ export const skillList: SkillNode[] = [
     name: 'Lucky Blight Chests',
     stats: [
       {
-        modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
-        amount: null,
+        modType: 'Varieties of Items contained in $AMOUNT Blight Chest in Areas are Lucky',
+        amount: 1,
         description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         modGroup: 'Blight'
       }
@@ -2258,8 +2258,8 @@ export const skillList: SkillNode[] = [
     name: 'Lucky Blight Chests',
     stats: [
       {
-        modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
-        amount: null,
+        modType: 'Varieties of Items contained in $AMOUNT Blight Chest in Areas are Lucky',
+        amount: 1,
         description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         modGroup: 'Blight'
       }
@@ -2660,8 +2660,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       },
       {
-        modType: 'Synthesised Unique Items dropped in Areas have 3 Synthesised Implicit Modifiers',
-        amount: null,
+        modType: 'Synthesised Unique Items dropped in Areas have $AMOUNT Synthesised Implicit Modifiers',
+        amount: 3,
         description: 'Synthesised Unique Items dropped in Areas have 3 Synthesised Implicit Modifiers',
         modGroup: 'Synthesis'
       }
@@ -3922,8 +3922,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       },
       {
-        modType: 'Blight Encounters in Areas contain up to 1 additional Blight Boss',
-        amount: null,
+        modType: 'Blight Encounters in Areas contain up to $AMOUNT additional Blight Boss',
+        amount: 1,
         description: 'Blight Encounters in Areas contain up to 1 additional Blight Boss',
         modGroup: 'Blight'
       }
@@ -5089,8 +5089,8 @@ export const skillList: SkillNode[] = [
     name: 'Commissioned Officer',
     stats: [
       {
-        modType: 'Gain 1 additional Kirac Mission each day',
-        amount: null,
+        modType: 'Gain $AMOUNT additional Kirac Mission each day',
+        amount: 1,
         description: 'Gain 1 additional Kirac Mission each day',
         modGroup: 'Kirac'
       },
@@ -5265,8 +5265,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       },
       {
-        modType: 'The Shaper drops 3 additional Shaper Items',
-        amount: null,
+        modType: 'The Shaper drops $AMOUNT additional Shaper Items',
+        amount: 3,
         description: 'The Shaper drops 3 additional Shaper Items',
         modGroup: 'Shaper & Elder'
       }
@@ -5665,8 +5665,8 @@ export const skillList: SkillNode[] = [
     name: 'Rare Monster Duplication',
     stats: [
       {
-        modType: '1 Rare Monster in Areas is Duplicated',
-        amount: null,
+        modType: '$AMOUNT Rare Monster in Areas is Duplicated',
+        amount: 1,
         description: '1 Rare Monster in Areas is Duplicated',
         modGroup: 'Rare Monsters'
       }
@@ -5679,8 +5679,8 @@ export const skillList: SkillNode[] = [
     name: 'Rare Monster Duplication',
     stats: [
       {
-        modType: '1 Rare Monster in Areas is Duplicated',
-        amount: null,
+        modType: '$AMOUNT Rare Monster in Areas is Duplicated',
+        amount: 1,
         description: '1 Rare Monster in Areas is Duplicated',
         modGroup: 'Rare Monsters'
       }
@@ -5713,8 +5713,8 @@ export const skillList: SkillNode[] = [
     name: 'Rare Monster Duplication',
     stats: [
       {
-        modType: '1 Rare Monster in Areas is Duplicated',
-        amount: null,
+        modType: '$AMOUNT Rare Monster in Areas is Duplicated',
+        amount: 1,
         description: '1 Rare Monster in Areas is Duplicated',
         modGroup: 'Rare Monsters'
       }
@@ -6597,20 +6597,20 @@ export const skillList: SkillNode[] = [
     name: 'Sulphite Infusion',
     stats: [
       {
-        modType: 'White Tier Maps grant 200 additional Voltaxic Sulphite on Completion',
-        amount: null,
+        modType: 'White Tier Maps grant $AMOUNT additional Voltaxic Sulphite on Completion',
+        amount: 200,
         description: 'White Tier Maps grant 200 additional Voltaxic Sulphite on Completion',
         modGroup: 'Delve'
       },
       {
-        modType: 'Yellow Tier Maps grant 350 additional Voltaxic Sulphite on Completion',
-        amount: null,
+        modType: 'Yellow Tier Maps grant $AMOUNT additional Voltaxic Sulphite on Completion',
+        amount: 350,
         description: 'Yellow Tier Maps grant 350 additional Voltaxic Sulphite on Completion',
         modGroup: 'Delve'
       },
       {
-        modType: 'Red Tier Maps grant 500 additional Voltaxic Sulphite on Completion',
-        amount: null,
+        modType: 'Red Tier Maps grant $AMOUNT additional Voltaxic Sulphite on Completion',
+        amount: 500,
         description: 'Red Tier Maps grant 500 additional Voltaxic Sulphite on Completion',
         modGroup: 'Delve'
       }
@@ -7593,8 +7593,8 @@ export const skillList: SkillNode[] = [
     name: 'Enduring Influence',
     stats: [
       {
-        modType: 'Sextant Modifiers have 1 additional use',
-        amount: null,
+        modType: 'Sextant Modifiers have $AMOUNT additional use',
+        amount: 1,
         description: 'Sextant Modifiers have 1 additional use',
         modGroup: 'Sextants'
       }
@@ -8181,8 +8181,8 @@ export const skillList: SkillNode[] = [
     name: 'Intelligence Gathering',
     stats: [
       {
-        modType: 'Completing Maps grants 10 Intelligence for a random Immortal Syndicate Safehouse',
-        amount: null,
+        modType: 'Completing Maps grants $AMOUNT Intelligence for a random Immortal Syndicate Safehouse',
+        amount: 10,
         description: 'Completing Maps grants 10 Intelligence for a random Immortal Syndicate Safehouse',
         modGroup: 'Betrayal'
       }
@@ -9183,8 +9183,8 @@ export const skillList: SkillNode[] = [
     name: 'Chain of Command',
     stats: [
       {
-        modType: 'Legions in Areas contains 2 additional Sergeants',
-        amount: null,
+        modType: 'Legions in Areas contains $AMOUNT additional Sergeants',
+        amount: 2,
         description: 'Legions in Areas contains 2 additional Sergeants',
         modGroup: 'Legion'
       },
