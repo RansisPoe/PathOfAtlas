@@ -13,7 +13,7 @@ const scaleBy = 1.3
 const width = 5000
 const height = 5000
 
-const overflowBounds = 1.1
+const overflowBounds = 1.5
 
 interface CanvasTreeProps {
   toggles: boolean[]
@@ -72,8 +72,8 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
     // This limits how much you can drag the image
     // TODO: somehow make this dynamic based on loaded image size
     return {
-      x: Math.max(Math.min(pos.x, 240), -width * this.getCurrentScale() * overflowBounds + window.innerWidth),
-      y: Math.max(Math.min(pos.y, 0), -height * this.getCurrentScale() * overflowBounds + window.innerHeight)
+      x: Math.max(Math.min(pos.x, 600), -width * this.getCurrentScale() * overflowBounds + window.innerWidth),
+      y: Math.max(Math.min(pos.y, 300), -height * this.getCurrentScale() * overflowBounds + window.innerHeight)
     }
   }
 
@@ -101,10 +101,10 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
   }
 
   setScale(stage: Konva.Stage, newScale: number) {
-    if (width * newScale < window.innerWidth) {
+    if (width * newScale * 2 < window.innerWidth) {
       return
     }
-    if (height * newScale < window.innerHeight) {
+    if (height * newScale * 2 < window.innerHeight) {
       return
     }
     const pointer = stage.getPointerPosition()
@@ -157,10 +157,10 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
         }}
         width={window.innerWidth}
         height={window.innerHeight}
-        scaleX={0.8}
-        scaleY={0.8}
+        scaleX={0.9}
+        scaleY={0.9}
       >
-        <Layer draggable x={-1500} y={-3500} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
+        <Layer draggable x={-1400} y={-3500} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
           <TreeImage src="./tree.png" />
           <SkillTree
             toggles={this.props.toggles}
