@@ -163,7 +163,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
         amount: 20,
         description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Torment'
       }
     ],
     neighbors: [39, 11]
@@ -177,7 +177,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
         amount: 20,
         description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Torment'
       }
     ],
     neighbors: [10, 13]
@@ -191,7 +191,7 @@ export const skillList: SkillNode[] = [
         modType: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched',
         amount: null,
         description: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched',
-        modGroup: 'Rare Monsters'
+        modGroup: 'Torment'
       }
     ],
     neighbors: [13]
@@ -205,7 +205,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
         amount: 20,
         description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Torment'
       }
     ],
     neighbors: [12, 11]
@@ -4099,7 +4099,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% more Quantity of Items dropped by Possessed Monsters in Areas',
         amount: 30,
         description: '30% more Quantity of Items dropped by Possessed Monsters in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Torment'
       }
     ],
     neighbors: [276, 274]
