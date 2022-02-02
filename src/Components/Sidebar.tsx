@@ -14,29 +14,27 @@ interface SidebarState {
 
 class Sidebar extends React.Component<SidebarProps, SidebarState> {
   passives() {
-    const passives: { [key: string]: number | null } = {}
+    const passives: { [key: string]: { amount: number; modGroup: string } } = {}
     this.props.toggles.forEach((toggle, index) => {
       if (!toggle) return
       const skill = skillList[index]
 
       skill.stats.forEach((mod) => {
-        if (mod.amount) {
-          passives[mod.modType] = (passives[mod.modType] || 0) + mod.amount
-        } else {
-          passives[mod.modType] = null
-        }
+        passives[mod.modType] = { amount: (passives[mod.modType]?.amount || 0) + (mod.amount || 0), modGroup: mod.modGroup }
       })
     })
 
     return _(passives)
-      .map((amount, modType) => {
-        return { modType, amount }
+      .map((obj, modType) => {
+        return { ...obj, modType }
       })
       .sortBy('modType')
+      .groupBy('modGroup')
       .value()
   }
 
   render() {
+    const passives = this.passives()
     return (
       <div className="sidebar">
         <h3>{_.sum(this.props.toggles)} / 128</h3>
@@ -48,16 +46,21 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
               this.setState({ copied: false })
             }, 2000)
           }}
+          options={{ format: 'margin-left: 5px' }}
         >
           <button>Copy build to clipboard</button>
         </CopyToClipboard>
 
-        {this.state?.copied ? <span style={{ color: 'red' }}>Copied.</span> : null}
-        <h3>Total Stats</h3>
+        {this.state?.copied ? <span style={{ color: 'red' }}> Copied.</span> : null}
         <div>
-          {this.passives().map(({ modType, amount }) => (
-            <div className="stat" key={modType}>
-              {modType.replace('$AMOUNT', `${amount}%`)}
+          {Object.keys(passives).map((modGroup) => (
+            <div className="statGroup" key={modGroup}>
+              <h3 key={modGroup}>{modGroup}</h3>
+              {passives[modGroup].map(({ modType, amount }) => (
+                <div className="stat" key={modType}>
+                  {modType.replace('$AMOUNT', `${amount}%`)}
+                </div>
+              ))}
             </div>
           ))}
         </div>

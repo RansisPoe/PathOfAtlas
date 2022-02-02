@@ -2,6 +2,7 @@ export interface PassiveMod {
   modType: string
   description: string
   amount: number | null
+  modGroup: string
 }
 
 export interface SkillNode {
@@ -21,7 +22,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [440, 437]
@@ -34,7 +36,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [408, 371]
@@ -47,7 +50,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [370, 291, 301]
@@ -60,7 +64,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [292, 248]
@@ -73,7 +78,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [229, 232]
@@ -86,7 +92,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain Ritual Altars',
         amount: 1,
-        description: 'Areas have +1% chance to contain Ritual Altars'
+        description: 'Areas have +1% chance to contain Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [6, 34, 9]
@@ -99,7 +106,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain Ritual Altars',
         amount: 1,
-        description: 'Areas have +1% chance to contain Ritual Altars'
+        description: 'Areas have +1% chance to contain Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [7, 5]
@@ -112,7 +120,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Completing the final Ritual Altar in Areas has $AMOUNT chance to drop a Blood-filled Vessel',
         amount: 10,
-        description: 'Completing the final Ritual Altar in Areas has 10% chance to drop a Blood-filled Vessel'
+        description: 'Completing the final Ritual Altar in Areas has 10% chance to drop a Blood-filled Vessel',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [8, 6]
@@ -125,7 +134,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [9, 7]
@@ -138,7 +148,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [5, 8]
@@ -151,7 +162,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
         amount: 20,
-        description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas'
+        description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [39, 11]
@@ -164,7 +176,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
         amount: 20,
-        description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas'
+        description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [10, 13]
@@ -177,7 +190,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched',
         amount: null,
-        description: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched'
+        description: 'Up to 5 Rare Monsters in Areas are Possessed and their Minions are Touched',
+        modGroup: 'Rare Monsters'
       }
     ],
     neighbors: [13]
@@ -190,7 +204,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
         amount: 20,
-        description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas'
+        description: '20% increased Quantity of Items dropped by Possessed or Touched Monsters in Areas',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [12, 11]
@@ -203,7 +218,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have $AMOUNT chance to contain an additional Red Beast',
         amount: 5,
-        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast'
+        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [15, 19, 17]
@@ -216,7 +232,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beasts in Areas are more likely to be less common varieties',
         amount: null,
-        description: 'Beasts in Areas are more likely to be less common varieties'
+        description: 'Beasts in Areas are more likely to be less common varieties',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [14]
@@ -229,7 +246,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have $AMOUNT chance to contain an additional Red Beast',
         amount: 5,
-        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast'
+        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [22, 19, 18]
@@ -242,7 +260,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have $AMOUNT chance to contain an additional Red Beast',
         amount: 5,
-        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast'
+        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [14, 20, 23]
@@ -255,7 +274,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have $AMOUNT chance to contain an additional Red Beast',
         amount: 5,
-        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast'
+        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [16, 20, 38]
@@ -268,7 +288,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have $AMOUNT chance to contain an additional Red Beast',
         amount: 5,
-        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast'
+        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [16, 14, 21]
@@ -281,7 +302,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have $AMOUNT chance to contain an additional Red Beast',
         amount: 5,
-        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast'
+        description: 'Areas that contain capturable Beasts have 5% chance to contain an additional Red Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [18, 24, 17]
@@ -294,7 +316,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Red Beasts in Areas have $AMOUNT increased chance to be from The Deep',
         amount: 100,
-        description: 'Red Beasts in Areas have 100% increased chance to be from The Deep'
+        description: 'Red Beasts in Areas have 100% increased chance to be from The Deep',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [19]
@@ -307,7 +330,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Red Beasts in Areas have $AMOUNT increased chance to be from The Wilds',
         amount: 100,
-        description: 'Red Beasts in Areas have 100% increased chance to be from The Wilds'
+        description: 'Red Beasts in Areas have 100% increased chance to be from The Wilds',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [16]
@@ -320,7 +344,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Red Beasts in Areas have $AMOUNT increased chance to be from The Caverns',
         amount: 100,
-        description: 'Red Beasts in Areas have 100% increased chance to be from The Caverns'
+        description: 'Red Beasts in Areas have 100% increased chance to be from The Caverns',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [17]
@@ -333,7 +358,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Red Beasts in Areas have $AMOUNT increased chance to be from The Sands',
         amount: 100,
-        description: 'Red Beasts in Areas have 100% increased chance to be from The Sands'
+        description: 'Red Beasts in Areas have 100% increased chance to be from The Sands',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [20]
@@ -346,7 +372,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [33, 30, 32]
@@ -359,7 +386,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [32, 27]
@@ -372,7 +400,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [26, 28]
@@ -385,7 +414,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas with Blight Encounters have $AMOUNT chance to contain an additional Blight Encounter',
         amount: 20,
-        description: 'Areas with Blight Encounters have 20% chance to contain an additional Blight Encounter'
+        description: 'Areas with Blight Encounters have 20% chance to contain an additional Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [27]
@@ -398,7 +428,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Chests in Areas have $AMOUNT increased chance to contain Blighted Maps or Oils',
         amount: 10,
-        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils'
+        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [30, 31]
@@ -411,7 +442,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Chests in Areas have $AMOUNT increased chance to contain Blighted Maps or Oils',
         amount: 10,
-        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils'
+        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [25, 29]
@@ -424,7 +456,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Chests in Areas have $AMOUNT more chance to contain Blighted Maps',
         amount: 80,
-        description: 'Blight Chests in Areas have 80% more chance to contain Blighted Maps'
+        description: 'Blight Chests in Areas have 80% more chance to contain Blighted Maps',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [29]
@@ -437,7 +470,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [25, 26]
@@ -447,7 +481,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [93, 95, 25, 37, 35, 86]
   },
@@ -456,7 +495,12 @@ export const skillList: SkillNode[] = [
     y: -4564.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [5, 37, 48, 40]
   },
@@ -468,7 +512,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [33, 36]
@@ -481,7 +526,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [35, 58, 41]
@@ -491,7 +537,12 @@ export const skillList: SkillNode[] = [
     y: -4316.412336883819,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [33, 34]
   },
@@ -503,7 +554,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [18, 39, 51, 78, 62]
@@ -513,7 +565,12 @@ export const skillList: SkillNode[] = [
     y: -5743.46,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [40, 38, 64, 10]
   },
@@ -522,7 +579,12 @@ export const skillList: SkillNode[] = [
     y: -5149.71,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [34, 39]
   },
@@ -534,7 +596,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Beyond Demons in Areas',
         amount: 8,
-        description: '8% increased Quantity of Items dropped by Beyond Demons in Areas'
+        description: '8% increased Quantity of Items dropped by Beyond Demons in Areas',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [36, 43]
@@ -547,7 +610,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Beyond Demons in Areas',
         amount: 8,
-        description: '8% increased Quantity of Items dropped by Beyond Demons in Areas'
+        description: '8% increased Quantity of Items dropped by Beyond Demons in Areas',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [43, 44]
@@ -560,7 +624,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Beyond Demons in Areas',
         amount: 8,
-        description: '8% increased Quantity of Items dropped by Beyond Demons in Areas'
+        description: '8% increased Quantity of Items dropped by Beyond Demons in Areas',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [41, 42]
@@ -573,7 +638,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rare Beyond Demons in Areas have $AMOUNT chance to drop an additional Basic Currency Item',
         amount: 25,
-        description: 'Rare Beyond Demons in Areas have 25% chance to drop an additional Basic Currency Item'
+        description: 'Rare Beyond Demons in Areas have 25% chance to drop an additional Basic Currency Item',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [42]
@@ -586,7 +652,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps have $AMOUNT chance to award double progress towards encountering The Searing Exarch',
         amount: 10,
-        description: 'Maps have 10% chance to award double progress towards encountering The Searing Exarch'
+        description: 'Maps have 10% chance to award double progress towards encountering The Searing Exarch',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [70, 73]
@@ -599,7 +666,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Demons in Areas grant $AMOUNT increased Experience',
         amount: 10,
-        description: 'Beyond Demons in Areas grant 10% increased Experience'
+        description: 'Beyond Demons in Areas grant 10% increased Experience',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [49, 47]
@@ -612,7 +680,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Slaying Enemies close together in Areas has a $AMOUNT chance to attract monsters from Beyond',
         amount: 3,
-        description: 'Slaying Enemies close together in Areas has a 3% chance to attract monsters from Beyond'
+        description: 'Slaying Enemies close together in Areas has a 3% chance to attract monsters from Beyond',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [46]
@@ -625,7 +694,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Demons in Areas grant $AMOUNT increased Experience',
         amount: 10,
-        description: 'Beyond Demons in Areas grant 10% increased Experience'
+        description: 'Beyond Demons in Areas grant 10% increased Experience',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [49, 34]
@@ -638,7 +708,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Demons in Areas grant $AMOUNT increased Experience',
         amount: 10,
-        description: 'Beyond Demons in Areas grant 10% increased Experience'
+        description: 'Beyond Demons in Areas grant 10% increased Experience',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [48, 46]
@@ -651,7 +722,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Portals in Areas have $AMOUNT chance to spawn an additional Beyond Demon',
         amount: 5,
-        description: 'Beyond Portals in Areas have 5% chance to spawn an additional Beyond Demon'
+        description: 'Beyond Portals in Areas have 5% chance to spawn an additional Beyond Demon',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [51, 54]
@@ -664,7 +736,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Portals in Areas have $AMOUNT chance to spawn an additional Beyond Demon',
         amount: 5,
-        description: 'Beyond Portals in Areas have 5% chance to spawn an additional Beyond Demon'
+        description: 'Beyond Portals in Areas have 5% chance to spawn an additional Beyond Demon',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [53, 50, 38]
@@ -677,7 +750,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Portals in Areas have $AMOUNT increased Merging Radius',
         amount: 10,
-        description: 'Beyond Portals in Areas have 10% increased Merging Radius'
+        description: 'Beyond Portals in Areas have 10% increased Merging Radius',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [54, 53]
@@ -690,7 +764,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Beyond Portals in Areas have $AMOUNT increased Merging Radius',
         amount: 10,
-        description: 'Beyond Portals in Areas have 10% increased Merging Radius'
+        description: 'Beyond Portals in Areas have 10% increased Merging Radius',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [52, 51]
@@ -703,12 +778,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Powerful Beyond Demons require 1 fewer Portal to summon in Areas',
         amount: null,
-        description: 'Powerful Beyond Demons require 1 fewer Portal to summon in Areas'
+        description: 'Powerful Beyond Demons require 1 fewer Portal to summon in Areas',
+        modGroup: 'Beyond'
       },
       {
         modType: 'Beyond Portals in Areas have $AMOUNT increased Merging Radius',
         amount: 30,
-        description: 'Beyond Portals in Areas have 30% increased Merging Radius'
+        description: 'Beyond Portals in Areas have 30% increased Merging Radius',
+        modGroup: 'Beyond'
       }
     ],
     neighbors: [50, 52]
@@ -721,7 +798,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
         amount: null,
-        description: 'Areas that contain capturable Beasts have 1 additional Yellow Beast'
+        description: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [58, 56]
@@ -734,7 +812,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
         amount: null,
-        description: 'Areas that contain capturable Beasts have 1 additional Yellow Beast'
+        description: 'Areas that contain capturable Beasts have 1 additional Yellow Beast',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [55, 61]
@@ -747,7 +826,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [59, 133, 60]
@@ -760,7 +840,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [59, 36, 55]
@@ -773,7 +854,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [57, 58]
@@ -786,17 +868,20 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Einhar has $AMOUNT increased Cooldown Recovery Rate in Areas',
         amount: 100,
-        description: 'Einhar has 100% increased Cooldown Recovery Rate in Areas'
+        description: 'Einhar has 100% increased Cooldown Recovery Rate in Areas',
+        modGroup: 'Bestiary'
       },
       {
         modType: 'Einhar deals $AMOUNT more Damage to Unique Monsters in Areas',
         amount: 1000,
-        description: 'Einhar deals 1000% more Damage to Unique Monsters in Areas'
+        description: 'Einhar deals 1000% more Damage to Unique Monsters in Areas',
+        modGroup: 'Bestiary'
       },
       {
         modType: 'Einhar remains in Areas after his Mission is Complete',
         amount: null,
-        description: 'Einhar remains in Areas after his Mission is Complete'
+        description: 'Einhar remains in Areas after his Mission is Complete',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [57]
@@ -809,7 +894,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Yellow Beasts in Areas have $AMOUNT chance to be replaced with Red Beasts',
         amount: 15,
-        description: 'Yellow Beasts in Areas have 15% chance to be replaced with Red Beasts'
+        description: 'Yellow Beasts in Areas have 15% chance to be replaced with Red Beasts',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [56]
@@ -822,7 +908,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [38, 107, 71]
@@ -835,7 +922,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [67, 64]
@@ -848,7 +936,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [39, 63]
@@ -861,7 +950,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [67, 66]
@@ -874,7 +964,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [65, 122]
@@ -889,12 +980,14 @@ export const skillList: SkillNode[] = [
           'Monster Packs Influenced by The Searing Exarch in Areas have $AMOUNT chance to contain an additional Possessing Flame Wraith',
         amount: 10,
         description:
-          'Monster Packs Influenced by The Searing Exarch in Areas have 10% chance to contain an additional Possessing Flame Wraith'
+          'Monster Packs Influenced by The Searing Exarch in Areas have 10% chance to contain an additional Possessing Flame Wraith',
+        modGroup: 'Searing Exarch'
       },
       {
         modType: 'Eldritch Currency Items found in Areas influenced by The Eater of Worlds have $AMOUNT chance to be Duplicated',
         amount: 10,
-        description: 'Eldritch Currency Items found in Areas influenced by The Eater of Worlds have 10% chance to be Duplicated'
+        description: 'Eldritch Currency Items found in Areas influenced by The Eater of Worlds have 10% chance to be Duplicated',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [65, 63]
@@ -909,7 +1002,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [70, 71]
@@ -924,7 +1018,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [72, 71]
@@ -939,7 +1034,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [45, 68]
@@ -954,7 +1050,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [62, 68, 69]
@@ -969,7 +1066,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [83, 69]
@@ -984,7 +1082,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [45, 74]
@@ -999,7 +1098,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [77, 73]
@@ -1014,7 +1114,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [77, 76]
@@ -1029,7 +1130,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Searing Exarch in Areas have $AMOUNT chance to drop an item with a Searing Exarch Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier'
+          'Monsters Influenced by The Searing Exarch in Areas have 0.2% chance to drop an item with a Searing Exarch Implicit Modifier',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [75, 83]
@@ -1042,17 +1144,20 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Searing Exarch has $AMOUNT chance to drop an additional Exceptional Eldritch Ember',
         amount: 10,
-        description: 'The Searing Exarch has 10% chance to drop an additional Exceptional Eldritch Ember'
+        description: 'The Searing Exarch has 10% chance to drop an additional Exceptional Eldritch Ember',
+        modGroup: 'Searing Exarch'
       },
       {
         modType: 'The Searing Exarch has $AMOUNT increased chance to drop Forbidden Flame',
         amount: 25,
-        description: 'The Searing Exarch has 25% increased chance to drop Forbidden Flame'
+        description: 'The Searing Exarch has 25% increased chance to drop Forbidden Flame',
+        modGroup: 'Searing Exarch'
       },
       {
         modType: 'The Black Star has $AMOUNT chance to drop an additional Grand Eldritch Ember',
         amount: 10,
-        description: 'The Black Star has 10% chance to drop an additional Grand Eldritch Ember'
+        description: 'The Black Star has 10% chance to drop an additional Grand Eldritch Ember',
+        modGroup: 'Searing Exarch'
       }
     ],
     neighbors: [74, 75]
@@ -1062,7 +1167,12 @@ export const skillList: SkillNode[] = [
     y: -6164.44,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [122, 38]
   },
@@ -1074,7 +1184,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [133, 80]
@@ -1087,7 +1198,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [79, 81]
@@ -1100,7 +1212,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [80, 82]
@@ -1113,12 +1226,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Atlas Scouting Reports found in Areas',
         amount: 20,
-        description: '20% increased Atlas Scouting Reports found in Areas'
+        description: '20% increased Atlas Scouting Reports found in Areas',
+        modGroup: 'Other'
       },
       {
         modType: '$AMOUNT chance for Scouting Reports in Areas to drop as Comprehensive Scouting Reports instead',
         amount: 20,
-        description: '20% chance for Scouting Reports in Areas to drop as Comprehensive Scouting Reports instead'
+        description: '20% chance for Scouting Reports in Areas to drop as Comprehensive Scouting Reports instead',
+        modGroup: 'Other'
       }
     ],
     neighbors: [81]
@@ -1131,17 +1246,20 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Eldritch Currency Items found have $AMOUNT chance to be Duplicated for each Searing Exarch Altar used in the Area',
         amount: 10,
-        description: 'Eldritch Currency Items found have 10% chance to be Duplicated for each Searing Exarch Altar used in the Area'
+        description: 'Eldritch Currency Items found have 10% chance to be Duplicated for each Searing Exarch Altar used in the Area',
+        modGroup: 'Searing Exarch'
       },
       {
         modType: 'Players take $AMOUNT increased Damage for each Searing Exarch Altar used in the Area',
         amount: 10,
-        description: 'Players take 10% increased Damage for each Searing Exarch Altar used in the Area'
+        description: 'Players take 10% increased Damage for each Searing Exarch Altar used in the Area',
+        modGroup: 'Searing Exarch'
       },
       {
         modType: '$AMOUNT increased chance to find Eater of Worlds Altars in Areas',
         amount: 20,
-        description: '20% increased chance to find Eater of Worlds Altars in Areas'
+        description: '20% increased chance to find Eater of Worlds Altars in Areas',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [72, 76]
@@ -1151,7 +1269,12 @@ export const skillList: SkillNode[] = [
     y: -4598.828510267787,
     name: 'Delirium Fog Dissipation Speed',
     stats: [
-      { modType: 'Delirium Fog in Areas dissipates $AMOUNT slower', amount: 5, description: 'Delirium Fog in Areas dissipates 5% slower' }
+      {
+        modType: 'Delirium Fog in Areas dissipates $AMOUNT slower',
+        amount: 5,
+        description: 'Delirium Fog in Areas dissipates 5% slower',
+        modGroup: 'Delirium'
+      }
     ],
     neighbors: [85, 88]
   },
@@ -1160,7 +1283,12 @@ export const skillList: SkillNode[] = [
     y: -4598.828510267787,
     name: 'Delirium Fog Dissipation Speed',
     stats: [
-      { modType: 'Delirium Fog in Areas dissipates $AMOUNT slower', amount: 5, description: 'Delirium Fog in Areas dissipates 5% slower' }
+      {
+        modType: 'Delirium Fog in Areas dissipates $AMOUNT slower',
+        amount: 5,
+        description: 'Delirium Fog in Areas dissipates 5% slower',
+        modGroup: 'Delirium'
+      }
     ],
     neighbors: [87, 84]
   },
@@ -1172,7 +1300,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a mirror of Delirium',
         amount: 1,
-        description: 'Areas have +1% chance to contain a mirror of Delirium'
+        description: 'Areas have +1% chance to contain a mirror of Delirium',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [33, 91, 92]
@@ -1185,7 +1314,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium in Areas increases $AMOUNT faster with distance from the mirror',
         amount: 50,
-        description: 'Delirium in Areas increases 50% faster with distance from the mirror'
+        description: 'Delirium in Areas increases 50% faster with distance from the mirror',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [90, 85]
@@ -1198,12 +1328,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Fog in Areas dissipates $AMOUNT slower',
         amount: 25,
-        description: 'Delirium Fog in Areas dissipates 25% slower'
+        description: 'Delirium Fog in Areas dissipates 25% slower',
+        modGroup: 'Delirium'
       },
       {
         modType: 'Delirium Fog in Areas lasts 10 additional seconds before dissipating',
         amount: null,
-        description: 'Delirium Fog in Areas lasts 10 additional seconds before dissipating'
+        description: 'Delirium Fog in Areas lasts 10 additional seconds before dissipating',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [84, 91]
@@ -1216,7 +1348,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a mirror of Delirium',
         amount: 1,
-        description: 'Areas have +1% chance to contain a mirror of Delirium'
+        description: 'Areas have +1% chance to contain a mirror of Delirium',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [90, 217, 92]
@@ -1229,7 +1362,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Stack size of Simulacrum Splinters found in Areas',
         amount: 4,
-        description: '4% increased Stack size of Simulacrum Splinters found in Areas'
+        description: '4% increased Stack size of Simulacrum Splinters found in Areas',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [89, 87]
@@ -1242,7 +1376,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Stack size of Simulacrum Splinters found in Areas',
         amount: 4,
-        description: '4% increased Stack size of Simulacrum Splinters found in Areas'
+        description: '4% increased Stack size of Simulacrum Splinters found in Areas',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [86, 88]
@@ -1255,7 +1390,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a mirror of Delirium',
         amount: 1,
-        description: 'Areas have +1% chance to contain a mirror of Delirium'
+        description: 'Areas have +1% chance to contain a mirror of Delirium',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [89, 86]
@@ -1265,7 +1401,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [216, 33]
   },
@@ -1277,7 +1418,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Incursions in Areas',
         amount: 5,
-        description: '5% increased Quantity of Items dropped in Incursions in Areas'
+        description: '5% increased Quantity of Items dropped in Incursions in Areas',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [100, 227, 98]
@@ -1290,7 +1432,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Incursions in Areas',
         amount: 5,
-        description: '5% increased Quantity of Items dropped in Incursions in Areas'
+        description: '5% increased Quantity of Items dropped in Incursions in Areas',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [33, 97, 100]
@@ -1303,7 +1446,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursion Architects in Areas have a $AMOUNT chance to drop an additional Rare Incursion Item',
         amount: 20,
-        description: 'Incursion Architects in Areas have a 20% chance to drop an additional Rare Incursion Item'
+        description: 'Incursion Architects in Areas have a 20% chance to drop an additional Rare Incursion Item',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [97, 99]
@@ -1316,7 +1460,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursion Architects in Areas have a $AMOUNT chance to drop an additional Rare Incursion Item',
         amount: 20,
-        description: 'Incursion Architects in Areas have a 20% chance to drop an additional Rare Incursion Item'
+        description: 'Incursion Architects in Areas have a 20% chance to drop an additional Rare Incursion Item',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [95, 96]
@@ -1329,7 +1474,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursions in Areas contain a Vaal Flesh Merchant',
         amount: null,
-        description: 'Incursions in Areas contain a Vaal Flesh Merchant'
+        description: 'Incursions in Areas contain a Vaal Flesh Merchant',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [94]
@@ -1342,12 +1488,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Alva Mission on Completion',
         amount: 3,
-        description: 'Areas have 3% chance to grant an additional Alva Mission on Completion'
+        description: 'Areas have 3% chance to grant an additional Alva Mission on Completion',
+        modGroup: 'Incursion'
       },
       {
         modType: 'Incursion Architects in Areas have a $AMOUNT chance to drop an additional Rare Incursion Item',
         amount: 60,
-        description: 'Incursion Architects in Areas have a 60% chance to drop an additional Rare Incursion Item'
+        description: 'Incursion Architects in Areas have a 60% chance to drop an additional Rare Incursion Item',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [96]
@@ -1360,7 +1508,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Incursions in Areas',
         amount: 5,
-        description: '5% increased Quantity of Items dropped in Incursions in Areas'
+        description: '5% increased Quantity of Items dropped in Incursions in Areas',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [95, 94]
@@ -1373,7 +1522,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [102, 104]
@@ -1386,7 +1536,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [107, 101, 105]
@@ -1399,7 +1550,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas with Einhar Missions have $AMOUNT chance to contain additional Packs of Beasts instead of other Monsters',
         amount: 8,
-        description: 'Areas with Einhar Missions have 8% chance to contain additional Packs of Beasts instead of other Monsters'
+        description: 'Areas with Einhar Missions have 8% chance to contain additional Packs of Beasts instead of other Monsters',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [106, 104]
@@ -1412,7 +1564,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [103, 101]
@@ -1425,7 +1578,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Red Beasts in Areas have $AMOUNT chance to appear in Pairs',
         amount: 4,
-        description: 'Red Beasts in Areas have 4% chance to appear in Pairs'
+        description: 'Red Beasts in Areas have 4% chance to appear in Pairs',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [102, 106]
@@ -1438,7 +1592,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Red Beasts in Areas have $AMOUNT chance to appear in Pairs',
         amount: 4,
-        description: 'Red Beasts in Areas have 4% chance to appear in Pairs'
+        description: 'Red Beasts in Areas have 4% chance to appear in Pairs',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [105, 103]
@@ -1451,7 +1606,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [62, 111, 102, 147]
@@ -1464,7 +1620,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate an additional Reward type',
         amount: 4,
-        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type'
+        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: []
@@ -1477,7 +1634,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Stack size of Simulacrum Splinters found in Areas',
         amount: 4,
-        description: '4% increased Stack size of Simulacrum Splinters found in Areas'
+        description: '4% increased Stack size of Simulacrum Splinters found in Areas',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: []
@@ -1490,7 +1648,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Monsters in Areas have $AMOUNT increased chance to drop Cluster Jewels',
         amount: 5,
-        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels'
+        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [112, 111]
@@ -1503,7 +1662,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Monsters in Areas have $AMOUNT increased chance to drop Cluster Jewels',
         amount: 5,
-        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels'
+        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [110, 107]
@@ -1516,7 +1676,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Monsters in Areas have $AMOUNT increased chance to drop Cluster Jewels',
         amount: 5,
-        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels'
+        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [113, 110]
@@ -1529,7 +1690,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps found in Areas have $AMOUNT chance to have layers of Delirium',
         amount: 3,
-        description: 'Maps found in Areas have 3% chance to have layers of Delirium'
+        description: 'Maps found in Areas have 3% chance to have layers of Delirium',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [112]
@@ -1542,7 +1704,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Monsters in Areas have $AMOUNT increased chance to drop Cluster Jewels',
         amount: 5,
-        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels'
+        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [122, 120, 116]
@@ -1555,7 +1718,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Monsters in Areas have $AMOUNT increased chance to drop Cluster Jewels',
         amount: 5,
-        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels'
+        description: 'Delirium Monsters in Areas have 5% increased chance to drop Cluster Jewels',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: []
@@ -1568,7 +1732,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate an additional Reward type',
         amount: 4,
-        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type'
+        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [114, 117]
@@ -1581,7 +1746,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate an additional Reward type',
         amount: 4,
-        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type'
+        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [116, 118]
@@ -1594,7 +1760,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate three additional Reward types',
         amount: 8,
-        description: 'Delirium Encounters in Areas have 8% chance to generate three additional Reward types'
+        description: 'Delirium Encounters in Areas have 8% chance to generate three additional Reward types',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [117]
@@ -1607,7 +1774,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Stack size of Simulacrum Splinters found in Areas',
         amount: 4,
-        description: '4% increased Stack size of Simulacrum Splinters found in Areas'
+        description: '4% increased Stack size of Simulacrum Splinters found in Areas',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [120, 121]
@@ -1620,7 +1788,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Stack size of Simulacrum Splinters found in Areas',
         amount: 4,
-        description: '4% increased Stack size of Simulacrum Splinters found in Areas'
+        description: '4% increased Stack size of Simulacrum Splinters found in Areas',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [114, 119]
@@ -1633,17 +1802,20 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas are $AMOUNT more likely to spawn Unique Bosses',
         amount: 100,
-        description: 'Delirium Encounters in Areas are 100% more likely to spawn Unique Bosses'
+        description: 'Delirium Encounters in Areas are 100% more likely to spawn Unique Bosses',
+        modGroup: 'Map Boss'
       },
       {
         modType: 'Delirium Bosses in Areas drop $AMOUNT increased Simulacrum Splinters',
         amount: 50,
-        description: 'Delirium Bosses in Areas drop 50% increased Simulacrum Splinters'
+        description: 'Delirium Bosses in Areas drop 50% increased Simulacrum Splinters',
+        modGroup: 'Delirium'
       },
       {
         modType: 'Delirium Bosses in Areas have $AMOUNT increased chance to drop Unique Cluster Jewels',
         amount: 50,
-        description: 'Delirium Bosses in Areas have 50% increased chance to drop Unique Cluster Jewels'
+        description: 'Delirium Bosses in Areas have 50% increased chance to drop Unique Cluster Jewels',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [119]
@@ -1653,7 +1825,12 @@ export const skillList: SkillNode[] = [
     y: -5743.46,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [66, 114, 141, 123, 78, 160]
   },
@@ -1665,7 +1842,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased chance of Ritual Altars with Special Rewards',
         amount: 25,
-        description: '25% increased chance of Ritual Altars with Special Rewards'
+        description: '25% increased chance of Ritual Altars with Special Rewards',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [122, 125, 124]
@@ -1678,7 +1856,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased chance of Ritual Altars with Special Rewards',
         amount: 25,
-        description: '25% increased chance of Ritual Altars with Special Rewards'
+        description: '25% increased chance of Ritual Altars with Special Rewards',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [123, 127]
@@ -1691,7 +1870,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rerolling Favours at Ritual Altars in Areas costs $AMOUNT less Tribute',
         amount: 15,
-        description: 'Rerolling Favours at Ritual Altars in Areas costs 15% less Tribute'
+        description: 'Rerolling Favours at Ritual Altars in Areas costs 15% less Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [128, 123]
@@ -1704,7 +1884,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Ritual Altars in Areas allow rerolling Favours 2 additional times',
         amount: null,
-        description: 'Ritual Altars in Areas allow rerolling Favours 2 additional times'
+        description: 'Ritual Altars in Areas allow rerolling Favours 2 additional times',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [128, 127]
@@ -1717,7 +1898,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased chance of Ritual Altars with Special Rewards',
         amount: 25,
-        description: '25% increased chance of Ritual Altars with Special Rewards'
+        description: '25% increased chance of Ritual Altars with Special Rewards',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [126, 124]
@@ -1730,7 +1912,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rerolling Favours at Ritual Altars in Areas costs $AMOUNT less Tribute',
         amount: 15,
-        description: 'Rerolling Favours at Ritual Altars in Areas costs 15% less Tribute'
+        description: 'Rerolling Favours at Ritual Altars in Areas costs 15% less Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [125, 126]
@@ -1743,7 +1926,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [133, 130]
@@ -1756,7 +1940,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [129, 131]
@@ -1769,7 +1954,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [130, 132]
@@ -1782,7 +1968,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain Ritual Altars',
         amount: 4,
-        description: 'Areas have +4% chance to contain Ritual Altars'
+        description: 'Areas have +4% chance to contain Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [131]
@@ -1795,7 +1982,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [57, 79, 135, 153, 129]
@@ -1808,7 +1996,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [139, 231, 136]
@@ -1821,7 +2010,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [139, 133, 137]
@@ -1834,7 +2024,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Chests in Areas have $AMOUNT increased chance to contain Blighted Maps or Oils',
         amount: 10,
-        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils'
+        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [134, 138]
@@ -1847,7 +2038,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Chests in Areas have $AMOUNT increased chance to contain Blighted Maps or Oils',
         amount: 10,
-        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils'
+        description: 'Blight Chests in Areas have 10% increased chance to contain Blighted Maps or Oils',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [135, 140]
@@ -1860,12 +2052,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Bosses in Areas drop an additional Anointed Jewellery Item',
         amount: null,
-        description: 'Blight Bosses in Areas drop an additional Anointed Jewellery Item'
+        description: 'Blight Bosses in Areas drop an additional Anointed Jewellery Item',
+        modGroup: 'Blight'
       },
       {
         modType: 'Blight Chests in Areas have $AMOUNT chance to contain an Oil Extractor',
         amount: 10,
-        description: 'Blight Chests in Areas have 10% chance to contain an Oil Extractor'
+        description: 'Blight Chests in Areas have 10% chance to contain an Oil Extractor',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [136]
@@ -1878,7 +2072,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Blight Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Blight Encounter'
+        description: 'Areas have +1% chance to contain a Blight Encounter',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [134, 135]
@@ -1891,9 +2086,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Blight Encounters in Areas spawn $AMOUNT more non-Unique Monsters',
         amount: 100,
-        description: 'Blight Encounters in Areas spawn 100% more non-Unique Monsters'
+        description: 'Blight Encounters in Areas spawn 100% more non-Unique Monsters',
+        modGroup: 'Blight'
       },
-      { modType: 'Blight Monsters in Areas spawn $AMOUNT faster', amount: 150, description: 'Blight Monsters in Areas spawn 150% faster' }
+      {
+        modType: 'Blight Monsters in Areas spawn $AMOUNT faster',
+        amount: 150,
+        description: 'Blight Monsters in Areas spawn 150% faster',
+        modGroup: 'Blight'
+      }
     ],
     neighbors: [137]
   },
@@ -1902,7 +2103,12 @@ export const skillList: SkillNode[] = [
     y: -5320.0,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [192, 122]
   },
@@ -1914,7 +2120,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have $AMOUNT chance to drop an additional Scarab',
         amount: 1,
-        description: 'Unique Bosses have 1% chance to drop an additional Scarab'
+        description: 'Unique Bosses have 1% chance to drop an additional Scarab',
+        modGroup: 'Scarabs'
       }
     ],
     neighbors: [143, 145]
@@ -1927,7 +2134,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have $AMOUNT chance to drop an additional Scarab',
         amount: 1,
-        description: 'Unique Bosses have 1% chance to drop an additional Scarab'
+        description: 'Unique Bosses have 1% chance to drop an additional Scarab',
+        modGroup: 'Scarabs'
       }
     ],
     neighbors: [142, 146]
@@ -1940,7 +2148,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have $AMOUNT chance to drop an additional Scarab',
         amount: 1,
-        description: 'Unique Bosses have 1% chance to drop an additional Scarab'
+        description: 'Unique Bosses have 1% chance to drop an additional Scarab',
+        modGroup: 'Scarabs'
       }
     ],
     neighbors: [146, 147]
@@ -1953,7 +2162,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Map Device has $AMOUNT chance not to consume Scarabs',
         amount: 10,
-        description: 'Map Device has 10% chance not to consume Scarabs'
+        description: 'Map Device has 10% chance not to consume Scarabs',
+        modGroup: 'Scarabs'
       }
     ],
     neighbors: [142]
@@ -1966,7 +2176,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have $AMOUNT chance to drop an additional Scarab',
         amount: 1,
-        description: 'Unique Bosses have 1% chance to drop an additional Scarab'
+        description: 'Unique Bosses have 1% chance to drop an additional Scarab',
+        modGroup: 'Scarabs'
       }
     ],
     neighbors: [143, 144]
@@ -1979,7 +2190,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [107, 144, 149, 204]
@@ -1992,7 +2204,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         amount: null,
-        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky'
+        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [151, 152]
@@ -2005,7 +2218,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         amount: null,
-        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky'
+        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [147, 151]
@@ -2018,7 +2232,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Maps found in Areas have $AMOUNT chance to have an 'Area contains a Blight Encounter'\nEnchantment Modifier",
         amount: 3,
-        description: "Maps found in Areas have 3% chance to have an 'Area contains a Blight Encounter'\nEnchantment Modifier"
+        description: "Maps found in Areas have 3% chance to have an 'Area contains a Blight Encounter'\nEnchantment Modifier",
+        modGroup: 'Blight'
       }
     ],
     neighbors: [152]
@@ -2031,7 +2246,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         amount: null,
-        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky'
+        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [149, 148]
@@ -2044,7 +2260,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
         amount: null,
-        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky'
+        description: 'Varieties of Items contained in 1 Blight Chest in Areas are Lucky',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [148, 150]
@@ -2057,7 +2274,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [169, 201, 133]
@@ -2070,7 +2288,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rogue Exiles in Areas have $AMOUNT chance to drop an additional Currency Item',
         amount: 5,
-        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item'
+        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [157, 192]
@@ -2083,7 +2302,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rogue Exiles in Areas have $AMOUNT chance to drop an additional Currency Item',
         amount: 5,
-        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item'
+        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [158, 156]
@@ -2096,7 +2316,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rogue Exiles in Areas have $AMOUNT chance to drop an additional Currency Item',
         amount: 5,
-        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item'
+        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [155, 157]
@@ -2109,7 +2330,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rogue Exiles in Areas have $AMOUNT chance to drop an additional Currency Item',
         amount: 5,
-        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item'
+        description: 'Rogue Exiles in Areas have 5% chance to drop an additional Currency Item',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [156, 154]
@@ -2122,7 +2344,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have $AMOUNT chance to be accompanied by two Rogue Exile Bodyguards',
         amount: 20,
-        description: 'Unique Bosses have 20% chance to be accompanied by two Rogue Exile Bodyguards'
+        description: 'Unique Bosses have 20% chance to be accompanied by two Rogue Exile Bodyguards',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [155]
@@ -2135,7 +2358,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain a rogue Metamorph',
         amount: 4,
-        description: 'Areas have 4% chance to contain a rogue Metamorph'
+        description: 'Areas have 4% chance to contain a rogue Metamorph',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [162, 214]
@@ -2148,7 +2372,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain a rogue Metamorph',
         amount: 4,
-        description: 'Areas have 4% chance to contain a rogue Metamorph'
+        description: 'Areas have 4% chance to contain a rogue Metamorph',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [122, 162, 163]
@@ -2161,7 +2386,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain a rogue Metamorph',
         amount: 20,
-        description: 'Areas have 20% chance to contain a rogue Metamorph'
+        description: 'Areas have 20% chance to contain a rogue Metamorph',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [163]
@@ -2174,7 +2400,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain a rogue Metamorph',
         amount: 4,
-        description: 'Areas have 4% chance to contain a rogue Metamorph'
+        description: 'Areas have 4% chance to contain a rogue Metamorph',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [160, 159]
@@ -2187,7 +2414,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain a rogue Metamorph',
         amount: 4,
-        description: 'Areas have 4% chance to contain a rogue Metamorph'
+        description: 'Areas have 4% chance to contain a rogue Metamorph',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [160, 161]
@@ -2200,7 +2428,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate an additional Reward type',
         amount: 4,
-        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type'
+        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [201, 165]
@@ -2213,7 +2442,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate an additional Reward type',
         amount: 4,
-        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type'
+        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [164, 166]
@@ -2226,7 +2456,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Delirium Encounters in Areas have $AMOUNT chance to generate an additional Reward type',
         amount: 4,
-        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type'
+        description: 'Delirium Encounters in Areas have 4% chance to generate an additional Reward type',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [165, 167]
@@ -2239,7 +2470,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a mirror of Delirium',
         amount: 4,
-        description: 'Areas have +4% chance to contain a mirror of Delirium'
+        description: 'Areas have +4% chance to contain a mirror of Delirium',
+        modGroup: 'Delirium'
       }
     ],
     neighbors: [166]
@@ -2252,7 +2484,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+1 Metamorph Monster Samples in Areas have Rewards',
         amount: null,
-        description: '+1 Metamorph Monster Samples in Areas have Rewards'
+        description: '+1 Metamorph Monster Samples in Areas have Rewards',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [170, 171]
@@ -2265,7 +2498,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+1 Metamorph Monster Samples in Areas have Rewards',
         amount: null,
-        description: '+1 Metamorph Monster Samples in Areas have Rewards'
+        description: '+1 Metamorph Monster Samples in Areas have Rewards',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [153, 171]
@@ -2278,7 +2512,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Metamorph Encounter',
         amount: 4,
-        description: 'Areas have +4% chance to contain a Metamorph Encounter'
+        description: 'Areas have +4% chance to contain a Metamorph Encounter',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [168]
@@ -2291,7 +2526,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+1 Metamorph Monster Samples in Areas have Rewards',
         amount: null,
-        description: '+1 Metamorph Monster Samples in Areas have Rewards'
+        description: '+1 Metamorph Monster Samples in Areas have Rewards',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [169, 168]
@@ -2304,7 +2540,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Rogue Exile',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Rogue Exile'
+        description: 'Areas have a 10% chance to contain an additional Rogue Exile',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [231, 174]
@@ -2317,7 +2554,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Rogue Exile',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Rogue Exile'
+        description: 'Areas have a 10% chance to contain an additional Rogue Exile',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [174, 175]
@@ -2330,7 +2568,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Rogue Exile',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Rogue Exile'
+        description: 'Areas have a 10% chance to contain an additional Rogue Exile',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [172, 173]
@@ -2343,9 +2582,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Wild Rogue Exiles in Areas have $AMOUNT chance to have additional Rewards',
         amount: 50,
-        description: 'Wild Rogue Exiles in Areas have 50% chance to have additional Rewards'
+        description: 'Wild Rogue Exiles in Areas have 50% chance to have additional Rewards',
+        modGroup: 'Rogue Exile'
       },
-      { modType: 'Rogue Exiles have $AMOUNT more Maximum Life', amount: 100, description: 'Rogue Exiles have 100% more Maximum Life' }
+      {
+        modType: 'Rogue Exiles have $AMOUNT more Maximum Life',
+        amount: 100,
+        description: 'Rogue Exiles have 100% more Maximum Life',
+        modGroup: 'Rogue Exile'
+      }
     ],
     neighbors: [173]
   },
@@ -2357,12 +2602,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
         amount: 0.5,
-        description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)'
+        description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
+        modGroup: 'Synthesis'
       },
       {
         modType: 'Monsters in Synthesis Maps have $AMOUNT chance to drop Synthesised Items',
         amount: 2,
-        description: 'Monsters in Synthesis Maps have 2% chance to drop Synthesised Items'
+        description: 'Monsters in Synthesis Maps have 2% chance to drop Synthesised Items',
+        modGroup: 'Synthesis'
       }
     ],
     neighbors: [182]
@@ -2372,7 +2619,12 @@ export const skillList: SkillNode[] = [
     y: -9128.04,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [178, 182]
   },
@@ -2384,12 +2636,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
         amount: 0.5,
-        description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)'
+        description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
+        modGroup: 'Synthesis'
       },
       {
         modType: '$AMOUNT increased effect of Additional Modifiers on Unique Synthesis Maps',
         amount: 100,
-        description: '100% increased effect of Additional Modifiers on Unique Synthesis Maps'
+        description: '100% increased effect of Additional Modifiers on Unique Synthesis Maps',
+        modGroup: 'Synthesis'
       }
     ],
     neighbors: [177, 184]
@@ -2402,12 +2656,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
         amount: 0.5,
-        description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)'
+        description: '+0.5% chance for a Synthesis Map to drop from Unique Bosses (Tier 11+)',
+        modGroup: 'Synthesis'
       },
       {
         modType: 'Synthesised Unique Items dropped in Areas have 3 Synthesised Implicit Modifiers',
         amount: null,
-        description: 'Synthesised Unique Items dropped in Areas have 3 Synthesised Implicit Modifiers'
+        description: 'Synthesised Unique Items dropped in Areas have 3 Synthesised Implicit Modifiers',
+        modGroup: 'Synthesis'
       }
     ],
     neighbors: [185]
@@ -2417,7 +2673,12 @@ export const skillList: SkillNode[] = [
     y: -8670.421489732214,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [181, 183, 204]
   },
@@ -2426,7 +2687,12 @@ export const skillList: SkillNode[] = [
     y: -8793.04,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [185, 180]
   },
@@ -2435,7 +2701,12 @@ export const skillList: SkillNode[] = [
     y: -8960.54,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [177, 183, 176]
   },
@@ -2444,7 +2715,12 @@ export const skillList: SkillNode[] = [
     y: -8625.54,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [180, 182]
   },
@@ -2453,7 +2729,12 @@ export const skillList: SkillNode[] = [
     y: -9295.54,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [178, 185]
   },
@@ -2462,7 +2743,12 @@ export const skillList: SkillNode[] = [
     y: -9250.658510267787,
     name: 'Synthesis Monster Pack Size',
     stats: [
-      { modType: '$AMOUNT increased Synthesised Monster Pack size', amount: 4, description: '4% increased Synthesised Monster Pack size' }
+      {
+        modType: '$AMOUNT increased Synthesised Monster Pack size',
+        amount: 4,
+        description: '4% increased Synthesised Monster Pack size',
+        modGroup: 'Synthesis'
+      }
     ],
     neighbors: [184, 179, 181]
   },
@@ -2474,7 +2760,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain an additional Essence',
         amount: 5,
-        description: 'Areas have 5% chance to contain an additional Essence'
+        description: 'Areas have 5% chance to contain an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [189, 192, 187]
@@ -2487,7 +2774,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to have an additional Essence',
         amount: 5,
-        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence'
+        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [186, 188]
@@ -2500,7 +2788,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to have an additional Essence',
         amount: 5,
-        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence'
+        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [187, 190]
@@ -2513,7 +2802,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Imprisoned by Essences have a $AMOUNT chance to contain a Remnant of Corruption',
         amount: 10,
-        description: 'Monsters Imprisoned by Essences have a 10% chance to contain a Remnant of Corruption'
+        description: 'Monsters Imprisoned by Essences have a 10% chance to contain a Remnant of Corruption',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [186, 191]
@@ -2526,12 +2816,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Imprisoned by a Shrieking Essence in Areas will be Duplicated when released',
         amount: null,
-        description: 'Monsters Imprisoned by a Shrieking Essence in Areas will be Duplicated when released'
+        description: 'Monsters Imprisoned by a Shrieking Essence in Areas will be Duplicated when released',
+        modGroup: 'Essence'
       },
       {
         modType: 'Corrupting Imprisoned Monsters in Areas cannot release them',
         amount: null,
-        description: 'Corrupting Imprisoned Monsters in Areas cannot release them'
+        description: 'Corrupting Imprisoned Monsters in Areas cannot release them',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [188, 191]
@@ -2544,7 +2836,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Imprisoned by Essences have a $AMOUNT chance to contain a Remnant of Corruption',
         amount: 10,
-        description: 'Monsters Imprisoned by Essences have a 10% chance to contain a Remnant of Corruption'
+        description: 'Monsters Imprisoned by Essences have a 10% chance to contain a Remnant of Corruption',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [189, 190]
@@ -2554,7 +2847,12 @@ export const skillList: SkillNode[] = [
     y: -4900.09,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [154, 186, 217, 258, 264, 141]
   },
@@ -2566,7 +2864,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Vaal Side Area',
         amount: 2,
-        description: 'Areas have +2% chance to contain a Vaal Side Area'
+        description: 'Areas have +2% chance to contain a Vaal Side Area',
+        modGroup: 'Vaal Side Areas'
       }
     ],
     neighbors: [194, 217]
@@ -2579,7 +2878,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Vaal Side Area',
         amount: 2,
-        description: 'Areas have +2% chance to contain a Vaal Side Area'
+        description: 'Areas have +2% chance to contain a Vaal Side Area',
+        modGroup: 'Vaal Side Areas'
       }
     ],
     neighbors: [193, 264, 196]
@@ -2592,12 +2892,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Vaal Side Areas in Areas have $AMOUNT chance to be an Alluring Vaal Side Area',
         amount: 20,
-        description: 'Vaal Side Areas in Areas have 20% chance to be an Alluring Vaal Side Area'
+        description: 'Vaal Side Areas in Areas have 20% chance to be an Alluring Vaal Side Area',
+        modGroup: 'Vaal Side Areas'
       },
       {
         modType: 'Areas have +$AMOUNT chance to contain a Vaal Side Area',
         amount: 4,
-        description: 'Areas have +4% chance to contain a Vaal Side Area'
+        description: 'Areas have +4% chance to contain a Vaal Side Area',
+        modGroup: 'Vaal Side Areas'
       }
     ],
     neighbors: [196]
@@ -2610,7 +2912,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Vaal Side Area',
         amount: 2,
-        description: 'Areas have +2% chance to contain a Vaal Side Area'
+        description: 'Areas have +2% chance to contain a Vaal Side Area',
+        modGroup: 'Vaal Side Areas'
       }
     ],
     neighbors: [194, 195]
@@ -2623,7 +2926,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to have an additional Essence',
         amount: 5,
-        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence'
+        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [199, 263, 198]
@@ -2636,7 +2940,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to have an additional Essence',
         amount: 5,
-        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence'
+        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [197, 200]
@@ -2649,7 +2954,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to have an additional Essence',
         amount: 5,
-        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence'
+        description: 'Imprisoned Monsters in Areas have 5% chance to have an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [227, 197]
@@ -2662,7 +2968,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to have 3 additional Essences',
         amount: 15,
-        description: 'Imprisoned Monsters in Areas have 15% chance to have 3 additional Essences'
+        description: 'Imprisoned Monsters in Areas have 15% chance to have 3 additional Essences',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [198]
@@ -2675,7 +2982,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [164, 202, 233, 245, 263, 227, 153]
@@ -2688,7 +2996,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [203, 201]
@@ -2701,7 +3010,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [202, 231]
@@ -2714,7 +3024,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [147, 180, 215, 256, 234]
@@ -2724,12 +3035,23 @@ export const skillList: SkillNode[] = [
     y: -7314.293884586921,
     name: 'Fine Specimens',
     stats: [
-      { modType: 'Metamorphs in Areas deal $AMOUNT more Damage', amount: 15, description: 'Metamorphs in Areas deal 15% more Damage' },
-      { modType: 'Metamorphs in Areas have $AMOUNT more Life', amount: 150, description: 'Metamorphs in Areas have 150% more Life' },
+      {
+        modType: 'Metamorphs in Areas deal $AMOUNT more Damage',
+        amount: 15,
+        description: 'Metamorphs in Areas deal 15% more Damage',
+        modGroup: 'Metamorph'
+      },
+      {
+        modType: 'Metamorphs in Areas have $AMOUNT more Life',
+        amount: 150,
+        description: 'Metamorphs in Areas have 150% more Life',
+        modGroup: 'Metamorph'
+      },
       {
         modType: '$AMOUNT chance for Rewards from Metamorphs in Areas to be Doubled',
         amount: 30,
-        description: '30% chance for Rewards from Metamorphs in Areas to be Doubled'
+        description: '30% chance for Rewards from Metamorphs in Areas to be Doubled',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [208]
@@ -2742,7 +3064,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rewards from Metamorphs in Areas to be Doubled',
         amount: 3,
-        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled'
+        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [209, 208]
@@ -2755,7 +3078,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rewards from Metamorphs in Areas to be Doubled',
         amount: 3,
-        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled'
+        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [243, 209]
@@ -2768,7 +3092,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rewards from Metamorphs in Areas to be Doubled',
         amount: 3,
-        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled'
+        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [205, 206]
@@ -2781,7 +3106,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rewards from Metamorphs in Areas to be Doubled',
         amount: 3,
-        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled'
+        description: '3% chance for Rewards from Metamorphs in Areas to be Doubled',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [207, 206]
@@ -2794,7 +3120,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Alva Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Alva Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Alva Mission on Completion',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [211, 213]
@@ -2807,7 +3134,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Alva Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Alva Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Alva Mission on Completion',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [316, 210]
@@ -2820,12 +3148,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursions in Areas have $AMOUNT chance for all Monsters to be at least Magic',
         amount: 33,
-        description: 'Incursions in Areas have 33% chance for all Monsters to be at least Magic'
+        description: 'Incursions in Areas have 33% chance for all Monsters to be at least Magic',
+        modGroup: 'Incursion'
       },
       {
         modType: 'Time gained from kills is Doubled for Incursions in Areas',
         amount: null,
-        description: 'Time gained from kills is Doubled for Incursions in Areas'
+        description: 'Time gained from kills is Doubled for Incursions in Areas',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [213]
@@ -2838,7 +3168,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Alva Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Alva Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Alva Mission on Completion',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [212, 210]
@@ -2848,7 +3179,12 @@ export const skillList: SkillNode[] = [
     y: -6164.76,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [310, 159]
   },
@@ -2857,7 +3193,12 @@ export const skillList: SkillNode[] = [
     y: -7846.53,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [243, 204]
   },
@@ -2866,7 +3207,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [221, 227, 217, 93]
   },
@@ -2875,7 +3221,12 @@ export const skillList: SkillNode[] = [
     y: -4141.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [193, 216, 192, 89]
   },
@@ -2887,7 +3238,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Metamorph Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Metamorph Encounter'
+        description: 'Areas have +1% chance to contain a Metamorph Encounter',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [222, 263, 225]
@@ -2900,7 +3252,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Metamorph Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Metamorph Encounter'
+        description: 'Areas have +1% chance to contain a Metamorph Encounter',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [225, 221]
@@ -2913,7 +3266,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+1 Metamorph Monster Samples in Areas have Rewards',
         amount: null,
-        description: '+1 Metamorph Monster Samples in Areas have Rewards'
+        description: '+1 Metamorph Monster Samples in Areas have Rewards',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [221, 226]
@@ -2926,7 +3280,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Metamorph Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Metamorph Encounter'
+        description: 'Areas have +1% chance to contain a Metamorph Encounter',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [219, 220, 216]
@@ -2939,7 +3294,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+1 Metamorph Monster Samples in Areas have Rewards',
         amount: null,
-        description: '+1 Metamorph Monster Samples in Areas have Rewards'
+        description: '+1 Metamorph Monster Samples in Areas have Rewards',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [223, 218]
@@ -2952,7 +3308,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+1 Metamorph Monster Samples in Areas have Rewards',
         amount: null,
-        description: '+1 Metamorph Monster Samples in Areas have Rewards'
+        description: '+1 Metamorph Monster Samples in Areas have Rewards',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [224, 222]
@@ -2965,7 +3322,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'You can assemble an additional Metamorph in Areas after the first is Dead',
         amount: null,
-        description: 'You can assemble an additional Metamorph in Areas after the first is Dead'
+        description: 'You can assemble an additional Metamorph in Areas after the first is Dead',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [223]
@@ -2978,7 +3336,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Metamorph Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Metamorph Encounter'
+        description: 'Areas have +1% chance to contain a Metamorph Encounter',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [218, 219]
@@ -2991,12 +3350,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Metamorph Bosses which drop an Itemised Sample drop an additional Itemised Sample',
         amount: null,
-        description: 'Metamorph Bosses which drop an Itemised Sample drop an additional Itemised Sample'
+        description: 'Metamorph Bosses which drop an Itemised Sample drop an additional Itemised Sample',
+        modGroup: 'Metamorph'
       },
       {
         modType: 'Metamorph Vat Meters in Areas require $AMOUNT less Power to fill',
         amount: 25,
-        description: 'Metamorph Vat Meters in Areas require 25% less Power to fill'
+        description: 'Metamorph Vat Meters in Areas require 25% less Power to fill',
+        modGroup: 'Metamorph'
       }
     ],
     neighbors: [220]
@@ -3009,7 +3370,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [199, 201, 216, 94]
@@ -3022,7 +3384,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Einhar Mission on Completion',
         amount: 4,
-        description: 'Areas have 4% chance to grant an additional Einhar Mission on Completion'
+        description: 'Areas have 4% chance to grant an additional Einhar Mission on Completion',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [229, 230]
@@ -3035,7 +3398,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance create a copy of Beasts Captured in Areas',
         amount: 3,
-        description: '3% chance create a copy of Beasts Captured in Areas'
+        description: '3% chance create a copy of Beasts Captured in Areas',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [4, 228]
@@ -3048,7 +3412,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance create a copy of Beasts Captured in Areas',
         amount: 3,
-        description: '3% chance create a copy of Beasts Captured in Areas'
+        description: '3% chance create a copy of Beasts Captured in Areas',
+        modGroup: 'Bestiary'
       }
     ],
     neighbors: [231, 228]
@@ -3061,7 +3426,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [172, 203, 232, 134, 230]
@@ -3074,7 +3440,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [4, 231]
@@ -3087,7 +3454,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [247, 201]
@@ -3100,7 +3468,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Stack size of Rogue's Markers found in Areas",
         amount: 8,
-        description: "8% increased Stack size of Rogue's Markers found in Areas"
+        description: "8% increased Stack size of Rogue's Markers found in Areas",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [204, 237]
@@ -3113,7 +3482,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Stack size of Rogue's Markers found in Areas",
         amount: 8,
-        description: "8% increased Stack size of Rogue's Markers found in Areas"
+        description: "8% increased Stack size of Rogue's Markers found in Areas",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [236, 237]
@@ -3126,7 +3496,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain a Bounty Target Pack',
         amount: 10,
-        description: 'Areas have 10% chance to contain a Bounty Target Pack'
+        description: 'Areas have 10% chance to contain a Bounty Target Pack',
+        modGroup: 'Other'
       }
     ],
     neighbors: [235]
@@ -3139,7 +3510,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Stack size of Rogue's Markers found in Areas",
         amount: 8,
-        description: "8% increased Stack size of Rogue's Markers found in Areas"
+        description: "8% increased Stack size of Rogue's Markers found in Areas",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [235, 234]
@@ -3152,7 +3524,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Areas have +$AMOUNT chance to contain a Smuggler's Cache",
         amount: 1,
-        description: "Areas have +1% chance to contain a Smuggler's Cache"
+        description: "Areas have +1% chance to contain a Smuggler's Cache",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [242, 239]
@@ -3165,7 +3538,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Areas have +$AMOUNT chance to contain a Smuggler's Cache",
         amount: 1,
-        description: "Areas have +1% chance to contain a Smuggler's Cache"
+        description: "Areas have +1% chance to contain a Smuggler's Cache",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [238, 240]
@@ -3178,7 +3552,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Areas have +$AMOUNT chance to contain a Smuggler's Cache",
         amount: 1,
-        description: "Areas have +1% chance to contain a Smuggler's Cache"
+        description: "Areas have +1% chance to contain a Smuggler's Cache",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [239, 310]
@@ -3191,12 +3566,14 @@ export const skillList: SkillNode[] = [
       {
         modType: "Smuggler's Caches in Areas have $AMOUNT increased chance to drop Blueprints",
         amount: 100,
-        description: "Smuggler's Caches in Areas have 100% increased chance to drop Blueprints"
+        description: "Smuggler's Caches in Areas have 100% increased chance to drop Blueprints",
+        modGroup: 'Heist'
       },
       {
         modType: 'Blueprints that drop in Areas have $AMOUNT chance to be fully Revealed',
         amount: 10,
-        description: 'Blueprints that drop in Areas have 10% chance to be fully Revealed'
+        description: 'Blueprints that drop in Areas have 10% chance to be fully Revealed',
+        modGroup: 'Heist'
       }
     ],
     neighbors: [242]
@@ -3209,7 +3586,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Areas have +$AMOUNT chance to contain a Smuggler's Cache",
         amount: 1,
-        description: "Areas have +1% chance to contain a Smuggler's Cache"
+        description: "Areas have +1% chance to contain a Smuggler's Cache",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [241, 238]
@@ -3219,7 +3597,12 @@ export const skillList: SkillNode[] = [
     y: -7454.59,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [207, 311, 215, 268]
   },
@@ -3231,7 +3614,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 5,
-        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [245, 246]
@@ -3244,7 +3628,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 5,
-        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [244, 201]
@@ -3257,12 +3642,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Map Bosses have $AMOUNT chance to add a free random craft to your Map device',
         amount: 10,
-        description: 'Unique Map Bosses have 10% chance to add a free random craft to your Map device'
+        description: 'Unique Map Bosses have 10% chance to add a free random craft to your Map device',
+        modGroup: 'Unique Maps'
       },
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 15,
-        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [244]
@@ -3275,7 +3662,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Incursions in Areas',
         amount: 5,
-        description: '5% increased Quantity of Items dropped in Incursions in Areas'
+        description: '5% increased Quantity of Items dropped in Incursions in Areas',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [249, 233]
@@ -3288,7 +3676,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Incursions in Areas',
         amount: 5,
-        description: '5% increased Quantity of Items dropped in Incursions in Areas'
+        description: '5% increased Quantity of Items dropped in Incursions in Areas',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [3, 249]
@@ -3301,7 +3690,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Alva Mission on Completion',
         amount: 4,
-        description: 'Areas have 4% chance to grant an additional Alva Mission on Completion'
+        description: 'Areas have 4% chance to grant an additional Alva Mission on Completion',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [247, 248]
@@ -3314,7 +3704,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [251, 254]
@@ -3327,7 +3718,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Monsters Sacrificed at Ritual Altars in Areas grant $AMOUNT increased Tribute',
         amount: 4,
-        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute'
+        description: 'Monsters Sacrificed at Ritual Altars in Areas grant 4% increased Tribute',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [255, 250]
@@ -3340,7 +3732,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain Ritual Altars',
         amount: 1,
-        description: 'Areas have +1% chance to contain Ritual Altars'
+        description: 'Areas have +1% chance to contain Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [253, 255]
@@ -3353,7 +3746,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain Ritual Altars',
         amount: 1,
-        description: 'Areas have +1% chance to contain Ritual Altars'
+        description: 'Areas have +1% chance to contain Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [252, 254]
@@ -3366,7 +3760,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas with Ritual Altars always have four Ritual Altars',
         amount: null,
-        description: 'Areas with Ritual Altars always have four Ritual Altars'
+        description: 'Areas with Ritual Altars always have four Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [253, 250]
@@ -3379,7 +3774,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain Ritual Altars',
         amount: 1,
-        description: 'Areas have +1% chance to contain Ritual Altars'
+        description: 'Areas have +1% chance to contain Ritual Altars',
+        modGroup: 'Ritual'
       }
     ],
     neighbors: [252, 251, 256]
@@ -3392,7 +3788,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [255, 204, 279]
@@ -3405,7 +3802,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursions in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Incursions in Areas have 5% increased Pack Size'
+        description: 'Incursions in Areas have 5% increased Pack Size',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [310, 261, 262]
@@ -3418,7 +3816,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursions in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Incursions in Areas have 5% increased Pack Size'
+        description: 'Incursions in Areas have 5% increased Pack Size',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [259, 262, 192]
@@ -3433,7 +3832,8 @@ export const skillList: SkillNode[] = [
           "Killing non-resident Architects in Areas has $AMOUNT chance to add\nan additional Upgrade Tier to the surviving Architect's Room",
         amount: 10,
         description:
-          "Killing non-resident Architects in Areas has 10% chance to add\nan additional Upgrade Tier to the surviving Architect's Room"
+          "Killing non-resident Architects in Areas has 10% chance to add\nan additional Upgrade Tier to the surviving Architect's Room",
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [260, 258]
@@ -3448,7 +3848,8 @@ export const skillList: SkillNode[] = [
           "Killing non-resident Architects in Areas has $AMOUNT chance to add\nan additional Upgrade Tier to the surviving Architect's Room",
         amount: 40,
         description:
-          "Killing non-resident Architects in Areas has 40% chance to add\nan additional Upgrade Tier to the surviving Architect's Room"
+          "Killing non-resident Architects in Areas has 40% chance to add\nan additional Upgrade Tier to the surviving Architect's Room",
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [259]
@@ -3461,7 +3862,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Killing resident Architects in Areas adds their Upgrade Tier to the surviving Architect's Room",
         amount: null,
-        description: "Killing resident Architects in Areas adds their Upgrade Tier to the surviving Architect's Room"
+        description: "Killing resident Architects in Areas adds their Upgrade Tier to the surviving Architect's Room",
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [257]
@@ -3474,7 +3876,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Incursions in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Incursions in Areas have 5% increased Pack Size'
+        description: 'Incursions in Areas have 5% increased Pack Size',
+        modGroup: 'Incursion'
       }
     ],
     neighbors: [257, 258]
@@ -3487,7 +3890,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [201, 284, 287, 197, 218]
@@ -3497,7 +3901,12 @@ export const skillList: SkillNode[] = [
     y: -4476.9,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [194, 285, 286, 192]
   },
@@ -3509,12 +3918,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Oils found in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 25,
-        description: 'Oils found in Areas have 25% chance to be 1 tier higher'
+        description: 'Oils found in Areas have 25% chance to be 1 tier higher',
+        modGroup: 'Blight'
       },
       {
         modType: 'Blight Encounters in Areas contain up to 1 additional Blight Boss',
         amount: null,
-        description: 'Blight Encounters in Areas contain up to 1 additional Blight Boss'
+        description: 'Blight Encounters in Areas contain up to 1 additional Blight Boss',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [266]
@@ -3527,7 +3938,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Lanes of Blight Encounters in Areas have $AMOUNT chance for an additional Reward Chest',
         amount: 5,
-        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest'
+        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [265, 269]
@@ -3540,7 +3952,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Lanes of Blight Encounters in Areas have $AMOUNT chance for an additional Reward Chest',
         amount: 5,
-        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest'
+        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [268, 269]
@@ -3553,7 +3966,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Lanes of Blight Encounters in Areas have $AMOUNT chance for an additional Reward Chest',
         amount: 5,
-        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest'
+        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [243, 267]
@@ -3566,7 +3980,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Lanes of Blight Encounters in Areas have $AMOUNT chance for an additional Reward Chest',
         amount: 5,
-        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest'
+        description: 'Lanes of Blight Encounters in Areas have 5% chance for an additional Reward Chest',
+        modGroup: 'Blight'
       }
     ],
     neighbors: [266, 267]
@@ -3579,7 +3994,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain an additional Essence',
         amount: 5,
-        description: 'Areas have 5% chance to contain an additional Essence'
+        description: 'Areas have 5% chance to contain an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [308, 273, 272]
@@ -3592,7 +4008,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain an additional Essence',
         amount: 5,
-        description: 'Areas have 5% chance to contain an additional Essence'
+        description: 'Areas have 5% chance to contain an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [273, 310]
@@ -3602,7 +4019,12 @@ export const skillList: SkillNode[] = [
     y: -6447.966115413079,
     name: 'Amplified Energies',
     stats: [
-      { modType: 'Essences found in Areas are a tier higher', amount: null, description: 'Essences found in Areas are a tier higher' }
+      {
+        modType: 'Essences found in Areas are a tier higher',
+        amount: null,
+        description: 'Essences found in Areas are a tier higher',
+        modGroup: 'Essence'
+      }
     ],
     neighbors: [270]
   },
@@ -3614,7 +4036,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain an additional Essence',
         amount: 5,
-        description: 'Areas have 5% chance to contain an additional Essence'
+        description: 'Areas have 5% chance to contain an additional Essence',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [270, 271]
@@ -3627,7 +4050,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Tormented Spirits in Areas have $AMOUNT increased Duration',
         amount: 50,
-        description: 'Tormented Spirits in Areas have 50% increased Duration'
+        description: 'Tormented Spirits in Areas have 50% increased Duration',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [277, 275]
@@ -3640,7 +4064,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Tormented Spirit',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Tormented Spirit'
+        description: 'Areas have a 10% chance to contain an additional Tormented Spirit',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [274, 278, 311]
@@ -3653,7 +4078,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Tormented Spirit',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Tormented Spirit'
+        description: 'Areas have a 10% chance to contain an additional Tormented Spirit',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [277, 278]
@@ -3666,12 +4092,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Map Boss has $AMOUNT chance to be surrounded by Tormented Spirits',
         amount: 10,
-        description: 'Map Boss has 10% chance to be surrounded by Tormented Spirits'
+        description: 'Map Boss has 10% chance to be surrounded by Tormented Spirits',
+        modGroup: 'Torment'
       },
       {
         modType: '$AMOUNT more Quantity of Items dropped by Possessed Monsters in Areas',
         amount: 30,
-        description: '30% more Quantity of Items dropped by Possessed Monsters in Areas'
+        description: '30% more Quantity of Items dropped by Possessed Monsters in Areas',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [276, 274]
@@ -3684,7 +4112,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Tormented Spirit',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Tormented Spirit'
+        description: 'Areas have a 10% chance to contain an additional Tormented Spirit',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [276, 275]
@@ -3697,7 +4126,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [256, 357]
@@ -3710,7 +4140,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Rarity of Items dropped by Unique Bosses',
         amount: 25,
-        description: '25% increased Rarity of Items dropped by Unique Bosses'
+        description: '25% increased Rarity of Items dropped by Unique Bosses',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [281, 347]
@@ -3723,7 +4154,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Rarity of Items dropped by Unique Bosses',
         amount: 25,
-        description: '25% increased Rarity of Items dropped by Unique Bosses'
+        description: '25% increased Rarity of Items dropped by Unique Bosses',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [280, 283]
@@ -3736,12 +4168,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Map Bosses have $AMOUNT chance to drop an additional Unique Item',
         amount: 3,
-        description: 'Unique Map Bosses have 3% chance to drop an additional Unique Item'
+        description: 'Unique Map Bosses have 3% chance to drop an additional Unique Item',
+        modGroup: 'Unique Maps'
       },
       {
         modType: 'Unique Bosses have $AMOUNT increased chance to drop a Fated Unique Item',
         amount: 80,
-        description: 'Unique Bosses have 80% increased chance to drop a Fated Unique Item'
+        description: 'Unique Bosses have 80% increased chance to drop a Fated Unique Item',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [283]
@@ -3754,7 +4188,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Rarity of Items dropped by Unique Bosses',
         amount: 25,
-        description: '25% increased Rarity of Items dropped by Unique Bosses'
+        description: '25% increased Rarity of Items dropped by Unique Bosses',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [282, 281]
@@ -3767,7 +4202,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [334, 263]
@@ -3777,7 +4213,12 @@ export const skillList: SkillNode[] = [
     y: -4278.31,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [339, 264]
   },
@@ -3786,7 +4227,12 @@ export const skillList: SkillNode[] = [
     y: -5101.15,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [297, 321, 264]
   },
@@ -3798,7 +4244,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Stack size of Rogue's Markers found in Areas",
         amount: 8,
-        description: "8% increased Stack size of Rogue's Markers found in Areas"
+        description: "8% increased Stack size of Rogue's Markers found in Areas",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [290, 263, 288]
@@ -3807,7 +4254,9 @@ export const skillList: SkillNode[] = [
     x: -429.32500000000005,
     y: -2926.026115413079,
     name: 'Heist Blueprint Chance',
-    stats: [{ modType: '$AMOUNT more Blueprints found in Areas', amount: 8, description: '8% more Blueprints found in Areas' }],
+    stats: [
+      { modType: '$AMOUNT more Blueprints found in Areas', amount: 8, description: '8% more Blueprints found in Areas', modGroup: 'Heist' }
+    ],
     neighbors: [287, 289]
   },
   {
@@ -3818,7 +4267,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Areas have +$AMOUNT chance to contain a Smuggler's Cache",
         amount: 4,
-        description: "Areas have +4% chance to contain a Smuggler's Cache"
+        description: "Areas have +4% chance to contain a Smuggler's Cache",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [288]
@@ -3831,7 +4281,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Stack size of Rogue's Markers found in Areas",
         amount: 8,
-        description: "8% increased Stack size of Rogue's Markers found in Areas"
+        description: "8% increased Stack size of Rogue's Markers found in Areas",
+        modGroup: 'Heist'
       }
     ],
     neighbors: [287, 347]
@@ -3844,7 +4295,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to drop an additional Rare Item with an Essence Modifier',
         amount: 25,
-        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier'
+        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [292, 295, 2]
@@ -3857,7 +4309,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to drop an additional Rare Item with an Essence Modifier',
         amount: 25,
-        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier'
+        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [294, 291, 3]
@@ -3866,7 +4319,14 @@ export const skillList: SkillNode[] = [
     x: -283.075,
     y: -1270.6,
     name: 'Prolific Essence',
-    stats: [{ modType: 'Areas contain an additional Essence', amount: null, description: 'Areas contain an additional Essence' }],
+    stats: [
+      {
+        modType: 'Areas contain an additional Essence',
+        amount: null,
+        description: 'Areas contain an additional Essence',
+        modGroup: 'Essence'
+      }
+    ],
     neighbors: [294, 295]
   },
   {
@@ -3877,7 +4337,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to drop an additional Rare Item with an Essence Modifier',
         amount: 25,
-        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier'
+        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [293, 292]
@@ -3890,7 +4351,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Imprisoned Monsters in Areas have $AMOUNT chance to drop an additional Rare Item with an Essence Modifier',
         amount: 25,
-        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier'
+        description: 'Imprisoned Monsters in Areas have 25% chance to drop an additional Rare Item with an Essence Modifier',
+        modGroup: 'Essence'
       }
     ],
     neighbors: [293, 291]
@@ -3900,8 +4362,18 @@ export const skillList: SkillNode[] = [
     y: -5263.15,
     name: 'Tamper-Proof',
     stats: [
-      { modType: 'Strongboxes in Areas are Corrupted', amount: null, description: 'Strongboxes in Areas are Corrupted' },
-      { modType: 'Strongboxes in Areas are at least Rare', amount: null, description: 'Strongboxes in Areas are at least Rare' }
+      {
+        modType: 'Strongboxes in Areas are Corrupted',
+        amount: null,
+        description: 'Strongboxes in Areas are Corrupted',
+        modGroup: 'Strongboxes'
+      },
+      {
+        modType: 'Strongboxes in Areas are at least Rare',
+        amount: null,
+        description: 'Strongboxes in Areas are at least Rare',
+        modGroup: 'Strongboxes'
+      }
     ],
     neighbors: [297]
   },
@@ -3913,7 +4385,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes opened in Areas have $AMOUNT chance to be openable again',
         amount: 2,
-        description: 'Strongboxes opened in Areas have 2% chance to be openable again'
+        description: 'Strongboxes opened in Areas have 2% chance to be openable again',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [298, 296, 286]
@@ -3926,7 +4399,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes opened in Areas have $AMOUNT chance to be openable again',
         amount: 2,
-        description: 'Strongboxes opened in Areas have 2% chance to be openable again'
+        description: 'Strongboxes opened in Areas have 2% chance to be openable again',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [299, 297]
@@ -3939,7 +4413,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes opened in Areas have $AMOUNT chance to be openable again',
         amount: 2,
-        description: 'Strongboxes opened in Areas have 2% chance to be openable again'
+        description: 'Strongboxes opened in Areas have 2% chance to be openable again',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [300, 298, 378]
@@ -3952,7 +4427,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT chance to be an Operative's Strongbox",
         amount: 6,
-        description: "Strongboxes in Areas have 6% chance to be an Operative's Strongbox"
+        description: "Strongboxes in Areas have 6% chance to be an Operative's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [299]
@@ -3965,7 +4441,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [302, 2]
@@ -3978,7 +4455,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [347, 301]
@@ -3991,12 +4469,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harvest Bosses in Areas always drop a Sacred Blossom',
         amount: null,
-        description: 'Harvest Bosses in Areas always drop a Sacred Blossom'
+        description: 'Harvest Bosses in Areas always drop a Sacred Blossom',
+        modGroup: 'Harvest'
       },
       {
         modType: 'Harvests in Areas have $AMOUNT chance for the unchosen Crop to not wilt',
         amount: 10,
-        description: 'Harvests in Areas have 10% chance for the unchosen Crop to not wilt'
+        description: 'Harvests in Areas have 10% chance for the unchosen Crop to not wilt',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [305]
@@ -4009,7 +4489,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 1,
-        description: 'Areas have +1% chance to contain The Sacred Grove'
+        description: 'Areas have +1% chance to contain The Sacred Grove',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [306, 305]
@@ -4022,7 +4503,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 1,
-        description: 'Areas have +1% chance to contain The Sacred Grove'
+        description: 'Areas have +1% chance to contain The Sacred Grove',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [304, 309, 303]
@@ -4035,7 +4517,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 1,
-        description: 'Areas have +1% chance to contain The Sacred Grove'
+        description: 'Areas have +1% chance to contain The Sacred Grove',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [314, 304]
@@ -4048,9 +4531,15 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       },
-      { modType: '$AMOUNT increased Rarity of Items found in Areas', amount: 5, description: '5% increased Rarity of Items found in Areas' }
+      {
+        modType: '$AMOUNT increased Rarity of Items found in Areas',
+        amount: 5,
+        description: '5% increased Rarity of Items found in Areas',
+        modGroup: 'Other'
+      }
     ],
     neighbors: [308, 391, 309]
   },
@@ -4062,9 +4551,15 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       },
-      { modType: '$AMOUNT increased Rarity of Items found in Areas', amount: 5, description: '5% increased Rarity of Items found in Areas' }
+      {
+        modType: '$AMOUNT increased Rarity of Items found in Areas',
+        amount: 5,
+        description: '5% increased Rarity of Items found in Areas',
+        modGroup: 'Other'
+      }
     ],
     neighbors: [270, 309, 307]
   },
@@ -4076,9 +4571,15 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       },
-      { modType: '$AMOUNT increased Rarity of Items found in Areas', amount: 5, description: '5% increased Rarity of Items found in Areas' }
+      {
+        modType: '$AMOUNT increased Rarity of Items found in Areas',
+        amount: 5,
+        description: '5% increased Rarity of Items found in Areas',
+        modGroup: 'Other'
+      }
     ],
     neighbors: [305, 307, 308]
   },
@@ -4090,7 +4591,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [214, 240, 257, 271, 319, 316]
@@ -4103,7 +4605,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [275, 316, 317, 243]
@@ -4116,7 +4619,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [315, 318, 414, 388]
@@ -4129,7 +4633,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [315, 320, 392, 403, 416, 447]
@@ -4142,7 +4647,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [306, 317, 318]
@@ -4155,7 +4661,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [312, 313, 444]
@@ -4168,7 +4675,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [211, 310, 311]
@@ -4181,7 +4689,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [311, 314]
@@ -4194,7 +4703,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [314, 312]
@@ -4207,7 +4717,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [321, 310]
@@ -4220,7 +4731,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [321, 313]
@@ -4233,7 +4745,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas',
         amount: 1,
-        description: '1% increased Quantity of Items found in Areas'
+        description: '1% increased Quantity of Items found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [286, 322, 378, 320, 319]
@@ -4246,7 +4759,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rogue Exiles in Areas to appear in Pairs',
         amount: 10,
-        description: '10% chance for Rogue Exiles in Areas to appear in Pairs'
+        description: '10% chance for Rogue Exiles in Areas to appear in Pairs',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [321, 324, 323]
@@ -4259,7 +4773,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rogue Exiles in Areas to appear in Pairs',
         amount: 10,
-        description: '10% chance for Rogue Exiles in Areas to appear in Pairs'
+        description: '10% chance for Rogue Exiles in Areas to appear in Pairs',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [322, 326]
@@ -4272,7 +4787,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Rogue Exiles in Areas to appear in Pairs',
         amount: 10,
-        description: '10% chance for Rogue Exiles in Areas to appear in Pairs'
+        description: '10% chance for Rogue Exiles in Areas to appear in Pairs',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [322, 325]
@@ -4285,7 +4801,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain 20 additional Rogue Exiles',
         amount: 8,
-        description: 'Areas have a 8% chance to contain 20 additional Rogue Exiles'
+        description: 'Areas have a 8% chance to contain 20 additional Rogue Exiles',
+        modGroup: 'Rogue Exile'
       }
     ],
     neighbors: [324]
@@ -4298,7 +4815,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rogue Exiles in Areas have $AMOUNT chance to be Possessed by a Tormented Spirit',
         amount: 100,
-        description: 'Rogue Exiles in Areas have 100% chance to be Possessed by a Tormented Spirit'
+        description: 'Rogue Exiles in Areas have 100% chance to be Possessed by a Tormented Spirit',
+        modGroup: 'Torment'
       }
     ],
     neighbors: [323]
@@ -4311,7 +4829,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 4,
-        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [331, 328]
@@ -4324,7 +4843,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 4,
-        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [327, 329]
@@ -4337,12 +4857,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps found in Areas have $AMOUNT increased chance to be Favoured Maps',
         amount: 25,
-        description: 'Maps found in Areas have 25% increased chance to be Favoured Maps'
+        description: 'Maps found in Areas have 25% increased chance to be Favoured Maps',
+        modGroup: 'Maps'
       },
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 15,
-        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [328]
@@ -4355,7 +4877,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 4,
-        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [333, 332]
@@ -4368,7 +4891,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 4,
-        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [339, 332, 327]
@@ -4381,7 +4905,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 4,
-        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 4% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [330, 331]
@@ -4394,22 +4919,26 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Areas affected by Fortune Favours the Brave',
         amount: 10,
-        description: '10% increased Quantity of Items found in Areas affected by Fortune Favours the Brave'
+        description: '10% increased Quantity of Items found in Areas affected by Fortune Favours the Brave',
+        modGroup: 'Other'
       },
       {
         modType: '$AMOUNT increased Rarity of Items found in Areas affected by Fortune Favours the Brave',
         amount: 10,
-        description: '10% increased Rarity of Items found in Areas affected by Fortune Favours the Brave'
+        description: '10% increased Rarity of Items found in Areas affected by Fortune Favours the Brave',
+        modGroup: 'Other'
       },
       {
         modType: '$AMOUNT increased Pack Size of Areas affected by Fortune Favours the Brave',
         amount: 10,
-        description: '10% increased Pack Size of Areas affected by Fortune Favours the Brave'
+        description: '10% increased Pack Size of Areas affected by Fortune Favours the Brave',
+        modGroup: 'Other'
       },
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 15,
-        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [330]
@@ -4422,7 +4951,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [335, 341, 347, 380, 284]
@@ -4435,7 +4965,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [338, 334]
@@ -4448,7 +4979,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [337, 339]
@@ -4461,7 +4993,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [346, 336]
@@ -4474,7 +5007,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [346, 335]
@@ -4484,7 +5018,12 @@ export const skillList: SkillNode[] = [
     y: -4053.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [336, 342, 344, 331, 285, 379]
   },
@@ -4496,7 +5035,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT to Quality of Maps offered by Kirac Missions in Areas',
         amount: 5,
-        description: '+5% to Quality of Maps offered by Kirac Missions in Areas'
+        description: '+5% to Quality of Maps offered by Kirac Missions in Areas',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [342, 345]
@@ -4509,7 +5049,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT to Quality of Maps offered by Kirac Missions in Areas',
         amount: 5,
-        description: '+5% to Quality of Maps offered by Kirac Missions in Areas'
+        description: '+5% to Quality of Maps offered by Kirac Missions in Areas',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [343, 334]
@@ -4522,7 +5063,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT to Quality of Maps offered by Kirac Missions in Areas',
         amount: 5,
-        description: '+5% to Quality of Maps offered by Kirac Missions in Areas'
+        description: '+5% to Quality of Maps offered by Kirac Missions in Areas',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [339, 340]
@@ -4535,7 +5077,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT to Quality of Maps offered by Kirac Missions in Areas',
         amount: 5,
-        description: '+5% to Quality of Maps offered by Kirac Missions in Areas'
+        description: '+5% to Quality of Maps offered by Kirac Missions in Areas',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [345, 341]
@@ -4545,11 +5088,17 @@ export const skillList: SkillNode[] = [
     y: -3880.2,
     name: 'Commissioned Officer',
     stats: [
-      { modType: 'Gain 1 additional Kirac Mission each day', amount: null, description: 'Gain 1 additional Kirac Mission each day' },
+      {
+        modType: 'Gain 1 additional Kirac Mission each day',
+        amount: null,
+        description: 'Gain 1 additional Kirac Mission each day',
+        modGroup: 'Kirac'
+      },
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Kirac Mission on Completion',
         amount: 3,
-        description: 'Areas have 3% chance to grant an additional Kirac Mission on Completion'
+        description: 'Areas have 3% chance to grant an additional Kirac Mission on Completion',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [339]
@@ -4562,17 +5111,20 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Scouting Reports in Areas to drop as Blighted Scouting Reports instead',
         amount: 5,
-        description: '5% chance for Scouting Reports in Areas to drop as Blighted Scouting Reports instead'
+        description: '5% chance for Scouting Reports in Areas to drop as Blighted Scouting Reports instead',
+        modGroup: 'Blight'
       },
       {
         modType: '$AMOUNT chance for Scouting Reports in Areas to drop as Delirious Scouting Reports instead',
         amount: 5,
-        description: '5% chance for Scouting Reports in Areas to drop as Delirious Scouting Reports instead'
+        description: '5% chance for Scouting Reports in Areas to drop as Delirious Scouting Reports instead',
+        modGroup: 'Other'
       },
       {
         modType: '$AMOUNT chance for Scouting Reports in Areas to drop as Otherworldly Scouting Reports instead',
         amount: 5,
-        description: '5% chance for Scouting Reports in Areas to drop as Otherworldly Scouting Reports instead'
+        description: '5% chance for Scouting Reports in Areas to drop as Otherworldly Scouting Reports instead',
+        modGroup: 'Other'
       }
     ],
     neighbors: [340, 343]
@@ -4585,7 +5137,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Atlas Scouting Reports found in Areas',
         amount: 60,
-        description: '60% increased Atlas Scouting Reports found in Areas'
+        description: '60% increased Atlas Scouting Reports found in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [338, 337]
@@ -4598,7 +5151,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [280, 290, 375, 334, 382, 302]
@@ -4611,7 +5165,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Shaper, The Elder and their Guardians have a $AMOUNT chance to drop an Influenced Item',
         amount: 20,
-        description: 'The Shaper, The Elder and their Guardians have a 20% chance to drop an Influenced Item'
+        description: 'The Shaper, The Elder and their Guardians have a 20% chance to drop an Influenced Item',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [350, 356, 353]
@@ -4624,12 +5179,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have +$AMOUNT chance to drop an Elder Guardian Map (Tier 14+)',
         amount: 2,
-        description: 'Unique Bosses have +2% chance to drop an Elder Guardian Map (Tier 14+)'
+        description: 'Unique Bosses have +2% chance to drop an Elder Guardian Map (Tier 14+)',
+        modGroup: 'Shaper & Elder'
       },
       {
         modType: 'Unique Bosses have +$AMOUNT chance to drop a Shaper Guardian Map (Tier 14+)',
         amount: 2,
-        description: 'Unique Bosses have +2% chance to drop a Shaper Guardian Map (Tier 14+)'
+        description: 'Unique Bosses have +2% chance to drop a Shaper Guardian Map (Tier 14+)',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [352, 351]
@@ -4642,7 +5199,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Shaper, The Elder and their Guardians have a $AMOUNT chance to drop an Influenced Item',
         amount: 15,
-        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item'
+        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [351, 353, 355, 348]
@@ -4655,7 +5213,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Shaper, The Elder and their Guardians have a $AMOUNT chance to drop an Influenced Item',
         amount: 15,
-        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item'
+        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [349, 355, 350, 352]
@@ -4668,7 +5227,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Shaper, The Elder and their Guardians have a $AMOUNT chance to drop an Influenced Item',
         amount: 15,
-        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item'
+        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [351, 354, 349, 353]
@@ -4681,7 +5241,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Shaper, The Elder and their Guardians have a $AMOUNT chance to drop an Influenced Item',
         amount: 15,
-        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item'
+        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [348, 352, 354, 350]
@@ -4694,14 +5255,21 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have +$AMOUNT chance to drop an Elder Guardian Map (Tier 14+)',
         amount: 2,
-        description: 'Unique Bosses have +2% chance to drop an Elder Guardian Map (Tier 14+)'
+        description: 'Unique Bosses have +2% chance to drop an Elder Guardian Map (Tier 14+)',
+        modGroup: 'Abyss'
       },
       {
         modType: "The Elder has +$AMOUNT chance to drop a Watcher's Eye",
         amount: 10,
-        description: "The Elder has +10% chance to drop a Watcher's Eye"
+        description: "The Elder has +10% chance to drop a Watcher's Eye",
+        modGroup: 'Abyss'
       },
-      { modType: 'The Shaper drops 3 additional Shaper Items', amount: null, description: 'The Shaper drops 3 additional Shaper Items' }
+      {
+        modType: 'The Shaper drops 3 additional Shaper Items',
+        amount: null,
+        description: 'The Shaper drops 3 additional Shaper Items',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [353, 352]
   },
@@ -4713,14 +5281,16 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses have +$AMOUNT chance to drop a Shaper Guardian Map (Tier 14+)',
         amount: 2,
-        description: 'Unique Bosses have +2% chance to drop a Shaper Guardian Map (Tier 14+)'
+        description: 'Unique Bosses have +2% chance to drop a Shaper Guardian Map (Tier 14+)',
+        modGroup: 'Shaper & Elder'
       },
       {
         modType:
           'Shaper and Elder Guardians are healed and joined by an ally on first reaching $AMOUNT Life\nAllies have a chance to drop their Fragments',
         amount: 33,
         description:
-          'Shaper and Elder Guardians are healed and joined by an ally on first reaching 33% Life\nAllies have a chance to drop their Fragments'
+          'Shaper and Elder Guardians are healed and joined by an ally on first reaching 33% Life\nAllies have a chance to drop their Fragments',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [351, 350]
@@ -4733,7 +5303,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Shaper, The Elder and their Guardians have a $AMOUNT chance to drop an Influenced Item',
         amount: 15,
-        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item'
+        description: 'The Shaper, The Elder and their Guardians have a 15% chance to drop an Influenced Item',
+        modGroup: 'Shaper & Elder'
       }
     ],
     neighbors: [357, 348]
@@ -4746,7 +5317,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [363, 279, 385, 356]
@@ -4759,7 +5331,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [365, 364]
@@ -4774,7 +5347,8 @@ export const skillList: SkillNode[] = [
           'Defeating a Map Boss while Witnessed by The Maven has $AMOUNT chance to count as also Witnessing an additional random Map Boss',
         amount: 10,
         description:
-          'Defeating a Map Boss while Witnessed by The Maven has 10% chance to count as also Witnessing an additional random Map Boss'
+          'Defeating a Map Boss while Witnessed by The Maven has 10% chance to count as also Witnessing an additional random Map Boss',
+        modGroup: 'Maven'
       }
     ],
     neighbors: [364]
@@ -4787,12 +5361,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for Orbs of Conflict found in Areas to be duplicated',
         amount: 25,
-        description: '25% chance for Orbs of Conflict found in Areas to be duplicated'
+        description: '25% chance for Orbs of Conflict found in Areas to be duplicated',
+        modGroup: 'Other'
       },
       {
         modType: "$AMOUNT increased chance to drop an Awakened Support Gem on completing The Maven's Crucible",
         amount: 25,
-        description: "25% increased chance to drop an Awakened Support Gem on completing The Maven's Crucible"
+        description: "25% increased chance to drop an Awakened Support Gem on completing The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [368]
@@ -4805,9 +5381,15 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT more Crescent Splinters found in The Maven's Crucible",
         amount: 20,
-        description: "20% more Crescent Splinters found in The Maven's Crucible"
+        description: "20% more Crescent Splinters found in The Maven's Crucible",
+        modGroup: 'Maven'
       },
-      { modType: "The Maven's Crucible has +2 to Monster Level", amount: null, description: "The Maven's Crucible has +2 to Monster Level" }
+      {
+        modType: "The Maven's Crucible has +2 to Monster Level",
+        amount: null,
+        description: "The Maven's Crucible has +2 to Monster Level",
+        modGroup: 'Maven'
+      }
     ],
     neighbors: [366]
   },
@@ -4819,7 +5401,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [364, 367]
@@ -4832,7 +5415,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [364, 357]
@@ -4845,7 +5429,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [358, 359, 362, 363]
@@ -4858,7 +5443,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [366, 358]
@@ -4871,7 +5457,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [365, 361]
@@ -4884,7 +5471,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [362, 368]
@@ -4897,7 +5485,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "$AMOUNT increased Quantity of Items found in The Maven's Crucible",
         amount: 3,
-        description: "3% increased Quantity of Items found in The Maven's Crucible"
+        description: "3% increased Quantity of Items found in The Maven's Crucible",
+        modGroup: 'Maven'
       }
     ],
     neighbors: [367, 360]
@@ -4906,7 +5495,14 @@ export const skillList: SkillNode[] = [
     x: 282.325,
     y: -1270.48,
     name: 'Twice Tempted',
-    stats: [{ modType: 'Areas contain an additional Strongbox', amount: null, description: 'Areas contain an additional Strongbox' }],
+    stats: [
+      {
+        modType: 'Areas contain an additional Strongbox',
+        amount: null,
+        description: 'Areas contain an additional Strongbox',
+        modGroup: 'Strongboxes'
+      }
+    ],
     neighbors: [372, 373]
   },
   {
@@ -4917,7 +5513,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas have $AMOUNT chance to be guarded by an additional Pack of Monsters',
         amount: 15,
-        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters'
+        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [371, 372, 2]
@@ -4930,7 +5527,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas have $AMOUNT chance to be guarded by an additional Pack of Monsters',
         amount: 15,
-        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters'
+        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [1, 373, 370]
@@ -4943,7 +5541,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas have $AMOUNT chance to be guarded by an additional Pack of Monsters',
         amount: 15,
-        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters'
+        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [369, 370]
@@ -4956,7 +5555,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas have $AMOUNT chance to be guarded by an additional Pack of Monsters',
         amount: 15,
-        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters'
+        description: 'Strongboxes in Areas have 15% chance to be guarded by an additional Pack of Monsters',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [369, 371]
@@ -4969,7 +5569,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Duration of Shrine Effects on Players',
         amount: 25,
-        description: '25% increased Duration of Shrine Effects on Players'
+        description: '25% increased Duration of Shrine Effects on Players',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [375, 401, 377]
@@ -4982,7 +5583,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Duration of Shrine Effects on Players',
         amount: 25,
-        description: '25% increased Duration of Shrine Effects on Players'
+        description: '25% increased Duration of Shrine Effects on Players',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [374, 347]
@@ -4991,7 +5593,14 @@ export const skillList: SkillNode[] = [
     x: 267.43499999999995,
     y: -2925.826115413079,
     name: 'Supplication',
-    stats: [{ modType: 'Areas contain an additional Shrine', amount: null, description: 'Areas contain an additional Shrine' }],
+    stats: [
+      {
+        modType: 'Areas contain an additional Shrine',
+        amount: null,
+        description: 'Areas contain an additional Shrine',
+        modGroup: 'Shrines'
+      }
+    ],
     neighbors: [377]
   },
   {
@@ -5002,7 +5611,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Duration of Shrine Effects on Players',
         amount: 25,
-        description: '25% increased Duration of Shrine Effects on Players'
+        description: '25% increased Duration of Shrine Effects on Players',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [374, 376]
@@ -5012,7 +5622,12 @@ export const skillList: SkillNode[] = [
     y: -5101.15,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [299, 321, 400]
   },
@@ -5021,7 +5636,12 @@ export const skillList: SkillNode[] = [
     y: -4270.92,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [339, 400]
   },
@@ -5033,7 +5653,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [401, 334]
@@ -5042,14 +5663,28 @@ export const skillList: SkillNode[] = [
     x: 326.735,
     y: -2173.603884586921,
     name: 'Rare Monster Duplication',
-    stats: [{ modType: '1 Rare Monster in Areas is Duplicated', amount: null, description: '1 Rare Monster in Areas is Duplicated' }],
+    stats: [
+      {
+        modType: '1 Rare Monster in Areas is Duplicated',
+        amount: null,
+        description: '1 Rare Monster in Areas is Duplicated',
+        modGroup: 'Rare Monsters'
+      }
+    ],
     neighbors: [382, 384]
   },
   {
     x: 267.43888458692095,
     y: -2394.9,
     name: 'Rare Monster Duplication',
-    stats: [{ modType: '1 Rare Monster in Areas is Duplicated', amount: null, description: '1 Rare Monster in Areas is Duplicated' }],
+    stats: [
+      {
+        modType: '1 Rare Monster in Areas is Duplicated',
+        amount: null,
+        description: '1 Rare Monster in Areas is Duplicated',
+        modGroup: 'Rare Monsters'
+      }
+    ],
     neighbors: [347, 381]
   },
   {
@@ -5060,12 +5695,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Rare Monsters in Areas have $AMOUNT chance to drop an additional Basic Currency Item',
         amount: 1,
-        description: 'Rare Monsters in Areas have 1% chance to drop an additional Basic Currency Item'
+        description: 'Rare Monsters in Areas have 1% chance to drop an additional Basic Currency Item',
+        modGroup: 'Rare Monsters'
       },
       {
         modType: 'Rare Monsters in Areas have $AMOUNT chance to drop an additional Rare Jewellery Item',
         amount: 5,
-        description: 'Rare Monsters in Areas have 5% chance to drop an additional Rare Jewellery Item'
+        description: 'Rare Monsters in Areas have 5% chance to drop an additional Rare Jewellery Item',
+        modGroup: 'Rare Monsters'
       }
     ],
     neighbors: [384]
@@ -5074,7 +5711,14 @@ export const skillList: SkillNode[] = [
     x: 488.735,
     y: -2173.603884586921,
     name: 'Rare Monster Duplication',
-    stats: [{ modType: '1 Rare Monster in Areas is Duplicated', amount: null, description: '1 Rare Monster in Areas is Duplicated' }],
+    stats: [
+      {
+        modType: '1 Rare Monster in Areas is Duplicated',
+        amount: null,
+        description: '1 Rare Monster in Areas is Duplicated',
+        modGroup: 'Rare Monsters'
+      }
+    ],
     neighbors: [383, 381]
   },
   {
@@ -5085,7 +5729,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [357, 407]
@@ -5098,7 +5743,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain an Expedition Encounter'
+        description: 'Areas have +1% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [388, 390]
@@ -5111,7 +5757,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased quantity of Artifacts dropped by Monsters',
         amount: 4,
-        description: '4% increased quantity of Artifacts dropped by Monsters'
+        description: '4% increased quantity of Artifacts dropped by Monsters',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [388, 389]
@@ -5124,7 +5771,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain an Expedition Encounter'
+        description: 'Areas have +1% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [312, 387, 386]
@@ -5137,12 +5785,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Expedition Logbooks dropped by Runic Monsters in Areas',
         amount: 50,
-        description: '50% increased Quantity of Expedition Logbooks dropped by Runic Monsters in Areas'
+        description: '50% increased Quantity of Expedition Logbooks dropped by Runic Monsters in Areas',
+        modGroup: 'Expedition'
       },
       {
         modType: 'Areas contain $AMOUNT increased number of Runic Monster Markers',
         amount: 20,
-        description: 'Areas contain 20% increased number of Runic Monster Markers'
+        description: 'Areas contain 20% increased number of Runic Monster Markers',
+        modGroup: 'Other'
       }
     ],
     neighbors: [387, 390]
@@ -5155,7 +5805,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain an Expedition Encounter'
+        description: 'Areas have +1% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [386, 389]
@@ -5168,7 +5819,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Harbinger',
         amount: 5,
-        description: 'Areas have a 5% chance to contain an additional Harbinger'
+        description: 'Areas have a 5% chance to contain an additional Harbinger',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [393, 394, 307]
@@ -5181,7 +5833,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Harbinger',
         amount: 5,
-        description: 'Areas have a 5% chance to contain an additional Harbinger'
+        description: 'Areas have a 5% chance to contain an additional Harbinger',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [313, 394]
@@ -5194,7 +5847,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT chance to be replaced by a powerful Harbinger boss',
         amount: 25,
-        description: 'Harbingers in Areas have 25% chance to be replaced by a powerful Harbinger boss'
+        description: 'Harbingers in Areas have 25% chance to be replaced by a powerful Harbinger boss',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [391]
@@ -5207,7 +5861,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Harbinger',
         amount: 5,
-        description: 'Areas have a 5% chance to contain an additional Harbinger'
+        description: 'Areas have a 5% chance to contain an additional Harbinger',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [392, 391]
@@ -5220,7 +5875,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
         amount: 0.2,
-        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
+        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [396, 397]
@@ -5233,7 +5889,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
         amount: 0.2,
-        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
+        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [399, 395]
@@ -5242,7 +5899,14 @@ export const skillList: SkillNode[] = [
     x: 780.5062985522208,
     y: -7803.381298552221,
     name: 'Deadly Nightmare',
-    stats: [{ modType: 'Unique maps have +2 to Monster Level', amount: null, description: 'Unique maps have +2 to Monster Level' }],
+    stats: [
+      {
+        modType: 'Unique maps have +2 to Monster Level',
+        amount: null,
+        description: 'Unique maps have +2 to Monster Level',
+        modGroup: 'Other'
+      }
+    ],
     neighbors: [395]
   },
   {
@@ -5253,7 +5917,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
         amount: 0.2,
-        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
+        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [414, 399]
@@ -5266,7 +5931,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Map Items have a $AMOUNT chance to drop as a random Unique Map instead in Areas',
         amount: 0.2,
-        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas'
+        description: 'Map Items have a 0.2% chance to drop as a random Unique Map instead in Areas',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [398, 396]
@@ -5276,7 +5942,12 @@ export const skillList: SkillNode[] = [
     y: -4476.83,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [378, 379, 455, 448]
   },
@@ -5288,7 +5959,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [374, 459, 462, 431, 380]
@@ -5301,7 +5973,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [448, 404, 406]
@@ -5314,7 +5987,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [406, 313]
@@ -5327,7 +6001,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [402, 405]
@@ -5340,7 +6015,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Sulphite Veins and Chests in Areas have $AMOUNT chance to also contain an equal amount of Azurite',
         amount: 10,
-        description: 'Sulphite Veins and Chests in Areas have 10% chance to also contain an equal amount of Azurite'
+        description: 'Sulphite Veins and Chests in Areas have 10% chance to also contain an equal amount of Azurite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [404]
@@ -5353,7 +6029,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [402, 403]
@@ -5366,7 +6043,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [385, 465]
@@ -5379,7 +6057,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [1, 410]
@@ -5392,7 +6071,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [410, 436]
@@ -5405,7 +6085,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 4,
-        description: 'Areas have 4% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 4% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [408, 409]
@@ -5418,7 +6099,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 5,
-        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [462, 412]
@@ -5431,7 +6113,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 5,
-        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 5% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [411, 413]
@@ -5444,12 +6127,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance on Completing Areas to gain a free use of a special Map crafting option',
         amount: 3,
-        description: '3% chance on Completing Areas to gain a free use of a special Map crafting option'
+        description: '3% chance on Completing Areas to gain a free use of a special Map crafting option',
+        modGroup: 'Maps'
       },
       {
         modType: 'Maps dropped in Areas have $AMOUNT chance to be 1 tier higher',
         amount: 15,
-        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher'
+        description: 'Maps dropped in Areas have 15% chance to be 1 tier higher',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [412]
@@ -5459,7 +6144,12 @@ export const skillList: SkillNode[] = [
     y: -7453.38,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [398, 466, 312, 442]
   },
@@ -5471,7 +6161,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Shrine',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Shrine'
+        description: 'Areas have a 10% chance to contain an additional Shrine',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [417, 416]
@@ -5484,7 +6175,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Shrine',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Shrine'
+        description: 'Areas have a 10% chance to contain an additional Shrine',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [313, 415, 418]
@@ -5497,12 +6189,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Shrines in Areas have $AMOUNT chance to be guarded by an additional Pack of Monsters',
         amount: 50,
-        description: 'Shrines in Areas have 50% chance to be guarded by an additional Pack of Monsters'
+        description: 'Shrines in Areas have 50% chance to be guarded by an additional Pack of Monsters',
+        modGroup: 'Shrines'
       },
       {
         modType: 'Shrines in Areas are guarded by at least one Magic Pack',
         amount: null,
-        description: 'Shrines in Areas are guarded by at least one Magic Pack'
+        description: 'Shrines in Areas are guarded by at least one Magic Pack',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [415]
@@ -5515,7 +6209,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Effect of Shrine Effects on Players in Areas',
         amount: 20,
-        description: '20% increased Effect of Shrine Effects on Players in Areas'
+        description: '20% increased Effect of Shrine Effects on Players in Areas',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [416, 419]
@@ -5528,12 +6223,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Shrines grant a random additional Shrine Effect',
         amount: null,
-        description: 'Shrines grant a random additional Shrine Effect'
+        description: 'Shrines grant a random additional Shrine Effect',
+        modGroup: 'Shrines'
       },
       {
         modType: '$AMOUNT increased Effect of Shrine Effects on Players in Areas',
         amount: 30,
-        description: '30% increased Effect of Shrine Effects on Players in Areas'
+        description: '30% increased Effect of Shrine Effects on Players in Areas',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [418]
@@ -5546,7 +6243,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Shrine',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Shrine'
+        description: 'Areas have a 10% chance to contain an additional Shrine',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [423, 422]
@@ -5559,7 +6257,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Shrine',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Shrine'
+        description: 'Areas have a 10% chance to contain an additional Shrine',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [465, 423]
@@ -5572,7 +6271,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Shrines in Areas have $AMOUNT chance to be a Covetous Shrine',
         amount: 10,
-        description: 'Shrines in Areas have 10% chance to be a Covetous Shrine'
+        description: 'Shrines in Areas have 10% chance to be a Covetous Shrine',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [420]
@@ -5585,7 +6285,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Shrine',
         amount: 10,
-        description: 'Areas have a 10% chance to contain an additional Shrine'
+        description: 'Areas have a 10% chance to contain an additional Shrine',
+        modGroup: 'Shrines'
       }
     ],
     neighbors: [421, 420]
@@ -5598,7 +6299,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 1,
-        description: 'Areas have +1% chance to contain The Sacred Grove'
+        description: 'Areas have +1% chance to contain The Sacred Grove',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [428, 434, 432]
@@ -5611,7 +6313,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [431, 426]
@@ -5624,7 +6327,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [425, 429]
@@ -5637,12 +6341,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harvest Monsters in Areas grant $AMOUNT increased Experience',
         amount: 200,
-        description: 'Harvest Monsters in Areas grant 200% increased Experience'
+        description: 'Harvest Monsters in Areas grant 200% increased Experience',
+        modGroup: 'Harvest'
       },
       {
         modType: 'Harvested Plants in Areas have $AMOUNT chance to spawn an additional Monster',
         amount: 50,
-        description: 'Harvested Plants in Areas have 50% chance to spawn an additional Monster'
+        description: 'Harvested Plants in Areas have 50% chance to spawn an additional Monster',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [432]
@@ -5655,7 +6361,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 1,
-        description: 'Areas have +1% chance to contain The Sacred Grove'
+        description: 'Areas have +1% chance to contain The Sacred Grove',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [424, 430]
@@ -5668,7 +6375,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'The Sacred Grove in Areas contains an additional Harvest',
         amount: null,
-        description: 'The Sacred Grove in Areas contains an additional Harvest'
+        description: 'The Sacred Grove in Areas contains an additional Harvest',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [426]
@@ -5681,7 +6389,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 1,
-        description: 'Areas have +1% chance to contain The Sacred Grove'
+        description: 'Areas have +1% chance to contain The Sacred Grove',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [428, 431]
@@ -5694,7 +6403,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [401, 430, 425]
@@ -5707,7 +6417,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [424, 427]
@@ -5717,7 +6428,12 @@ export const skillList: SkillNode[] = [
     y: -4141.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [434, 454, 448, 557]
   },
@@ -5726,7 +6442,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [424, 435, 554, 433]
   },
@@ -5738,7 +6459,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [458, 462, 434, 568]
@@ -5751,7 +6473,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [409, 462]
@@ -5764,7 +6487,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more\nlikely to be accompanied by reinforcements',
         amount: 5,
-        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements'
+        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [439, 0]
@@ -5777,7 +6501,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more\nlikely to be accompanied by reinforcements',
         amount: 5,
-        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements'
+        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [441, 439]
@@ -5790,7 +6515,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 4,
-        description: 'Areas have 4% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 4% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Other'
       }
     ],
     neighbors: [438, 437]
@@ -5803,7 +6529,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [441, 0]
@@ -5816,7 +6543,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [440, 464, 477, 516, 438]
@@ -5826,7 +6554,12 @@ export const skillList: SkillNode[] = [
     y: -7847.71,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [414, 465]
   },
@@ -5838,7 +6571,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [446, 445]
@@ -5851,7 +6585,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [315, 446]
@@ -5864,17 +6599,20 @@ export const skillList: SkillNode[] = [
       {
         modType: 'White Tier Maps grant 200 additional Voltaxic Sulphite on Completion',
         amount: null,
-        description: 'White Tier Maps grant 200 additional Voltaxic Sulphite on Completion'
+        description: 'White Tier Maps grant 200 additional Voltaxic Sulphite on Completion',
+        modGroup: 'Delve'
       },
       {
         modType: 'Yellow Tier Maps grant 350 additional Voltaxic Sulphite on Completion',
         amount: null,
-        description: 'Yellow Tier Maps grant 350 additional Voltaxic Sulphite on Completion'
+        description: 'Yellow Tier Maps grant 350 additional Voltaxic Sulphite on Completion',
+        modGroup: 'Delve'
       },
       {
         modType: 'Red Tier Maps grant 500 additional Voltaxic Sulphite on Completion',
         amount: null,
-        description: 'Red Tier Maps grant 500 additional Voltaxic Sulphite on Completion'
+        description: 'Red Tier Maps grant 500 additional Voltaxic Sulphite on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [443]
@@ -5887,7 +6625,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [444, 443]
@@ -5897,7 +6636,12 @@ export const skillList: SkillNode[] = [
     y: -6163.88,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [313, 497]
   },
@@ -5906,7 +6650,12 @@ export const skillList: SkillNode[] = [
     y: -4893.25,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [400, 402, 433, 502, 514, 453]
   },
@@ -5918,12 +6667,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abyss Monsters in Areas grant $AMOUNT increased Experience',
         amount: 50,
-        description: 'Abyss Monsters in Areas grant 50% increased Experience'
+        description: 'Abyss Monsters in Areas grant 50% increased Experience',
+        modGroup: 'Abyss'
       },
       {
         modType: 'Abysses in Area spawn $AMOUNT increased Monsters',
         amount: 100,
-        description: 'Abysses in Area spawn 100% increased Monsters'
+        description: 'Abysses in Area spawn 100% increased Monsters',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [453]
@@ -5933,7 +6684,12 @@ export const skillList: SkillNode[] = [
     y: -5431.25,
     name: 'Abyss Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [452, 451]
   },
@@ -5942,7 +6698,12 @@ export const skillList: SkillNode[] = [
     y: -5269.25,
     name: 'Abyss Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [450, 453]
   },
@@ -5954,7 +6715,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abyssal Troves in Areas have $AMOUNT chance to drop a Rare Item with an Abyssal Socket',
         amount: 20,
-        description: 'Abyssal Troves in Areas have 20% chance to drop a Rare Item with an Abyssal Socket'
+        description: 'Abyssal Troves in Areas have 20% chance to drop a Rare Item with an Abyssal Socket',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [450]
@@ -5964,7 +6726,12 @@ export const skillList: SkillNode[] = [
     y: -5188.25,
     name: 'Abyss Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [448, 451, 449]
   },
@@ -5976,7 +6743,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Trial of Ascendancy',
         amount: 2,
-        description: 'Areas have +2% chance to contain a Trial of Ascendancy'
+        description: 'Areas have +2% chance to contain a Trial of Ascendancy',
+        modGroup: 'Labyrinth'
       }
     ],
     neighbors: [433, 455]
@@ -5989,7 +6757,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Trial of Ascendancy',
         amount: 2,
-        description: 'Areas have +2% chance to contain a Trial of Ascendancy'
+        description: 'Areas have +2% chance to contain a Trial of Ascendancy',
+        modGroup: 'Labyrinth'
       }
     ],
     neighbors: [454, 457, 400]
@@ -6002,12 +6771,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Labyrinth Trials in Areas have $AMOUNT chance to award an Improved Offering to the Goddesss',
         amount: 20,
-        description: 'Labyrinth Trials in Areas have 20% chance to award an Improved Offering to the Goddesss'
+        description: 'Labyrinth Trials in Areas have 20% chance to award an Improved Offering to the Goddesss',
+        modGroup: 'Labyrinth'
       },
       {
         modType: 'Areas have +$AMOUNT chance to contain a Trial of Ascendancy',
         amount: 4,
-        description: 'Areas have +4% chance to contain a Trial of Ascendancy'
+        description: 'Areas have +4% chance to contain a Trial of Ascendancy',
+        modGroup: 'Other'
       }
     ],
     neighbors: [457]
@@ -6020,7 +6791,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Trial of Ascendancy',
         amount: 2,
-        description: 'Areas have +2% chance to contain a Trial of Ascendancy'
+        description: 'Areas have +2% chance to contain a Trial of Ascendancy',
+        modGroup: 'Labyrinth'
       }
     ],
     neighbors: [456, 455]
@@ -6033,7 +6805,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT chance to drop an additional Currency Shard',
         amount: 20,
-        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard'
+        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [435, 459]
@@ -6046,7 +6819,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT chance to drop an additional Currency Shard',
         amount: 20,
-        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard'
+        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [458, 401, 461]
@@ -6055,7 +6829,14 @@ export const skillList: SkillNode[] = [
     x: 1462.66,
     y: -2971.21,
     name: 'Ominous Arrival',
-    stats: [{ modType: 'Areas contain an additional Harbinger', amount: null, description: 'Areas contain an additional Harbinger' }],
+    stats: [
+      {
+        modType: 'Areas contain an additional Harbinger',
+        amount: null,
+        description: 'Areas contain an additional Harbinger',
+        modGroup: 'Harbinger'
+      }
+    ],
     neighbors: [461]
   },
   {
@@ -6066,7 +6847,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT chance to drop an additional Currency Shard',
         amount: 20,
-        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard'
+        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [459, 460]
@@ -6079,7 +6861,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [411, 436, 463, 496, 515, 401, 435]
@@ -6092,7 +6875,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [464, 462]
@@ -6105,7 +6889,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [463, 441]
@@ -6118,7 +6903,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [421, 442, 513, 407, 485]
@@ -6131,7 +6917,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped by Strongboxes in Areas',
         amount: 10,
-        description: '10% increased Quantity of Items dropped by Strongboxes in Areas'
+        description: '10% increased Quantity of Items dropped by Strongboxes in Areas',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [469, 474, 468, 414]
@@ -6144,7 +6931,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas contain Duplicated Divination Cards',
         amount: null,
-        description: 'Strongboxes in Areas contain Duplicated Divination Cards'
+        description: 'Strongboxes in Areas contain Duplicated Divination Cards',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [470]
@@ -6157,7 +6945,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT increased chance to be an Arcanist's Strongbox",
         amount: 30,
-        description: "Strongboxes in Areas have 30% increased chance to be an Arcanist's Strongbox"
+        description: "Strongboxes in Areas have 30% increased chance to be an Arcanist's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [466, 472]
@@ -6170,7 +6959,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT increased chance to be a Cartographer's Strongbox",
         amount: 30,
-        description: "Strongboxes in Areas have 30% increased chance to be a Cartographer's Strongbox"
+        description: "Strongboxes in Areas have 30% increased chance to be a Cartographer's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [473, 466]
@@ -6183,7 +6973,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT increased chance to be a Diviner's Strongbox",
         amount: 30,
-        description: "Strongboxes in Areas have 30% increased chance to be a Diviner's Strongbox"
+        description: "Strongboxes in Areas have 30% increased chance to be a Diviner's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [474, 467]
@@ -6196,7 +6987,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas contain Duplicated Currency Items',
         amount: null,
-        description: 'Strongboxes in Areas contain Duplicated Currency Items'
+        description: 'Strongboxes in Areas contain Duplicated Currency Items',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [472]
@@ -6209,7 +7001,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT increased chance to be an Arcanist's Strongbox",
         amount: 30,
-        description: "Strongboxes in Areas have 30% increased chance to be an Arcanist's Strongbox"
+        description: "Strongboxes in Areas have 30% increased chance to be an Arcanist's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [468, 471]
@@ -6222,7 +7015,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT increased chance to be a Cartographer's Strongbox",
         amount: 30,
-        description: "Strongboxes in Areas have 30% increased chance to be a Cartographer's Strongbox"
+        description: "Strongboxes in Areas have 30% increased chance to be a Cartographer's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [475, 469]
@@ -6235,7 +7029,8 @@ export const skillList: SkillNode[] = [
       {
         modType: "Strongboxes in Areas have $AMOUNT increased chance to be a Diviner's Strongbox",
         amount: 30,
-        description: "Strongboxes in Areas have 30% increased chance to be a Diviner's Strongbox"
+        description: "Strongboxes in Areas have 30% increased chance to be a Diviner's Strongbox",
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [470, 466]
@@ -6248,7 +7043,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Strongboxes in Areas contain Duplicated Map Items',
         amount: null,
-        description: 'Strongboxes in Areas contain Duplicated Map Items'
+        description: 'Strongboxes in Areas contain Duplicated Map Items',
+        modGroup: 'Strongboxes'
       }
     ],
     neighbors: [473]
@@ -6261,7 +7057,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased quantity of Artifacts dropped by Monsters',
         amount: 4,
-        description: '4% increased quantity of Artifacts dropped by Monsters'
+        description: '4% increased quantity of Artifacts dropped by Monsters',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [478, 479]
@@ -6274,7 +7071,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased quantity of Artifacts dropped by Monsters',
         amount: 4,
-        description: '4% increased quantity of Artifacts dropped by Monsters'
+        description: '4% increased quantity of Artifacts dropped by Monsters',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [441, 479]
@@ -6287,7 +7085,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 4,
-        description: 'Areas have +4% chance to contain an Expedition Encounter'
+        description: 'Areas have +4% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [476]
@@ -6300,7 +7099,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased quantity of Artifacts dropped by Monsters',
         amount: 4,
-        description: '4% increased quantity of Artifacts dropped by Monsters'
+        description: '4% increased quantity of Artifacts dropped by Monsters',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [477, 476]
@@ -6313,7 +7113,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [485, 487]
@@ -6326,7 +7127,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [485, 488]
@@ -6339,17 +7141,20 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items found in Conqueror Maps',
         amount: 20,
-        description: '20% increased Quantity of Items found in Conqueror Maps'
+        description: '20% increased Quantity of Items found in Conqueror Maps',
+        modGroup: 'Elderslayers'
       },
       {
         modType: 'Conqueror Maps have $AMOUNT increased Pack Size',
         amount: 20,
-        description: 'Conqueror Maps have 20% increased Pack Size'
+        description: 'Conqueror Maps have 20% increased Pack Size',
+        modGroup: 'Elderslayers'
       },
       {
         modType: 'Eldritch Bosses have $AMOUNT chance to drop a Conqueror Map',
         amount: 20,
-        description: 'Eldritch Bosses have 20% chance to drop a Conqueror Map'
+        description: 'Eldritch Bosses have 20% chance to drop a Conqueror Map',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [486]
@@ -6362,17 +7167,20 @@ export const skillList: SkillNode[] = [
       {
         modType: "Conquerors have $AMOUNT increased chance to drop a Conqueror's Exalted Orb",
         amount: 25,
-        description: "Conquerors have 25% increased chance to drop a Conqueror's Exalted Orb"
+        description: "Conquerors have 25% increased chance to drop a Conqueror's Exalted Orb",
+        modGroup: 'Elderslayers'
       },
       {
         modType: 'Unique Bosses have $AMOUNT increased chance to drop a Conqueror Map',
         amount: 25,
-        description: 'Unique Bosses have 25% increased chance to drop a Conqueror Map'
+        description: 'Unique Bosses have 25% increased chance to drop a Conqueror Map',
+        modGroup: 'Elderslayers'
       },
       {
         modType: 'Sirus has $AMOUNT chance to drop an Awakened Support Gem',
         amount: 10,
-        description: 'Sirus has 10% chance to drop an Awakened Support Gem'
+        description: 'Sirus has 10% chance to drop an Awakened Support Gem',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [484]
@@ -6385,7 +7193,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [487, 483]
@@ -6398,7 +7207,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [465, 480, 481]
@@ -6411,7 +7221,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [488, 482]
@@ -6424,7 +7235,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [480, 484]
@@ -6437,7 +7249,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Items found in Conqueror Maps have $AMOUNT increased chance to be Influenced',
         amount: 5,
-        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced'
+        description: 'Items found in Conqueror Maps have 5% increased chance to be Influenced',
+        modGroup: 'Elderslayers'
       }
     ],
     neighbors: [481, 486]
@@ -6450,7 +7263,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have $AMOUNT chance to be Duplicated',
         amount: 4,
-        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated'
+        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [515, 492]
@@ -6463,7 +7277,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have $AMOUNT chance to be Duplicated',
         amount: 4,
-        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated'
+        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [492, 491]
@@ -6476,7 +7291,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 4,
-        description: 'Areas have +4% chance to contain a Legion Encounter'
+        description: 'Areas have +4% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [490]
@@ -6489,7 +7305,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have $AMOUNT chance to be Duplicated',
         amount: 4,
-        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated'
+        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [489, 490]
@@ -6502,7 +7319,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abysses in Area spawn $AMOUNT increased Monsters',
         amount: 10,
-        description: 'Abysses in Area spawn 10% increased Monsters'
+        description: 'Abysses in Area spawn 10% increased Monsters',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [494, 495]
@@ -6515,7 +7333,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abysses in Area spawn $AMOUNT increased Monsters',
         amount: 10,
-        description: 'Abysses in Area spawn 10% increased Monsters'
+        description: 'Abysses in Area spawn 10% increased Monsters',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [496, 493]
@@ -6528,7 +7347,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to contain an Abyss per 2% increased Pack Size',
         amount: 1,
-        description: 'Areas have 1% chance to contain an Abyss per 2% increased Pack Size'
+        description: 'Areas have 1% chance to contain an Abyss per 2% increased Pack Size',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [493]
@@ -6541,7 +7361,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abysses in Area spawn $AMOUNT increased Monsters',
         amount: 10,
-        description: 'Abysses in Area spawn 10% increased Monsters'
+        description: 'Abysses in Area spawn 10% increased Monsters',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [494, 462]
@@ -6551,7 +7372,12 @@ export const skillList: SkillNode[] = [
     y: -6163.88,
     name: 'Breach Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [447, 500]
   },
@@ -6560,7 +7386,12 @@ export const skillList: SkillNode[] = [
     y: -6163.88,
     name: 'Breach Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [500, 534, 501]
   },
@@ -6572,14 +7403,21 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased Area of Effect',
         amount: 30,
-        description: 'Breaches in Areas have 30% increased Area of Effect'
+        description: 'Breaches in Areas have 30% increased Area of Effect',
+        modGroup: 'Breach'
       },
       {
         modType: 'Breaches in Areas have $AMOUNT increased Monster density',
         amount: 30,
-        description: 'Breaches in Areas have 30% increased Monster density'
+        description: 'Breaches in Areas have 30% increased Monster density',
+        modGroup: 'Breach'
       },
-      { modType: 'Breaches in Areas open and close $AMOUNT faster', amount: 50, description: 'Breaches in Areas open and close 50% faster' }
+      {
+        modType: 'Breaches in Areas open and close $AMOUNT faster',
+        amount: 50,
+        description: 'Breaches in Areas open and close 50% faster',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [501]
   },
@@ -6588,7 +7426,12 @@ export const skillList: SkillNode[] = [
     y: -6244.88,
     name: 'Breach Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [497, 498]
   },
@@ -6600,7 +7443,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas spawn $AMOUNT increased Magic Monsters',
         amount: 8,
-        description: 'Breaches in Areas spawn 8% increased Magic Monsters'
+        description: 'Breaches in Areas spawn 8% increased Magic Monsters',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [498, 499]
@@ -6613,7 +7457,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Harbinger',
         amount: 5,
-        description: 'Areas have a 5% chance to contain an additional Harbinger'
+        description: 'Areas have a 5% chance to contain an additional Harbinger',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [448, 506, 507]
@@ -6626,7 +7471,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Harbinger',
         amount: 5,
-        description: 'Areas have a 5% chance to contain an additional Harbinger'
+        description: 'Areas have a 5% chance to contain an additional Harbinger',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [507, 505]
@@ -6639,7 +7485,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT chance to drop an additional Currency Shard',
         amount: 20,
-        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard'
+        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [505, 506]
@@ -6652,17 +7499,20 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT increased Cooldown Recovery Rate',
         amount: 60,
-        description: 'Harbingers in Areas have 60% increased Cooldown Recovery Rate'
+        description: 'Harbingers in Areas have 60% increased Cooldown Recovery Rate',
+        modGroup: 'Harbinger'
       },
       {
         modType: 'Harbingers in Areas summon $AMOUNT more Minions',
         amount: 60,
-        description: 'Harbingers in Areas summon 60% more Minions'
+        description: 'Harbingers in Areas summon 60% more Minions',
+        modGroup: 'Harbinger'
       },
       {
         modType: 'Currency Shards dropped by Harbingers in Areas can drop as Currency Items instead',
         amount: null,
-        description: 'Currency Shards dropped by Harbingers in Areas can drop as Currency Items instead'
+        description: 'Currency Shards dropped by Harbingers in Areas can drop as Currency Items instead',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [503, 504]
@@ -6675,7 +7525,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Harbingers in Areas have $AMOUNT chance to drop an additional Currency Shard',
         amount: 20,
-        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard'
+        description: 'Harbingers in Areas have 20% chance to drop an additional Currency Shard',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [504, 502]
@@ -6688,7 +7539,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have a $AMOUNT chance to contain an additional Harbinger',
         amount: 5,
-        description: 'Areas have a 5% chance to contain an additional Harbinger'
+        description: 'Areas have a 5% chance to contain an additional Harbinger',
+        modGroup: 'Harbinger'
       }
     ],
     neighbors: [502, 503]
@@ -6701,7 +7553,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Map Bosses have $AMOUNT chance to drop additional Map Currency Items',
         amount: 1,
-        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items'
+        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [512, 513]
@@ -6714,7 +7567,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Map Bosses have $AMOUNT chance to drop additional Map Currency Items',
         amount: 1,
-        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items'
+        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [510, 512]
@@ -6727,7 +7581,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Map Bosses have $AMOUNT chance to drop additional Map Currency Items',
         amount: 1,
-        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items'
+        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [511, 509]
@@ -6736,7 +7591,14 @@ export const skillList: SkillNode[] = [
     x: 2052.143884586921,
     y: -8396.62,
     name: 'Enduring Influence',
-    stats: [{ modType: 'Sextant Modifiers have 1 additional use', amount: null, description: 'Sextant Modifiers have 1 additional use' }],
+    stats: [
+      {
+        modType: 'Sextant Modifiers have 1 additional use',
+        amount: null,
+        description: 'Sextant Modifiers have 1 additional use',
+        modGroup: 'Sextants'
+      }
+    ],
     neighbors: [510]
   },
   {
@@ -6747,7 +7609,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Map Bosses have $AMOUNT chance to drop additional Map Currency Items',
         amount: 1,
-        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items'
+        description: 'Unique Map Bosses have 1% chance to drop additional Map Currency Items',
+        modGroup: 'Unique Maps'
       }
     ],
     neighbors: [509, 508]
@@ -6760,7 +7623,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [548, 465, 508]
@@ -6770,7 +7634,12 @@ export const skillList: SkillNode[] = [
     y: -5320.0,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [448, 534]
   },
@@ -6782,7 +7651,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [489, 553, 462]
@@ -6795,7 +7665,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas spawn $AMOUNT increased Magic Monsters',
         amount: 8,
-        description: 'Breaches in Areas spawn 8% increased Magic Monsters'
+        description: 'Breaches in Areas spawn 8% increased Magic Monsters',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [517, 441, 522]
@@ -6808,7 +7679,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas spawn $AMOUNT increased Magic Monsters',
         amount: 8,
-        description: 'Breaches in Areas spawn 8% increased Magic Monsters'
+        description: 'Breaches in Areas spawn 8% increased Magic Monsters',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [516, 518]
@@ -6818,7 +7690,12 @@ export const skillList: SkillNode[] = [
     y: -902.5214897322132,
     name: 'Probing for Weaknesses',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 4, description: 'Areas have +4% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 4,
+        description: 'Areas have +4% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [517]
   },
@@ -6830,7 +7707,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Breach Splinters found in Breach Hands in Areas',
         amount: 10,
-        description: '10% increased Quantity of Breach Splinters found in Breach Hands in Areas'
+        description: '10% increased Quantity of Breach Splinters found in Breach Hands in Areas',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [520]
@@ -6843,7 +7721,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Breach Splinters found in Breach Hands in Areas',
         amount: 10,
-        description: '10% increased Quantity of Breach Splinters found in Breach Hands in Areas'
+        description: '10% increased Quantity of Breach Splinters found in Breach Hands in Areas',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [519, 522, 553, 521]
@@ -6856,12 +7735,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT chance to contain Xesht-Ula, the Open Hand',
         amount: 2,
-        description: 'Breaches in Areas have 2% chance to contain Xesht-Ula, the Open Hand'
+        description: 'Breaches in Areas have 2% chance to contain Xesht-Ula, the Open Hand',
+        modGroup: 'Breach'
       },
       {
         modType: 'Breaches in Areas have $AMOUNT chance to contain a Hand of Xesht-Ula',
         amount: 20,
-        description: 'Breaches in Areas have 20% chance to contain a Hand of Xesht-Ula'
+        description: 'Breaches in Areas have 20% chance to contain a Hand of Xesht-Ula',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [520]
@@ -6874,7 +7755,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Breach Splinters found in Breach Hands in Areas',
         amount: 10,
-        description: '10% increased Quantity of Breach Splinters found in Breach Hands in Areas'
+        description: '10% increased Quantity of Breach Splinters found in Breach Hands in Areas',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [516, 520]
@@ -6887,12 +7769,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased chance to include a Templar army',
         amount: 60,
-        description: 'Legion Encounters in Areas have 60% increased chance to include a Templar army'
+        description: 'Legion Encounters in Areas have 60% increased chance to include a Templar army',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [526, 528]
@@ -6905,7 +7789,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT chance to drop as Timeless Emblems instead',
         amount: 0.2,
-        description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead'
+        description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [532, 531]
@@ -6918,12 +7803,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased chance to include an Eternal Empire army',
         amount: 100,
-        description: 'Legion Encounters in Areas have 100% increased chance to include an Eternal Empire army'
+        description: 'Legion Encounters in Areas have 100% increased chance to include an Eternal Empire army',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [526, 528]
@@ -6936,7 +7823,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [573, 527, 571, 525, 523, 534]
@@ -6949,12 +7837,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased chance to include a Vaal army',
         amount: 80,
-        description: 'Legion Encounters in Areas have 80% increased chance to include a Vaal army'
+        description: 'Legion Encounters in Areas have 80% increased chance to include a Vaal army',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [526, 528]
@@ -6967,7 +7857,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT chance to drop as Timeless Emblems instead',
         amount: 0.6,
-        description: 'Timeless Splinters dropped in Areas have 0.6% chance to drop as Timeless Emblems instead'
+        description: 'Timeless Splinters dropped in Areas have 0.6% chance to drop as Timeless Emblems instead',
+        modGroup: 'Other'
       }
     ],
     neighbors: [523, 525, 527, 571, 573]
@@ -6980,7 +7871,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [548, 530, 531]
@@ -6993,7 +7885,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have $AMOUNT chance to be Duplicated',
         amount: 4,
-        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated'
+        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [529, 572]
@@ -7006,7 +7899,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Timeless Splinters dropped in Areas have $AMOUNT chance to drop as Timeless Emblems instead',
         amount: 0.2,
-        description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead'
+        description: 'Timeless Splinters dropped in Areas have 0.2% chance to drop as Timeless Emblems instead',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [524, 529]
@@ -7019,12 +7913,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Legion Encounters in Areas are $AMOUNT more likely to include a General',
         amount: 60,
-        description: 'Legion Encounters in Areas are 60% more likely to include a General'
+        description: 'Legion Encounters in Areas are 60% more likely to include a General',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Encounters with a General in Areas have both Generals',
         amount: null,
-        description: 'Legion Encounters with a General in Areas have both Generals'
+        description: 'Legion Encounters with a General in Areas have both Generals',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [524]
@@ -7037,7 +7933,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Each Legion in Areas contains an additional War Hoard',
         amount: null,
-        description: 'Each Legion in Areas contains an additional War Hoard'
+        description: 'Each Legion in Areas contains an additional War Hoard',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [572]
@@ -7047,7 +7944,12 @@ export const skillList: SkillNode[] = [
     y: -5740.5,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [498, 514, 526, 581, 585, 540]
   },
@@ -7059,7 +7961,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Abyssal Depths in Areas',
         amount: 10,
-        description: '10% increased Quantity of Items dropped in Abyssal Depths in Areas'
+        description: '10% increased Quantity of Items dropped in Abyssal Depths in Areas',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [543, 536]
@@ -7072,7 +7975,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Items dropped in Abyssal Depths in Areas',
         amount: 10,
-        description: '10% increased Quantity of Items dropped in Abyssal Depths in Areas'
+        description: '10% increased Quantity of Items dropped in Abyssal Depths in Areas',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [535, 539]
@@ -7085,12 +7989,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT increased Pack Size',
         amount: 15,
-        description: 'Abyssal Depths in Areas have 15% increased Pack Size'
+        description: 'Abyssal Depths in Areas have 15% increased Pack Size',
+        modGroup: 'Abyss'
       },
       {
         modType: 'Abysses in Area spawn $AMOUNT increased Monsters',
         amount: 15,
-        description: 'Abysses in Area spawn 15% increased Monsters'
+        description: 'Abysses in Area spawn 15% increased Monsters',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [538, 540]
@@ -7103,12 +8009,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT increased Pack Size',
         amount: 15,
-        description: 'Abyssal Depths in Areas have 15% increased Pack Size'
+        description: 'Abyssal Depths in Areas have 15% increased Pack Size',
+        modGroup: 'Abyss'
       },
       {
         modType: 'Abysses in Area spawn $AMOUNT increased Monsters',
         amount: 15,
-        description: 'Abysses in Area spawn 15% increased Monsters'
+        description: 'Abysses in Area spawn 15% increased Monsters',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [539, 537]
@@ -7121,22 +8029,26 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abyssal Depths in Areas have +3 to Monster Level',
         amount: null,
-        description: 'Abyssal Depths in Areas have +3 to Monster Level'
+        description: 'Abyssal Depths in Areas have +3 to Monster Level',
+        modGroup: 'Legion'
       },
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT more Magic Monsters',
         amount: 100,
-        description: 'Abyssal Depths in Areas have 100% more Magic Monsters'
+        description: 'Abyssal Depths in Areas have 100% more Magic Monsters',
+        modGroup: 'Legion'
       },
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT more Rare Monsters',
         amount: 100,
-        description: 'Abyssal Depths in Areas have 100% more Rare Monsters'
+        description: 'Abyssal Depths in Areas have 100% more Rare Monsters',
+        modGroup: 'Legion'
       },
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT increased Pack Size',
         amount: 30,
-        description: 'Abyssal Depths in Areas have 30% increased Pack Size'
+        description: 'Abyssal Depths in Areas have 30% increased Pack Size',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [536, 538]
@@ -7146,11 +8058,17 @@ export const skillList: SkillNode[] = [
     y: -5417.81,
     name: 'Abyss and Abyssal Depths Chances',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' },
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      },
       {
         modType: 'Abysses in Areas have $AMOUNT increased chance to lead to an Abyssal Depths',
         amount: 10,
-        description: 'Abysses in Areas have 10% increased chance to lead to an Abyssal Depths'
+        description: 'Abysses in Areas have 10% increased chance to lead to an Abyssal Depths',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [534, 537, 542]
@@ -7160,11 +8078,17 @@ export const skillList: SkillNode[] = [
     y: -5082.81,
     name: 'Abyss and Abyssal Depths Chances',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' },
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      },
       {
         modType: 'Abysses in Areas have $AMOUNT increased chance to lead to an Abyssal Depths',
         amount: 10,
-        description: 'Abysses in Areas have 10% increased chance to lead to an Abyssal Depths'
+        description: 'Abysses in Areas have 10% increased chance to lead to an Abyssal Depths',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [542, 543]
@@ -7174,11 +8098,17 @@ export const skillList: SkillNode[] = [
     y: -5250.31,
     name: 'Abyss and Abyssal Depths Chances',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' },
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      },
       {
         modType: 'Abysses in Areas have $AMOUNT increased chance to lead to an Abyssal Depths',
         amount: 10,
-        description: 'Abysses in Areas have 10% increased chance to lead to an Abyssal Depths'
+        description: 'Abysses in Areas have 10% increased chance to lead to an Abyssal Depths',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [540, 541]
@@ -7191,12 +8121,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abysses in Areas have $AMOUNT increased chance to lead to an Abyssal Depths',
         amount: 50,
-        description: 'Abysses in Areas have 50% increased chance to lead to an Abyssal Depths'
+        description: 'Abysses in Areas have 50% increased chance to lead to an Abyssal Depths',
+        modGroup: 'Abyss'
       },
       {
         modType: 'Abyssal Depths in Areas have $AMOUNT increased chance to contain a Lich',
         amount: 100,
-        description: 'Abyssal Depths in Areas have 100% increased chance to contain a Lich'
+        description: 'Abyssal Depths in Areas have 100% increased chance to contain a Lich',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [541, 535]
@@ -7209,7 +8141,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more\nlikely to be accompanied by reinforcements',
         amount: 5,
-        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements'
+        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [547, 546]
@@ -7222,7 +8155,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more\nlikely to be accompanied by reinforcements',
         amount: 5,
-        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements'
+        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [546, 548]
@@ -7235,7 +8169,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more\nlikely to be accompanied by reinforcements',
         amount: 5,
-        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements'
+        description: 'Immortal Syndicate Members in Areas are 5% more\nlikely to be accompanied by reinforcements',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [544, 545]
@@ -7248,7 +8183,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Completing Maps grants 10 Intelligence for a random Immortal Syndicate Safehouse',
         amount: null,
-        description: 'Completing Maps grants 10 Intelligence for a random Immortal Syndicate Safehouse'
+        description: 'Completing Maps grants 10 Intelligence for a random Immortal Syndicate Safehouse',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [544]
@@ -7261,7 +8197,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [513, 545, 579, 529]
@@ -7274,7 +8211,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [552, 551]
@@ -7287,7 +8225,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [551, 553]
@@ -7300,7 +8239,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Plants Harvested in Areas have $AMOUNT chance to give an additional Crafting option',
         amount: 3,
-        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option'
+        description: 'Plants Harvested in Areas have 3% chance to give an additional Crafting option',
+        modGroup: 'Harvest'
       }
     ],
     neighbors: [549, 550]
@@ -7313,7 +8253,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain The Sacred Grove',
         amount: 4,
-        description: 'Areas have +4% chance to contain The Sacred Grove'
+        description: 'Areas have +4% chance to contain The Sacred Grove',
+        modGroup: 'Other'
       }
     ],
     neighbors: [549]
@@ -7326,7 +8267,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [597, 520, 574, 550, 515]
@@ -7336,7 +8278,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [617, 434]
   },
@@ -7345,8 +8292,18 @@ export const skillList: SkillNode[] = [
     y: -4476.21,
     name: 'Distinguished Demolitionist',
     stats: [
-      { modType: '$AMOUNT increased Explosive Radius in Areas', amount: 35, description: '35% increased Explosive Radius in Areas' },
-      { modType: '$AMOUNT increased number of Explosives in Areas', amount: 20, description: '20% increased number of Explosives in Areas' }
+      {
+        modType: '$AMOUNT increased Explosive Radius in Areas',
+        amount: 35,
+        description: '35% increased Explosive Radius in Areas',
+        modGroup: 'Other'
+      },
+      {
+        modType: '$AMOUNT increased number of Explosives in Areas',
+        amount: 20,
+        description: '20% increased number of Explosives in Areas',
+        modGroup: 'Other'
+      }
     ],
     neighbors: [563, 562]
   },
@@ -7358,7 +8315,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain an Expedition Encounter'
+        description: 'Areas have +1% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [561, 617, 563]
@@ -7371,7 +8329,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain an Expedition Encounter'
+        description: 'Areas have +1% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [433, 559, 561]
@@ -7384,7 +8343,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
         amount: 5,
-        description: '5% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas'
+        description: '5% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [562, 560]
@@ -7397,7 +8357,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
         amount: 5,
-        description: '5% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas'
+        description: '5% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [560, 557]
@@ -7410,9 +8371,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Remnants in Areas have $AMOUNT chance to have an additional Suffix Modifier',
         amount: 30,
-        description: 'Remnants in Areas have 30% chance to have an additional Suffix Modifier'
+        description: 'Remnants in Areas have 30% chance to have an additional Suffix Modifier',
+        modGroup: 'Other'
       },
-      { modType: 'Expeditions in Areas have +2 Remnants', amount: null, description: 'Expeditions in Areas have +2 Remnants' }
+      {
+        modType: 'Expeditions in Areas have +2 Remnants',
+        amount: null,
+        description: 'Expeditions in Areas have +2 Remnants',
+        modGroup: 'Expedition'
+      }
     ],
     neighbors: [558, 559]
   },
@@ -7424,7 +8391,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain an Expedition Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain an Expedition Encounter'
+        description: 'Areas have +1% chance to contain an Expedition Encounter',
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [557, 556]
@@ -7437,7 +8405,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Explosive Placement Range in Areas',
         amount: 20,
-        description: '20% increased Explosive Placement Range in Areas'
+        description: '20% increased Explosive Placement Range in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [555, 558]
@@ -7450,7 +8419,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Explosive Placement Range in Areas',
         amount: 20,
-        description: '20% increased Explosive Placement Range in Areas'
+        description: '20% increased Explosive Placement Range in Areas',
+        modGroup: 'Other'
       }
     ],
     neighbors: [556, 555]
@@ -7463,7 +8433,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [568, 567]
@@ -7476,7 +8447,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [566, 567]
@@ -7489,7 +8461,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas contain $AMOUNT increased Sulphite',
         amount: 3,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas contain 3% increased Sulphite',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [569, 565]
@@ -7502,7 +8475,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [564, 565, 617]
@@ -7515,7 +8489,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Niko Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Niko Mission on Completion',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [435, 570, 564]
@@ -7528,12 +8503,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Voltaxic Sulphite Veins and Chests in Areas have $AMOUNT chance to contain double Sulphite',
         amount: 5,
-        description: 'Voltaxic Sulphite Veins and Chests in Areas have 5% chance to contain double Sulphite'
+        description: 'Voltaxic Sulphite Veins and Chests in Areas have 5% chance to contain double Sulphite',
+        modGroup: 'Delve'
       },
       {
         modType: 'Sulphite Veins and Chests in Areas are guarded by Sulphite-hoarding Monsters',
         amount: null,
-        description: 'Sulphite Veins and Chests in Areas are guarded by Sulphite-hoarding Monsters'
+        description: 'Sulphite Veins and Chests in Areas are guarded by Sulphite-hoarding Monsters',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [566]
@@ -7546,17 +8523,20 @@ export const skillList: SkillNode[] = [
       {
         modType: '+$AMOUNT to all maximum Elemental Resistances for each Voltaxic Sulphite Vein or Chest found in Areas',
         amount: 1,
-        description: '+1% to all maximum Elemental Resistances for each Voltaxic Sulphite Vein or Chest found in Areas'
+        description: '+1% to all maximum Elemental Resistances for each Voltaxic Sulphite Vein or Chest found in Areas',
+        modGroup: 'Delve'
       },
       {
         modType: '$AMOUNT increased Damage for each Voltaxic Sulphite Vein or Chest found in Areas',
         amount: 35,
-        description: '35% increased Damage for each Voltaxic Sulphite Vein or Chest found in Areas'
+        description: '35% increased Damage for each Voltaxic Sulphite Vein or Chest found in Areas',
+        modGroup: 'Delve'
       },
       {
         modType: '$AMOUNT increased Movement Speed for each Voltaxic Sulphite Vein or Chest found in Areas',
         amount: 15,
-        description: '15% increased Movement Speed for each Voltaxic Sulphite Vein or Chest found in Areas'
+        description: '15% increased Movement Speed for each Voltaxic Sulphite Vein or Chest found in Areas',
+        modGroup: 'Delve'
       }
     ],
     neighbors: [568]
@@ -7569,12 +8549,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased chance to include a Karui army',
         amount: 100,
-        description: 'Legion Encounters in Areas have 100% increased chance to include a Karui army'
+        description: 'Legion Encounters in Areas have 100% increased chance to include a Karui army',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [526, 528]
@@ -7587,7 +8569,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have $AMOUNT chance to be Duplicated',
         amount: 4,
-        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated'
+        description: 'Splinters dropped by Legion Monsters or contained in Legion Chests in Areas have 4% chance to be Duplicated',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [530, 533]
@@ -7600,12 +8583,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased chance to include a Maraketh army',
         amount: 40,
-        description: 'Legion Encounters in Areas have 40% increased chance to include a Maraketh army'
+        description: 'Legion Encounters in Areas have 40% increased chance to include a Maraketh army',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [526, 528]
@@ -7618,7 +8603,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Kirac Mission Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Kirac Mission Areas have 5% increased Pack Size'
+        description: 'Kirac Mission Areas have 5% increased Pack Size',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [553, 575]
@@ -7631,7 +8617,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Kirac Mission Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Kirac Mission Areas have 5% increased Pack Size'
+        description: 'Kirac Mission Areas have 5% increased Pack Size',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [574, 576]
@@ -7644,7 +8631,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Kirac Mission Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Kirac Mission Areas have 5% increased Pack Size'
+        description: 'Kirac Mission Areas have 5% increased Pack Size',
+        modGroup: 'Kirac'
       }
     ],
     neighbors: [575, 577]
@@ -7657,12 +8645,14 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Atlas Scouting Reports found in Areas',
         amount: 20,
-        description: '20% increased Atlas Scouting Reports found in Areas'
+        description: '20% increased Atlas Scouting Reports found in Areas',
+        modGroup: 'Other'
       },
       {
         modType: "$AMOUNT chance for Scouting Reports in Areas to drop as Operative's Scouting Reports instead",
         amount: 10,
-        description: "10% chance for Scouting Reports in Areas to drop as Operative's Scouting Reports instead"
+        description: "10% chance for Scouting Reports in Areas to drop as Operative's Scouting Reports instead",
+        modGroup: 'Other'
       }
     ],
     neighbors: [576]
@@ -7677,7 +8667,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [589, 591]
@@ -7690,7 +8681,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [614, 548, 589]
@@ -7703,7 +8695,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [584, 581]
@@ -7716,7 +8709,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [580, 534]
@@ -7729,7 +8723,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [583, 584]
@@ -7742,7 +8737,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Influenced Monster Packs in Areas have $AMOUNT increased Pack Size',
         amount: 5,
-        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size'
+        description: 'Influenced Monster Packs in Areas have 5% increased Pack Size',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [615, 582]
@@ -7755,14 +8751,16 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Eldritch Currency Items found in Areas influenced by The Eater of Worlds have $AMOUNT chance to be Duplicated',
         amount: 10,
-        description: 'Eldritch Currency Items found in Areas influenced by The Eater of Worlds have 10% chance to be Duplicated'
+        description: 'Eldritch Currency Items found in Areas influenced by The Eater of Worlds have 10% chance to be Duplicated',
+        modGroup: 'Eater of Worlds'
       },
       {
         modType:
           'Monster Packs Influenced by The Eater of Worlds in Areas have $AMOUNT chance to contain an additional Touching Tentacle Mass',
         amount: 10,
         description:
-          'Monster Packs Influenced by The Eater of Worlds in Areas have 10% chance to contain an additional Touching Tentacle Mass'
+          'Monster Packs Influenced by The Eater of Worlds in Areas have 10% chance to contain an additional Touching Tentacle Mass',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [582, 580]
@@ -7772,7 +8770,12 @@ export const skillList: SkillNode[] = [
     y: -6164.44,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [534, 614]
   },
@@ -7786,7 +8789,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [594, 588]
@@ -7801,7 +8805,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [590, 593]
@@ -7816,7 +8821,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [586, 595]
@@ -7831,7 +8837,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [579, 578, 603]
@@ -7846,7 +8853,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [594, 587]
@@ -7861,7 +8869,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [578, 593]
@@ -7876,7 +8885,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [595, 603]
@@ -7889,7 +8899,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Maps have $AMOUNT chance to award double progress towards encountering The Eater of Worlds',
         amount: 10,
-        description: 'Maps have 10% chance to award double progress towards encountering The Eater of Worlds'
+        description: 'Maps have 10% chance to award double progress towards encountering The Eater of Worlds',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [587, 591]
@@ -7902,12 +8913,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Eldritch Currency Items dropped by The Infinite Hunger or The Eater of Worlds has $AMOUNT chance to be Duplicated',
         amount: 25,
-        description: 'Eldritch Currency Items dropped by The Infinite Hunger or The Eater of Worlds has 25% chance to be Duplicated'
+        description: 'Eldritch Currency Items dropped by The Infinite Hunger or The Eater of Worlds has 25% chance to be Duplicated',
+        modGroup: 'Eater of Worlds'
       },
       {
         modType: 'The Eater of Worlds has $AMOUNT increased chance to drop Forbidden Flesh',
         amount: 25,
-        description: 'The Eater of Worlds has 25% increased chance to drop Forbidden Flesh'
+        description: 'The Eater of Worlds has 25% increased chance to drop Forbidden Flesh',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [590, 586]
@@ -7920,7 +8933,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased chance to find Eater of Worlds Altars in Areas',
         amount: 50,
-        description: '50% increased chance to find Eater of Worlds Altars in Areas'
+        description: '50% increased chance to find Eater of Worlds Altars in Areas',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [588, 592]
@@ -7933,7 +8947,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [598, 597]
@@ -7946,7 +8961,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [553, 596, 601]
@@ -7959,7 +8975,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [600, 619, 596]
@@ -7972,12 +8989,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more likely to be accompanied by their Leader',
         amount: 100,
-        description: 'Immortal Syndicate Members in Areas are 100% more likely to be accompanied by their Leader'
+        description: 'Immortal Syndicate Members in Areas are 100% more likely to be accompanied by their Leader',
+        modGroup: 'Other'
       },
       {
         modType: 'Immortal Syndicate Leaders in Areas drop an additional Veiled Item',
         amount: null,
-        description: 'Immortal Syndicate Leaders in Areas drop an additional Veiled Item'
+        description: 'Immortal Syndicate Leaders in Areas drop an additional Veiled Item',
+        modGroup: 'Other'
       }
     ],
     neighbors: [600]
@@ -7990,7 +9009,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members have $AMOUNT chance to drop an additional Veiled Item',
         amount: 15,
-        description: 'Immortal Syndicate Members have 15% chance to drop an additional Veiled Item'
+        description: 'Immortal Syndicate Members have 15% chance to drop an additional Veiled Item',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [599, 598]
@@ -8003,7 +9023,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members have $AMOUNT chance to drop an additional Veiled Item',
         amount: 15,
-        description: 'Immortal Syndicate Members have 15% chance to drop an additional Veiled Item'
+        description: 'Immortal Syndicate Members have 15% chance to drop an additional Veiled Item',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [597, 602]
@@ -8016,12 +9037,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members in Areas are $AMOUNT more\nlikely to offer to Bargain for Items',
         amount: 200,
-        description: 'Immortal Syndicate Members in Areas are 200% more\nlikely to offer to Bargain for Items'
+        description: 'Immortal Syndicate Members in Areas are 200% more\nlikely to offer to Bargain for Items',
+        modGroup: 'Other'
       },
       {
         modType: 'Immortal Syndicate Members in Areas drop $AMOUNT more\nItems when Bargained with for Items',
         amount: 200,
-        description: 'Immortal Syndicate Members in Areas drop 200% more\nItems when Bargained with for Items'
+        description: 'Immortal Syndicate Members in Areas drop 200% more\nItems when Bargained with for Items',
+        modGroup: 'Other'
       }
     ],
     neighbors: [601]
@@ -8036,7 +9059,8 @@ export const skillList: SkillNode[] = [
           'Monsters Influenced by The Eater of Worlds in Areas have $AMOUNT chance to drop an item with an Eater of Worlds Implicit Modifier',
         amount: 0.2,
         description:
-          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier'
+          'Monsters Influenced by The Eater of Worlds in Areas have 0.2% chance to drop an item with an Eater of Worlds Implicit Modifier',
+        modGroup: 'Eater of Worlds'
       }
     ],
     neighbors: [589, 592]
@@ -8046,7 +9070,12 @@ export const skillList: SkillNode[] = [
     y: -6587.76,
     name: 'Abyss Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [606, 614]
   },
@@ -8055,7 +9084,12 @@ export const skillList: SkillNode[] = [
     y: -6587.76,
     name: 'Abyss Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [606, 607]
   },
@@ -8064,7 +9098,12 @@ export const skillList: SkillNode[] = [
     y: -6447.463884586921,
     name: 'Abyss Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain an Abyss', amount: 1, description: 'Areas have +1% chance to contain an Abyss' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain an Abyss',
+        amount: 1,
+        description: 'Areas have +1% chance to contain an Abyss',
+        modGroup: 'Abyss'
+      }
     ],
     neighbors: [604, 605]
   },
@@ -8076,7 +9115,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Abyss Jewels found in Areas have $AMOUNT chance to be Corrupted and have 5 or 6 random Modifiers',
         amount: 20,
-        description: 'Abyss Jewels found in Areas have 20% chance to be Corrupted and have 5 or 6 random Modifiers'
+        description: 'Abyss Jewels found in Areas have 20% chance to be Corrupted and have 5 or 6 random Modifiers',
+        modGroup: 'Abyss'
       }
     ],
     neighbors: [605]
@@ -8089,7 +9129,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [609, 612]
@@ -8102,7 +9143,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have +$AMOUNT chance to contain a Legion Encounter',
         amount: 1,
-        description: 'Areas have +1% chance to contain a Legion Encounter'
+        description: 'Areas have +1% chance to contain a Legion Encounter',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [618, 608, 610]
@@ -8115,7 +9157,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased Duration',
         amount: 10,
-        description: 'Legion Encounters in Areas have 10% increased Duration'
+        description: 'Legion Encounters in Areas have 10% increased Duration',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [609, 613]
@@ -8128,7 +9171,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased Duration',
         amount: 10,
-        description: 'Legion Encounters in Areas have 10% increased Duration'
+        description: 'Legion Encounters in Areas have 10% increased Duration',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [613, 612]
@@ -8141,12 +9185,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Legions in Areas contains 2 additional Sergeants',
         amount: null,
-        description: 'Legions in Areas contains 2 additional Sergeants'
+        description: 'Legions in Areas contains 2 additional Sergeants',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Sergeants in Areas have $AMOUNT additional chance to have Rewards',
         amount: 20,
-        description: 'Legion Sergeants in Areas have 20% additional chance to have Rewards'
+        description: 'Legion Sergeants in Areas have 20% additional chance to have Rewards',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [608, 611]
@@ -8159,12 +9205,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Legion Encounters in Areas have $AMOUNT increased Duration',
         amount: 40,
-        description: 'Legion Encounters in Areas have 40% increased Duration'
+        description: 'Legion Encounters in Areas have 40% increased Duration',
+        modGroup: 'Legion'
       },
       {
         modType: 'Legion Monsters in Areas take $AMOUNT increased Damage while in Stasis',
         amount: 50,
-        description: 'Legion Monsters in Areas take 50% increased Damage while in Stasis'
+        description: 'Legion Monsters in Areas take 50% increased Damage while in Stasis',
+        modGroup: 'Legion'
       }
     ],
     neighbors: [610, 611]
@@ -8177,7 +9225,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased effect of Modifiers on non-unique Maps',
         amount: 2,
-        description: '2% increased effect of Modifiers on non-unique Maps'
+        description: '2% increased effect of Modifiers on non-unique Maps',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [585, 604, 630, 579, 615]
@@ -8187,7 +9236,12 @@ export const skillList: SkillNode[] = [
     y: -5740.52,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [583, 614, 616, 635]
   },
@@ -8196,7 +9250,12 @@ export const skillList: SkillNode[] = [
     y: -5149.71,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [618, 615]
   },
@@ -8205,7 +9264,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [556, 567, 620, 623, 554, 621]
   },
@@ -8214,7 +9278,12 @@ export const skillList: SkillNode[] = [
     y: -4564.2,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [621, 638, 609, 616]
   },
@@ -8226,7 +9295,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [598, 620]
@@ -8239,7 +9309,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT chance for an additional connected Map to drop from Unique Map Bosses',
         amount: 2,
-        description: '2% chance for an additional connected Map to drop from Unique Map Bosses'
+        description: '2% chance for an additional connected Map to drop from Unique Map Bosses',
+        modGroup: 'Maps'
       }
     ],
     neighbors: [619, 617]
@@ -8249,7 +9320,12 @@ export const skillList: SkillNode[] = [
     y: -4316.412336883819,
     name: 'Map Drop Duplication',
     stats: [
-      { modType: '$AMOUNT chance for Map Drops to be Duplicated', amount: 0.5, description: '0.5% chance for Map Drops to be Duplicated' }
+      {
+        modType: '$AMOUNT chance for Map Drops to be Duplicated',
+        amount: 0.5,
+        description: '0.5% chance for Map Drops to be Duplicated',
+        modGroup: 'Maps'
+      }
     ],
     neighbors: [617, 618]
   },
@@ -8261,12 +9337,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to contain a Boss',
         amount: 70,
-        description: 'Breaches in Areas have 70% increased chance to contain a Boss'
+        description: 'Breaches in Areas have 70% increased chance to contain a Boss',
+        modGroup: 'Breach'
       },
       {
         modType: 'Breach Bosses in Areas drop double Breach Splinters',
         amount: null,
-        description: 'Breach Bosses in Areas drop double Breach Splinters'
+        description: 'Breach Bosses in Areas drop double Breach Splinters',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [625, 628, 624, 626, 627]
@@ -8276,7 +9354,12 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Breach Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [617, 624, 626, 627, 628, 625]
   },
@@ -8288,9 +9371,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to belong to Xoph',
         amount: 100,
-        description: 'Breaches in Areas have 100% increased chance to belong to Xoph'
+        description: 'Breaches in Areas have 100% increased chance to belong to Xoph',
+        modGroup: 'Breach'
       },
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [622, 623]
   },
@@ -8302,9 +9391,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to belong to Tul',
         amount: 100,
-        description: 'Breaches in Areas have 100% increased chance to belong to Tul'
+        description: 'Breaches in Areas have 100% increased chance to belong to Tul',
+        modGroup: 'Breach'
       },
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [623, 622]
   },
@@ -8316,9 +9411,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to belong to Esh',
         amount: 100,
-        description: 'Breaches in Areas have 100% increased chance to belong to Esh'
+        description: 'Breaches in Areas have 100% increased chance to belong to Esh',
+        modGroup: 'Breach'
       },
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [622, 623]
   },
@@ -8330,9 +9431,15 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to belong to Uul-Netol',
         amount: 60,
-        description: 'Breaches in Areas have 60% increased chance to belong to Uul-Netol'
+        description: 'Breaches in Areas have 60% increased chance to belong to Uul-Netol',
+        modGroup: 'Breach'
       },
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' }
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      }
     ],
     neighbors: [622, 623]
   },
@@ -8341,11 +9448,17 @@ export const skillList: SkillNode[] = [
     y: -3718.2,
     name: 'Chayula Breach Chance',
     stats: [
-      { modType: 'Areas have +$AMOUNT chance to contain Breaches', amount: 1, description: 'Areas have +1% chance to contain Breaches' },
+      {
+        modType: 'Areas have +$AMOUNT chance to contain Breaches',
+        amount: 1,
+        description: 'Areas have +1% chance to contain Breaches',
+        modGroup: 'Breach'
+      },
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to belong to Chayula',
         amount: 30,
-        description: 'Breaches in Areas have 30% increased chance to belong to Chayula'
+        description: 'Breaches in Areas have 30% increased chance to belong to Chayula',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [622, 623]
@@ -8358,7 +9471,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to contain a Boss',
         amount: 8,
-        description: 'Breaches in Areas have 8% increased chance to contain a Boss'
+        description: 'Breaches in Areas have 8% increased chance to contain a Boss',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [631, 632]
@@ -8371,7 +9485,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to contain a Boss',
         amount: 8,
-        description: 'Breaches in Areas have 8% increased chance to contain a Boss'
+        description: 'Breaches in Areas have 8% increased chance to contain a Boss',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [614, 633]
@@ -8384,22 +9499,26 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breach Bosses Defeated in Areas have $AMOUNT chance to drop a Breachstone',
         amount: 8,
-        description: 'Breach Bosses Defeated in Areas have 8% chance to drop a Breachstone'
+        description: 'Breach Bosses Defeated in Areas have 8% chance to drop a Breachstone',
+        modGroup: 'Breach'
       },
       {
         modType: 'Breachstones dropped by Breach Bosses in Areas have $AMOUNT chance to be Charged',
         amount: 9,
-        description: 'Breachstones dropped by Breach Bosses in Areas have 9% chance to be Charged'
+        description: 'Breachstones dropped by Breach Bosses in Areas have 9% chance to be Charged',
+        modGroup: 'Breach'
       },
       {
         modType: 'Breachstones dropped by Breach Bosses in Areas have $AMOUNT chance to be Enriched',
         amount: 3,
-        description: 'Breachstones dropped by Breach Bosses in Areas have 3% chance to be Enriched'
+        description: 'Breachstones dropped by Breach Bosses in Areas have 3% chance to be Enriched',
+        modGroup: 'Breach'
       },
       {
         modType: 'Breachstones dropped by Breach Bosses in Areas have $AMOUNT chance to be Pure',
         amount: 1,
-        description: 'Breachstones dropped by Breach Bosses in Areas have 1% chance to be Pure'
+        description: 'Breachstones dropped by Breach Bosses in Areas have 1% chance to be Pure',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [629]
@@ -8412,7 +9531,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to contain a Boss',
         amount: 8,
-        description: 'Breaches in Areas have 8% increased chance to contain a Boss'
+        description: 'Breaches in Areas have 8% increased chance to contain a Boss',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [629, 633]
@@ -8425,7 +9545,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Breaches in Areas have $AMOUNT increased chance to contain a Boss',
         amount: 8,
-        description: 'Breaches in Areas have 8% increased chance to contain a Boss'
+        description: 'Breaches in Areas have 8% increased chance to contain a Boss',
+        modGroup: 'Breach'
       }
     ],
     neighbors: [630, 632]
@@ -8438,7 +9559,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Rarity of Items dropped by Unique Bosses',
         amount: 25,
-        description: '25% increased Rarity of Items dropped by Unique Bosses'
+        description: '25% increased Rarity of Items dropped by Unique Bosses',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [635, 637]
@@ -8451,7 +9573,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Rarity of Items dropped by Unique Bosses',
         amount: 25,
-        description: '25% increased Rarity of Items dropped by Unique Bosses'
+        description: '25% increased Rarity of Items dropped by Unique Bosses',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [634, 615]
@@ -8464,12 +9587,14 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Unique Bosses drop an additional Basic Currency Item',
         amount: null,
-        description: 'Unique Bosses drop an additional Basic Currency Item'
+        description: 'Unique Bosses drop an additional Basic Currency Item',
+        modGroup: 'Map Boss'
       },
       {
         modType: 'Unique Bosses have $AMOUNT chance to be Duplicated if possible',
         amount: 20,
-        description: 'Unique Bosses have 20% chance to be Duplicated if possible'
+        description: 'Unique Bosses have 20% chance to be Duplicated if possible',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [637]
@@ -8482,7 +9607,8 @@ export const skillList: SkillNode[] = [
       {
         modType: '$AMOUNT increased Rarity of Items dropped by Unique Bosses',
         amount: 25,
-        description: '25% increased Rarity of Items dropped by Unique Bosses'
+        description: '25% increased Rarity of Items dropped by Unique Bosses',
+        modGroup: 'Map Boss'
       }
     ],
     neighbors: [634, 636]
@@ -8495,7 +9621,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [639, 618]
@@ -8508,7 +9635,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [638, 641]
@@ -8521,7 +9649,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Immortal Syndicate Members Executed in Areas have $AMOUNT chance to gain an additional Rank',
         amount: 100,
-        description: 'Immortal Syndicate Members Executed in Areas have 100% chance to gain an additional Rank'
+        description: 'Immortal Syndicate Members Executed in Areas have 100% chance to gain an additional Rank',
+        modGroup: 'Other'
       }
     ],
     neighbors: [641]
@@ -8534,7 +9663,8 @@ export const skillList: SkillNode[] = [
       {
         modType: 'Areas have $AMOUNT chance to grant an additional Jun Mission on Completion',
         amount: 1,
-        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion'
+        description: 'Areas have 1% chance to grant an additional Jun Mission on Completion',
+        modGroup: 'Betrayal'
       }
     ],
     neighbors: [639, 640]
