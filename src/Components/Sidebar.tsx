@@ -1,12 +1,11 @@
 import './Sidebar.css'
 import React from 'react'
-import { skillList } from '../utils'
+import { skillList } from '../tree'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import _ from 'lodash'
 
 interface SidebarProps {
   toggles: boolean[]
-  resetToggles: any
 }
 
 interface SidebarState {
@@ -20,14 +19,18 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
       if (!toggle) return
       const skill = skillList[index]
 
-      skill.mods.forEach((mod) => {
-        passives[mod.modType] = (passives[mod.modType] || 0) + mod.amount
+      skill.stats.forEach((mod) => {
+        if (mod.amount) {
+          passives[mod.modType] = (passives[mod.modType] || 0) + mod.amount
+        }
       })
     })
 
     return _(passives)
-      .map((val, key) => [key, val])
-      .sortBy([0])
+      .map((amount, modType) => {
+        return { modType, amount }
+      })
+      .sortBy('modType')
       .value()
   }
 
@@ -35,15 +38,6 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
     return (
       <div className="sidebar">
         <h3>{_.sum(this.props.toggles)} / 132</h3>
-        <button
-          onClick={() => {
-            if (window.confirm('Are you sure you wish to reset your entire tree?')) {
-              this.props.resetToggles()
-            }
-          }}
-        >
-          Reset all points
-        </button>
         <CopyToClipboard
           text={window.location + ''}
           onCopy={() => {
@@ -59,9 +53,9 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
         {this.state?.copied ? <span style={{ color: 'red' }}>Copied.</span> : null}
         <h3>Total Stats</h3>
         <div>
-          {this.passives().map(([modType, amount]) => (
-            <div key={modType}>
-              {modType}: <span>+{amount}%</span>
+          {this.passives().map(({ modType, amount }) => (
+            <div className="stat" key={modType}>
+              {modType.replace('$AMOUNT', `${amount}%`)}
             </div>
           ))}
         </div>

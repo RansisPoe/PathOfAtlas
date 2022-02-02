@@ -2,14 +2,19 @@
   position: fixed;
   z-index: 1;
   height: 100%;
-  width: 240px;
+  width: 320px;
 
   color: white;
   background: rgb(25, 25, 25);
 
   border-right: 5px solid gray;
+  overflow-y: scroll;
 }
 
 .sidebar button {
+  margin-bottom: 10px;
+}
+
+.sidebar .stat {
   margin-bottom: 10px;
 }

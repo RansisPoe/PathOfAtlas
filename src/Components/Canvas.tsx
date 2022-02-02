@@ -4,12 +4,13 @@ import { Stage, Layer } from 'react-konva'
 import SkillTree from './SkillTree'
 import TreeImage from './TreeImage'
 import ToolTip from './Tooltip'
-import { skillList, findShortestPath } from '../utils'
+import { findShortestPath } from '../utils'
+import { skillList } from '../tree'
 
 const scaleBy = 1.1
 
-const width = 3956
-const height = 3654
+const width = 5000
+const height = 5000
 
 const overflowBounds = 1.2
 
@@ -62,7 +63,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
         x: skillList[index].x,
         y: skillList[index].y,
         name: skillList[index].name,
-        value: skillList[index].description
+        value: skillList[index].stats.join(',')
       }
 
       const hoveredList = [...this.state.hoveredList]
@@ -125,7 +126,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
     // TODO: make x and y dynamic based on the image
     return (
       <Stage width={window.innerWidth} height={window.innerHeight}>
-        <Layer draggable x={-1200} y={-2100} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
+        <Layer draggable x={-1900} y={-3500} dragBoundFunc={this.dragBound.bind(this)} onWheel={this.wheelFunc.bind(this)}>
           <TreeImage src="./tree.png" />
           <SkillTree
             toggles={this.props.toggles}

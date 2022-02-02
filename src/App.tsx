@@ -2,7 +2,8 @@ import React from 'react'
 import './App.css'
 import CanvasTree from './Components/Canvas'
 import Sidebar from './Components/Sidebar'
-import { skillList, findShortestPath, disconnectedSearch, encodeBitList, parseBitList } from './utils'
+import { findShortestPath, disconnectedSearch, encodeBitList, parseBitList } from './utils'
+import { skillList } from './tree'
 
 interface AppState {
   toggles: boolean[]
@@ -60,7 +61,7 @@ class App extends React.Component<any, AppState> {
 
     const redoHistory: boolean[][] = []
 
-    this.setUrl(toggles)
+    // this.setUrl(toggles)
     this.setState({ toggles, history, redoHistory })
   }
 
@@ -99,23 +100,10 @@ class App extends React.Component<any, AppState> {
     }
   }
 
-  resetToggles() {
-    const history = [...this.state.history]
-    history.push([...this.state.toggles])
-
-    const redoHistory: boolean[][] = []
-
-    this.setState({
-      toggles: skillList.map((skill) => false),
-      history,
-      redoHistory
-    })
-  }
-
   render() {
     return (
       <div className="App">
-        <Sidebar toggles={this.state.toggles} resetToggles={this.resetToggles.bind(this)}></Sidebar>
+        <Sidebar toggles={this.state.toggles}></Sidebar>
         <CanvasTree toggles={this.state.toggles} toggleIndex={this.toggleIndex.bind(this)}></CanvasTree>
       </div>
     )

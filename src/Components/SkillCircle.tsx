@@ -21,10 +21,11 @@ class SkillCircle extends React.Component<SkillCircleProps> {
         width={30}
         height={30}
         fill={this.props.toggled ? 'yellow' : 'black'}
-        opacity={this.props.toggled ? 0.3 : 0.6}
+        opacity={this.props.toggled ? 0.1 : 0}
         shadowBlur={5}
         onClick={this.props.onClick}
         onMouseEnter={(e: any) => {
+          console.log('index hover', this.props.index)
           // style stage container:
           const container = e.target.getStage().container()
           container.style.cursor = 'pointer'

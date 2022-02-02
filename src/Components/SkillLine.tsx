@@ -16,8 +16,8 @@ class SkillLine extends React.Component<SkillLineProps> {
       <Line
         points={[this.props.x, this.props.y, this.props.neighborX, this.props.neighborY]}
         strokeWidth={5}
-        opacity={this.props.toggled ? 0.6 : this.props.hovered ? 0.2 : 0}
-        stroke="yellow"
+        opacity={this.props.toggled ? 1 : this.props.hovered ? 0.3 : 0}
+        stroke="#cac1a6"
         listening={false}
       />
     )

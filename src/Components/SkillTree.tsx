@@ -1,7 +1,7 @@
 import React from 'react'
 import SkillCircle from './SkillCircle'
 import SkillLine from './SkillLine'
-import { skillList } from '../utils'
+import { skillList } from '../tree'
 import { Group } from 'react-konva'
 
 interface SkillTreeProps {
@@ -28,7 +28,7 @@ class SkillTree extends React.Component<SkillTreeProps> {
                 x={skillList[index].x}
                 y={skillList[index].y}
                 name={skillList[index].name}
-                value={skillList[index].description}
+                value={skillList[index].stats.join(',')}
                 toggled={toggle}
                 onClick={this.toggleIndex.bind(this, index)}
                 setHover={this.props.setHover}
