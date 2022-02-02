@@ -65,6 +65,8 @@ class Sidebar extends React.Component<SidebarProps, SidebarState> {
             </div>
           ))}
         </div>
+
+        <div className="disclaimer">This product isn't affiliated with or endorsed by Grinding Gear Games in any way.</div>
       </div>
     )
   }
