@@ -5,12 +5,14 @@ import Sidebar from './Components/Sidebar'
 import Searchbar from './Components/Searchbar'
 import { findShortestPath, disconnectedSearch, encodeBitList, parseBitList } from './utils'
 import { skillList } from './tree'
+import Checkbox from './Components/Checkbox'
 
 interface AppState {
   toggles: boolean[]
   searched: boolean[]
   history: boolean[][]
   redoHistory: boolean[][]
+  displayLen: boolean
 }
 
 const _history: boolean[][] = []
@@ -21,7 +23,8 @@ class App extends React.Component<any, AppState> {
     toggles: skillList.map((skill) => false),
     searched: skillList.map((skill) => false),
     history: _history,
-    redoHistory: _redoHistory
+    redoHistory: _redoHistory,
+    displayLen: false
   }
 
   componentDidMount() {
@@ -126,12 +129,22 @@ class App extends React.Component<any, AppState> {
     }
   }
 
+  toggleLenDisplay = () => {
+    this.setState({ displayLen: !this.state.displayLen })
+  }
+
   render() {
     return (
       <div className="App">
         <Sidebar toggles={this.state.toggles}></Sidebar>
         <Searchbar setSearch={this.search.bind(this)}></Searchbar>
-        <CanvasTree toggles={this.state.toggles} searched={this.state.searched} toggleIndex={this.toggleIndex.bind(this)}></CanvasTree>
+        <Checkbox toggle={this.toggleLenDisplay} displayLen={this.state.displayLen} />
+        <CanvasTree
+          toggles={this.state.toggles}
+          searched={this.state.searched}
+          toggleIndex={this.toggleIndex.bind(this)}
+          displayLen={this.state.displayLen}
+        ></CanvasTree>
       </div>
     )
   }

@@ -1,0 +1,17 @@
+.checkbox {
+  position: fixed;
+  z-index: 1;
+  height: 20px;
+  bottom: 8px;
+  left: 540px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox label {
+  color: white;
+  width: auto;
+}
