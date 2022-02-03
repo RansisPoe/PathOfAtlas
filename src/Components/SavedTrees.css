@@ -1,0 +1,7 @@
+.trees {
+  background-color: white;
+  height: 300px;
+  width: 600px;
+
+  z-index: 200;
+}
