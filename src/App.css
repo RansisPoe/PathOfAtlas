@@ -4,3 +4,13 @@
   min-height: 100vh;
   background-color: rgb(8, 12, 17);
 }
+
+.checkboxes {
+  position: fixed;
+  display: flex;
+  column-gap: 1rem;
+  z-index: 1;
+  height: 20px;
+  bottom: 8px;
+  left: 540px;
+}
