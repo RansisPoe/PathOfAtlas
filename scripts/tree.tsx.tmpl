@@ -1,0 +1,26 @@
+export interface PassiveMod {
+  modType: string
+  description: string
+  amount: number | null
+  modGroup: string
+}
+
+export interface SkillNode {
+  x: number
+  y: number
+  name: string
+  stats: PassiveMod[]
+  neighbors: number[]
+}
+
+export const skillList: SkillNode[] = $REPLACEME
+
+const yscale = 2.605
+const ybase = 4540
+const xscale = 2.61
+const xbase = 2560
+
+skillList.forEach((skill) => {
+  skill.x = (skill.x + xbase * xscale) / xscale
+  skill.y = (skill.y + ybase * yscale) / yscale
+})

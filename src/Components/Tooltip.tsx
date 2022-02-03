@@ -12,7 +12,7 @@ const ToolTip = (props: any) => {
       <Rect width={width} height={(valArray?.length + 1) * 25 * props.currentScale} fill="rgba(0,0,0,0.9)" cornerRadius={8} />
       <Text fontSize={12 * props.currentScale} fill="#fff" text={name || ''} fontStyle="bold" x={10} y={8 * props.currentScale} />
       {valArray.map((val: string, index: number) => (
-        <Text fontSize={12 * props.currentScale} fill="#fff" text={val} x={10} y={24 * props.currentScale * (index + 1)} />
+        <Text key={index} fontSize={12 * props.currentScale} fill="#fff" text={val} x={10} y={24 * props.currentScale * (index + 1)} />
       ))}
     </Group>
   )

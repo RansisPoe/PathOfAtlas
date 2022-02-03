@@ -8344,7 +8344,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
         amount: 5,
         description: '5% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [562, 560]
@@ -8358,7 +8358,7 @@ export const skillList: SkillNode[] = [
         modType: '$AMOUNT% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
         amount: 5,
         description: '5% increased Quantity of Vendor Refresh Currencies dropped by Monsters in Areas',
-        modGroup: 'Maps'
+        modGroup: 'Expedition'
       }
     ],
     neighbors: [560, 557]
