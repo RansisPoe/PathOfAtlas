@@ -41,10 +41,9 @@ const SavedTree: React.FC<SavedTreeProps> = (props) => {
 
   return (
     <div>
-      <h4>{props.name}</h4>
+      <h3>{props.name}</h3>
       <p>Allocated nodes: {allocatedNodes}/ 128</p>
       <p>Refunds required: {refundsNeeded}</p>
-
       <button style={{ marginRight: 10 }} onClick={() => props.loadTree(props.treeBits)}>
         Load
       </button>
