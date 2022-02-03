@@ -138,7 +138,13 @@ class App extends React.Component<any, AppState> {
       <div className="App">
         <Sidebar toggles={this.state.toggles}></Sidebar>
         <Searchbar setSearch={this.search.bind(this)}></Searchbar>
-        <Checkbox toggle={this.toggleLenDisplay} displayLen={this.state.displayLen} />
+
+        <div className="checkboxes">
+          <Checkbox toggle={this.toggleLenDisplay} checked={this.state.displayLen}>
+            Display path length
+          </Checkbox>
+        </div>
+
         <CanvasTree
           toggles={this.state.toggles}
           searched={this.state.searched}
