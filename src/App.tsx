@@ -4,7 +4,7 @@ import './App.css'
 import CanvasTree from './Components/Canvas'
 import Sidebar from './Components/Sidebar'
 import Searchbar from './Components/Searchbar'
-import { findShortestPath, disconnectedSearch, encodeBitList, parseBitList } from './utils'
+import { findShortestPath, disconnectedSearch, parseEitherEncodedTree, encodePoeCompatibleTree } from './utils'
 import { skillList } from './tree'
 import Checkbox from './Components/Checkbox'
 import SavedTrees from './Components/SavedTrees'
@@ -35,7 +35,7 @@ class App extends React.Component<any, AppState> {
     if (window.location.hash && window.location.hash.length > 1) {
       try {
         const bitList = window.location.hash.slice(1)
-        this.setState({ toggles: parseBitList(bitList) })
+        this.setState({ toggles: parseEitherEncodedTree(bitList) })
       } catch (err) {
         console.error('failed to parse build', err)
       }
@@ -49,7 +49,7 @@ class App extends React.Component<any, AppState> {
   }
 
   setUrl(toggles: boolean[]) {
-    window.history.replaceState(null, '', '#' + encodeBitList(toggles))
+    window.history.replaceState(null, '', '#' + encodePoeCompatibleTree(toggles))
   }
 
   toggleIndex(index: number) {
@@ -143,15 +143,15 @@ class App extends React.Component<any, AppState> {
 
   loadTreeHandler = (bits: string) => {
     const bitList = bits.slice(1)
-    this.setState({ toggles: parseBitList(bitList) })
-    this.setUrl(parseBitList(bitList))
+    this.setState({ toggles: parseEitherEncodedTree(bitList) })
+    this.setUrl(parseEitherEncodedTree(bitList))
   }
 
   render() {
     return (
       <div className="App">
         {this.state.showSavedTrees ? (
-          <SavedTrees currentBits={'#' + encodeBitList(this.state.toggles)} loadTree={(bits) => this.loadTreeHandler(bits)} />
+          <SavedTrees currentBits={'#' + encodePoeCompatibleTree(this.state.toggles)} loadTree={(bits) => this.loadTreeHandler(bits)} />
         ) : (
           <Sidebar toggles={this.state.toggles}></Sidebar>
         )}

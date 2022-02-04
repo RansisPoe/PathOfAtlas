@@ -4,7 +4,8 @@
   "plugins": ["prettier", "jest"],
   "parser": "@typescript-eslint/parser",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
   "rules": {
     "prettier/prettier": ["error"],

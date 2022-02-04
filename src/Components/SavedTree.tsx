@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { parseBitList } from '../utils'
+import { parseEitherEncodedTree } from '../utils'
 
 interface SavedTreeProps {
   name: string
@@ -15,8 +15,8 @@ const SavedTree: React.FC<SavedTreeProps> = (props) => {
   const [refundsNeeded, setRefundsNeeded] = useState(0)
 
   const updateTrees = () => {
-    const parsedCurrent = parseBitList(props.currentBits.slice(props.currentBits.indexOf('#')))
-    const parsedSaved = parseBitList(props.treeBits.slice(1))
+    const parsedCurrent = parseEitherEncodedTree(props.currentBits.slice(props.currentBits.indexOf('#')))
+    const parsedSaved = parseEitherEncodedTree(props.treeBits.slice(1))
 
     let allocatedNodes = 0
     let refundsNeeded = 0
