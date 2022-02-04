@@ -85,7 +85,7 @@ export function parseBitList(encodedBitList: string): boolean[] {
     }
   })
 
-  return bitList.slice(0, skillList.length)
+  return bitList
 }
 
 export function encodePoeCompatibleTree(bitlist: boolean[]): string {
@@ -131,4 +131,27 @@ export function decodePoeCompatibleTree(slug: string): boolean[] {
   }
 
   return skillList.map((node) => node.originalTreeId in treeNodeIdMap)
+}
+
+export function parseEitherEncodedTree(slug: string): boolean[] {
+  try {
+    if (slug.length === 108) {
+      // only even try classic parsing if length is exactly 108
+      const toggles = parseBitList(slug)
+
+      // the encoded list length is actually a bit dynamic, but it has a max of 648 elements
+      if (toggles.length > 648 || toggles.length < 648 - 16) {
+        throw new Error('wrong number of passives allocated')
+      }
+
+      // extra sanity check, make sure one of the first 5 nodes is allocated
+      if (!toggles[0] && !toggles[1] && !toggles[2] && !toggles[3] && !toggles[4]) {
+        throw new Error('no starter passives allocated')
+      }
+
+      return toggles.slice(0, skillList.length)
+    }
+  } catch {}
+
+  return decodePoeCompatibleTree(slug)
 }

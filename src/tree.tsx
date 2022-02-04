@@ -76,7 +76,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 42692
   },
   {
-    x: -885.4514897322128,
+    x: -885.451489732213,
     y: -498.3950000000001,
     name: 'Adjacent Map Drop Chance',
     stats: [
@@ -1148,7 +1148,7 @@ export const skillList: SkillNode[] = [
   },
   {
     x: -4086.205397612489,
-    y: -7795.391421344764,
+    y: -7795.391421344763,
     name: 'Searing Exarch Item Chance',
     stats: [
       {
@@ -2586,7 +2586,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 2657
   },
   {
-    x: -1829.7238845869208,
+    x: -1829.723884586921,
     y: -2537.9,
     name: 'Additional Delirium Reward Chance',
     stats: [
@@ -3066,7 +3066,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 788
   },
   {
-    x: -1325.4138845869209,
+    x: -1325.413884586921,
     y: -4222.21,
     name: 'Vaal Side Area Chance',
     stats: [
@@ -3132,7 +3132,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 53581
   },
   {
-    x: -1325.4138845869209,
+    x: -1325.413884586921,
     y: -3048.75,
     name: 'Imprisoned Monster Additional Essence Chance',
     stats: [
@@ -3510,7 +3510,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 32604
   },
   {
-    x: -903.271489732213,
+    x: -903.2714897322131,
     y: -3550.7,
     name: 'Additional Metamorph Sample Reward',
     stats: [
@@ -4580,7 +4580,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 41861
   },
   {
-    x: -142.7788845869209,
+    x: -142.77888458692092,
     y: -1027.6,
     name: 'Essence Rare Chance',
     stats: [
@@ -4706,7 +4706,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 44048
   },
   {
-    x: 138.4911154130791,
+    x: 138.49111541307906,
     y: -5101.15,
     name: 'Strongbox Chance to be Reopenable ',
     stats: [
@@ -4940,7 +4940,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 64969
   },
   {
-    x: 732.2824916016352,
+    x: 732.2824916016351,
     y: -6164.76,
     name: 'Item Quantity',
     stats: [
@@ -5105,7 +5105,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 37452
   },
   {
-    x: 139.9211154130791,
+    x: 139.92111541307906,
     y: -5991.48,
     name: 'Exile Pair Chance',
     stats: [
@@ -5150,7 +5150,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 26414
   },
   {
-    x: 289.74351026778703,
+    x: 289.743510267787,
     y: -4442.71,
     name: 'Higher Map Tier Chance',
     stats: [
@@ -5414,7 +5414,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 41999
   },
   {
-    x: 289.74351026778703,
+    x: 289.743510267787,
     y: -3550.7,
     name: 'Kirac Map Quality',
     stats: [
@@ -5832,7 +5832,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 30365
   },
   {
-    x: 291.643510267787,
+    x: 291.64351026778695,
     y: -8081.459999999999,
     name: 'Maven Invitation Item Quantity',
     stats: [
@@ -5892,7 +5892,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 35537
   },
   {
-    x: 422.6211154130791,
+    x: 422.62111541307905,
     y: -1027.48,
     name: 'Strongbox Additional Pack Chance',
     stats: [
@@ -6783,7 +6783,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 53175
   },
   {
-    x: 1451.3085102677871,
+    x: 1451.308510267787,
     y: -3550.7,
     name: 'Harvest Chance',
     stats: [
@@ -7038,7 +7038,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 59224
   },
   {
-    x: 1472.5861154130791,
+    x: 1472.586115413079,
     y: -6508.44,
     name: 'Sulphite Infusion',
     stats: [
@@ -7146,7 +7146,7 @@ export const skillList: SkillNode[] = [
     originalTreeId: 49177
   },
   {
-    x: 1601.4861154130792,
+    x: 1601.486115413079,
     y: -5269.25,
     name: 'Abyss Chance',
     stats: [
