@@ -19,6 +19,7 @@ interface CanvasTreeProps {
   toggles: boolean[]
   searched: boolean[]
   toggleIndex: any
+  displayLen: boolean
 }
 interface TooltipData {
   x: number
@@ -34,6 +35,7 @@ interface CanvasTreeState {
   hoveredIndex?: number
   windowWidth: number
   windowHeight: number
+  shortestPath: number
 }
 
 const emptyHoverList = skillList.map((skill) => false)
@@ -49,7 +51,8 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
     hoveredIndex: undefined,
     tooltip: undefined,
     windowWidth: window.innerWidth,
-    windowHeight: window.innerHeight
+    windowHeight: window.innerHeight,
+    shortestPath: 0
   }
 
   handleResize = () => {
@@ -93,6 +96,7 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
         minPath.forEach((pathIndex: any) => {
           hoveredList[pathIndex] = true
         })
+        this.setState({ shortestPath: minPath.length - 1 })
       }
       this.setState({ tooltip, hoveredList })
     } else {
@@ -168,6 +172,8 @@ class CanvasTree extends React.Component<CanvasTreeProps, CanvasTreeState> {
             toggleIndex={this.props.toggleIndex}
             setHover={this.setHover.bind(this)}
             hoveredList={this.state.hoveredList}
+            shortestPath={this.state.shortestPath}
+            displayLen={this.props.displayLen}
           ></SkillTree>
           {this.state?.tooltip && <ToolTip data={this.state.tooltip} currentScale={1 / this.getCurrentScale()} />}
         </Layer>

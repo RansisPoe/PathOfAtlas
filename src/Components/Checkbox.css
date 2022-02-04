@@ -1,0 +1,9 @@
+.checkbox input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox label {
+  color: white;
+  width: auto;
+}

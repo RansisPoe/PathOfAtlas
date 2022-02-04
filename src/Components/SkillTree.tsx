@@ -10,6 +10,8 @@ interface SkillTreeProps {
   hoveredList: boolean[]
   toggleIndex: any
   setHover: any
+  shortestPath: number
+  displayLen: boolean
 }
 
 class SkillTree extends React.Component<SkillTreeProps> {
@@ -45,6 +47,8 @@ class SkillTree extends React.Component<SkillTreeProps> {
                 searched={this.props.searched[index]}
                 onClick={this.toggleIndex.bind(this, index)}
                 setHover={this.props.setHover}
+                shortestPath={this.props.shortestPath}
+                displayLen={this.props.displayLen}
               ></SkillCircle>
               {skillList[index].neighbors.map((neighbor) =>
                 checkIndex(index, neighbor) ? (

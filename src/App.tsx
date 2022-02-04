@@ -1,3 +1,4 @@
+/* eslint-disable multiline-ternary */
 import React from 'react'
 import './App.css'
 import CanvasTree from './Components/Canvas'
@@ -5,12 +6,16 @@ import Sidebar from './Components/Sidebar'
 import Searchbar from './Components/Searchbar'
 import { findShortestPath, disconnectedSearch, encodeBitList, parseBitList } from './utils'
 import { skillList } from './tree'
+import Checkbox from './Components/Checkbox'
+import SavedTrees from './Components/SavedTrees'
 
 interface AppState {
   toggles: boolean[]
   searched: boolean[]
   history: boolean[][]
   redoHistory: boolean[][]
+  displayLen: boolean
+  showSavedTrees: boolean
 }
 
 const _history: boolean[][] = []
@@ -21,7 +26,9 @@ class App extends React.Component<any, AppState> {
     toggles: skillList.map((skill) => false),
     searched: skillList.map((skill) => false),
     history: _history,
-    redoHistory: _redoHistory
+    redoHistory: _redoHistory,
+    displayLen: false,
+    showSavedTrees: false
   }
 
   componentDidMount() {
@@ -126,12 +133,43 @@ class App extends React.Component<any, AppState> {
     }
   }
 
+  toggleLenDisplay = () => {
+    this.setState({ displayLen: !this.state.displayLen })
+  }
+
+  toggleSavedTray = () => {
+    this.setState({ showSavedTrees: !this.state.showSavedTrees })
+  }
+
+  loadTreeHandler = (bits: string) => {
+    const bitList = bits.slice(1)
+    this.setState({ toggles: parseBitList(bitList) })
+    this.setUrl(parseBitList(bitList))
+  }
+
   render() {
     return (
       <div className="App">
-        <Sidebar toggles={this.state.toggles}></Sidebar>
+        {this.state.showSavedTrees ? (
+          <SavedTrees currentBits={'#' + encodeBitList(this.state.toggles)} loadTree={(bits) => this.loadTreeHandler(bits)} />
+        ) : (
+          <Sidebar toggles={this.state.toggles}></Sidebar>
+        )}
         <Searchbar setSearch={this.search.bind(this)}></Searchbar>
-        <CanvasTree toggles={this.state.toggles} searched={this.state.searched} toggleIndex={this.toggleIndex.bind(this)}></CanvasTree>
+        <div className="checkboxes">
+          <Checkbox toggle={this.toggleLenDisplay} checked={this.state.displayLen}>
+            Display path length
+          </Checkbox>
+          <Checkbox toggle={this.toggleSavedTray} checked={this.state.showSavedTrees}>
+            Show saved trees
+          </Checkbox>
+        </div>
+        <CanvasTree
+          toggles={this.state.toggles}
+          searched={this.state.searched}
+          toggleIndex={this.toggleIndex.bind(this)}
+          displayLen={this.state.displayLen}
+        ></CanvasTree>
       </div>
     )
   }
