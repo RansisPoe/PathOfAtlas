@@ -152,6 +152,7 @@ for i, x in enumerate(nodes):
         "name": x["name"],
         "stats": stats,
         "neighbors": neighbors,
+        "originalTreeId": x["skill"],
     })
 
 treeStr = json.dumps(ret)

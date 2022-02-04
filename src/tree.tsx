@@ -11,6 +11,7 @@ export interface SkillNode {
   name: string
   stats: PassiveMod[]
   neighbors: number[]
+  originalTreeId: number
 }
 
 export const skillList: SkillNode[] = [
@@ -26,7 +27,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [440, 437]
+    neighbors: [440, 437],
+    originalTreeId: 44775
   },
   {
     x: 422.62499999999994,
@@ -40,7 +42,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [408, 371]
+    neighbors: [408, 371],
+    originalTreeId: 55117
   },
   {
     x: -0.375,
@@ -54,7 +57,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [370, 291, 301]
+    neighbors: [370, 291, 301],
+    originalTreeId: 64048
   },
   {
     x: -423.3750000000004,
@@ -68,10 +72,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [292, 248]
+    neighbors: [292, 248],
+    originalTreeId: 42692
   },
   {
-    x: -885.451489732213,
+    x: -885.4514897322128,
     y: -498.3950000000001,
     name: 'Adjacent Map Drop Chance',
     stats: [
@@ -82,7 +87,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [229, 232]
+    neighbors: [229, 232],
+    originalTreeId: 63311
   },
   {
     x: -4694.17,
@@ -96,7 +102,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [6, 34, 9]
+    neighbors: [6, 34, 9],
+    originalTreeId: 8235
   },
   {
     x: -4856.17,
@@ -110,7 +117,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [7, 5]
+    neighbors: [7, 5],
+    originalTreeId: 49074
   },
   {
     x: -5018.17,
@@ -124,7 +132,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [8, 6]
+    neighbors: [8, 6],
+    originalTreeId: 41753
   },
   {
     x: -4937.17,
@@ -138,7 +147,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [9, 7]
+    neighbors: [9, 7],
+    originalTreeId: 28166
   },
   {
     x: -4775.17,
@@ -152,7 +162,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [5, 8]
+    neighbors: [5, 8],
+    originalTreeId: 1238
   },
   {
     x: -4691.42,
@@ -166,7 +177,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [39, 11]
+    neighbors: [39, 11],
+    originalTreeId: 54875
   },
   {
     x: -4934.42,
@@ -180,7 +192,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [10, 13]
+    neighbors: [10, 13],
+    originalTreeId: 31485
   },
   {
     x: -4934.42,
@@ -194,7 +207,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [13]
+    neighbors: [13],
+    originalTreeId: 5239
   },
   {
     x: -5015.42,
@@ -208,7 +222,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [12, 11]
+    neighbors: [12, 11],
+    originalTreeId: 29946
   },
   {
     x: -5015.38,
@@ -222,7 +237,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [15, 19, 17]
+    neighbors: [15, 19, 17],
+    originalTreeId: 2624
   },
   {
     x: -5188.38,
@@ -236,7 +252,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [14]
+    neighbors: [14],
+    originalTreeId: 23092
   },
   {
     x: -4772.38,
@@ -250,7 +267,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [22, 19, 18]
+    neighbors: [22, 19, 18],
+    originalTreeId: 60761
   },
   {
     x: -4934.38,
@@ -264,7 +282,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [14, 20, 23]
+    neighbors: [14, 20, 23],
+    originalTreeId: 55725
   },
   {
     x: -4691.38,
@@ -278,7 +297,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [16, 20, 38]
+    neighbors: [16, 20, 38],
+    originalTreeId: 46840
   },
   {
     x: -4934.38,
@@ -292,7 +312,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [16, 14, 21]
+    neighbors: [16, 14, 21],
+    originalTreeId: 11142
   },
   {
     x: -4772.38,
@@ -306,7 +327,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [18, 24, 17]
+    neighbors: [18, 24, 17],
+    originalTreeId: 62888
   },
   {
     x: -5020.88,
@@ -320,7 +342,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [19]
+    neighbors: [19],
+    originalTreeId: 11194
   },
   {
     x: -4685.88,
@@ -334,7 +357,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [16]
+    neighbors: [16],
+    originalTreeId: 52011
   },
   {
     x: -5020.88,
@@ -348,7 +372,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [17]
+    neighbors: [17],
+    originalTreeId: 31941
   },
   {
     x: -4685.88,
@@ -362,7 +387,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [20]
+    neighbors: [20],
+    originalTreeId: 46353
   },
   {
     x: -4061.7299999999996,
@@ -376,7 +402,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [33, 30, 32]
+    neighbors: [33, 30, 32],
+    originalTreeId: 16915
   },
   {
     x: -4396.73,
@@ -390,7 +417,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [32, 27]
+    neighbors: [32, 27],
+    originalTreeId: 22988
   },
   {
     x: -4564.23,
@@ -404,7 +432,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [26, 28]
+    neighbors: [26, 28],
+    originalTreeId: 52867
   },
   {
     x: -4686.848510267786,
@@ -418,7 +447,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [27]
+    neighbors: [27],
+    originalTreeId: 799
   },
   {
     x: -4396.73,
@@ -432,7 +462,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [30, 31]
+    neighbors: [30, 31],
+    originalTreeId: 32732
   },
   {
     x: -4229.23,
@@ -446,7 +477,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [25, 29]
+    neighbors: [25, 29],
+    originalTreeId: 2750
   },
   {
     x: -4564.23,
@@ -460,7 +492,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [29]
+    neighbors: [29],
+    originalTreeId: 64797
   },
   {
     x: -4229.23,
@@ -474,7 +507,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [25, 26]
+    neighbors: [25, 26],
+    originalTreeId: 44778
   },
   {
     x: -3550.7299999999996,
@@ -488,7 +522,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [93, 95, 25, 37, 35, 86]
+    neighbors: [93, 95, 25, 37, 35, 86],
+    originalTreeId: 41694
   },
   {
     x: -4396.73,
@@ -502,7 +537,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [5, 37, 48, 40]
+    neighbors: [5, 37, 48, 40],
+    originalTreeId: 40369
   },
   {
     x: -3664.0725083983643,
@@ -516,7 +552,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [33, 36]
+    neighbors: [33, 36],
+    originalTreeId: 41425
   },
   {
     x: -3973.7299999999996,
@@ -530,7 +567,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [35, 58, 41]
+    neighbors: [35, 58, 41],
+    originalTreeId: 53540
   },
   {
     x: -3798.5176631161803,
@@ -544,7 +582,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [33, 34]
+    neighbors: [33, 34],
+    originalTreeId: 64218
   },
   {
     x: -4396.36,
@@ -558,7 +597,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [18, 39, 51, 78, 62]
+    neighbors: [18, 39, 51, 78, 62],
+    originalTreeId: 16780
   },
   {
     x: -4396.36,
@@ -572,7 +612,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [40, 38, 64, 10]
+    neighbors: [40, 38, 64, 10],
+    originalTreeId: 31498
   },
   {
     x: -4396.36,
@@ -586,7 +627,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [34, 39]
+    neighbors: [34, 39],
+    originalTreeId: 31171
   },
   {
     x: -4229.21,
@@ -600,7 +642,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [36, 43]
+    neighbors: [36, 43],
+    originalTreeId: 186
   },
   {
     x: -4472.21,
@@ -614,7 +657,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [43, 44]
+    neighbors: [43, 44],
+    originalTreeId: 32676
   },
   {
     x: -4310.21,
@@ -628,7 +672,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [41, 42]
+    neighbors: [41, 42],
+    originalTreeId: 10631
   },
   {
     x: -4472.21,
@@ -642,7 +687,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [42]
+    neighbors: [42],
+    originalTreeId: 4272
   },
   {
     x: -4206.88,
@@ -656,7 +702,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [70, 73]
+    neighbors: [70, 73],
+    originalTreeId: 54499
   },
   {
     x: -3823.8087014477796,
@@ -670,7 +717,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [49, 47]
+    neighbors: [49, 47],
+    originalTreeId: 62476
   },
   {
     x: -3823.8087014477796,
@@ -684,7 +732,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [46]
+    neighbors: [46],
+    originalTreeId: 43055
   },
   {
     x: -4052.9112985522206,
@@ -698,7 +747,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [49, 34]
+    neighbors: [49, 34],
+    originalTreeId: 47488
   },
   {
     x: -4052.911298552221,
@@ -712,7 +762,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [48, 46]
+    neighbors: [48, 46],
+    originalTreeId: 60286
   },
   {
     x: -3822.06,
@@ -726,7 +777,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [51, 54]
+    neighbors: [51, 54],
+    originalTreeId: 3774
   },
   {
     x: -3984.06,
@@ -740,7 +792,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [53, 50, 38]
+    neighbors: [53, 50, 38],
+    originalTreeId: 28543
   },
   {
     x: -3741.06,
@@ -754,7 +807,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [54, 53]
+    neighbors: [54, 53],
+    originalTreeId: 43948
   },
   {
     x: -3903.06,
@@ -768,7 +822,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [52, 51]
+    neighbors: [52, 51],
+    originalTreeId: 27
   },
   {
     x: -3660.06,
@@ -788,7 +843,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Beyond'
       }
     ],
-    neighbors: [50, 52]
+    neighbors: [50, 52],
+    originalTreeId: 11966
   },
   {
     x: -4018.25,
@@ -802,7 +858,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [58, 56]
+    neighbors: [58, 56],
+    originalTreeId: 25272
   },
   {
     x: -3973.368510267787,
@@ -816,7 +873,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [55, 61]
+    neighbors: [55, 61],
+    originalTreeId: 16493
   },
   {
     x: -3393.131489732213,
@@ -830,7 +888,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [59, 133, 60]
+    neighbors: [59, 133, 60],
+    originalTreeId: 1683
   },
   {
     x: -3973.368510267787,
@@ -844,7 +903,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [59, 36, 55]
+    neighbors: [59, 36, 55],
+    originalTreeId: 3763
   },
   {
     x: -3515.75,
@@ -858,7 +918,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [57, 58]
+    neighbors: [57, 58],
+    originalTreeId: 16065
   },
   {
     x: -3515.75,
@@ -884,7 +945,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [57]
+    neighbors: [57],
+    originalTreeId: 1176
   },
   {
     x: -3850.75,
@@ -898,7 +960,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [56]
+    neighbors: [56],
+    originalTreeId: 13129
   },
   {
     x: -3660.74,
@@ -912,7 +975,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [38, 107, 71]
+    neighbors: [38, 107, 71],
+    originalTreeId: 2929
   },
   {
     x: -3741.74,
@@ -926,7 +990,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [67, 64]
+    neighbors: [67, 64],
+    originalTreeId: 46891
   },
   {
     x: -3822.74,
@@ -940,7 +1005,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [39, 63]
+    neighbors: [39, 63],
+    originalTreeId: 58236
   },
   {
     x: -3579.74,
@@ -954,7 +1020,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [67, 66]
+    neighbors: [67, 66],
+    originalTreeId: 56397
   },
   {
     x: -3498.74,
@@ -968,7 +1035,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [65, 122]
+    neighbors: [65, 122],
+    originalTreeId: 37260
   },
   {
     x: -3660.74,
@@ -990,7 +1058,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [65, 63]
+    neighbors: [65, 63],
+    originalTreeId: 37197
   },
   {
     x: -3887.0973348815924,
@@ -1006,7 +1075,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [70, 71]
+    neighbors: [70, 71],
+    originalTreeId: 23827
   },
   {
     x: -3434.262665118407,
@@ -1022,7 +1092,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [72, 71]
+    neighbors: [72, 71],
+    originalTreeId: 23887
   },
   {
     x: -4086.205397612489,
@@ -1038,7 +1109,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [45, 68]
+    neighbors: [45, 68],
+    originalTreeId: 17827
   },
   {
     x: -3660.68,
@@ -1054,7 +1126,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [62, 68, 69]
+    neighbors: [62, 68, 69],
+    originalTreeId: 27100
   },
   {
     x: -3235.1546023875107,
@@ -1070,11 +1143,12 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [83, 69]
+    neighbors: [83, 69],
+    originalTreeId: 53603
   },
   {
     x: -4086.205397612489,
-    y: -7795.391421344763,
+    y: -7795.391421344764,
     name: 'Searing Exarch Item Chance',
     stats: [
       {
@@ -1086,7 +1160,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [45, 74]
+    neighbors: [45, 74],
+    originalTreeId: 59859
   },
   {
     x: -3887.097334881593,
@@ -1102,7 +1177,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [77, 73]
+    neighbors: [77, 73],
+    originalTreeId: 36483
   },
   {
     x: -3434.2626651184073,
@@ -1118,7 +1194,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [77, 76]
+    neighbors: [77, 76],
+    originalTreeId: 12102
   },
   {
     x: -3235.1546023875107,
@@ -1134,7 +1211,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [75, 83]
+    neighbors: [75, 83],
+    originalTreeId: 57451
   },
   {
     x: -3660.68,
@@ -1160,7 +1238,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Searing Exarch'
       }
     ],
-    neighbors: [74, 75]
+    neighbors: [74, 75],
+    originalTreeId: 35628
   },
   {
     x: -3660.15,
@@ -1174,7 +1253,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [122, 38]
+    neighbors: [122, 38],
+    originalTreeId: 57123
   },
   {
     x: -3185.613884586921,
@@ -1188,7 +1268,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [133, 80]
+    neighbors: [133, 80],
+    originalTreeId: 51296
   },
   {
     x: -3185.613884586921,
@@ -1202,7 +1283,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [79, 81]
+    neighbors: [79, 81],
+    originalTreeId: 40248
   },
   {
     x: -3325.91,
@@ -1216,7 +1298,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [80, 82]
+    neighbors: [80, 82],
+    originalTreeId: 51743
   },
   {
     x: -3466.206115413079,
@@ -1236,7 +1319,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [81]
+    neighbors: [81],
+    originalTreeId: 30645
   },
   {
     x: -3104.59,
@@ -1262,7 +1346,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [72, 76]
+    neighbors: [72, 76],
+    originalTreeId: 55003
   },
   {
     x: -3099.11,
@@ -1276,7 +1361,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [85, 88]
+    neighbors: [85, 88],
+    originalTreeId: 28736
   },
   {
     x: -2764.11,
@@ -1290,7 +1376,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [87, 84]
+    neighbors: [87, 84],
+    originalTreeId: 48918
   },
   {
     x: -3221.728510267787,
@@ -1304,7 +1391,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [33, 91, 92]
+    neighbors: [33, 91, 92],
+    originalTreeId: 52171
   },
   {
     x: -2641.4914897322133,
@@ -1318,7 +1406,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [90, 85]
+    neighbors: [90, 85],
+    originalTreeId: 15324
   },
   {
     x: -3221.728510267787,
@@ -1338,7 +1427,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [84, 91]
+    neighbors: [84, 91],
+    originalTreeId: 2276
   },
   {
     x: -2641.4914897322133,
@@ -1352,7 +1442,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [90, 217, 92]
+    neighbors: [90, 217, 92],
+    originalTreeId: 49607
   },
   {
     x: -2596.61,
@@ -1366,7 +1457,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [89, 87]
+    neighbors: [89, 87],
+    originalTreeId: 21467
   },
   {
     x: -3266.61,
@@ -1380,7 +1472,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [86, 88]
+    neighbors: [86, 88],
+    originalTreeId: 35138
   },
   {
     x: -2931.61,
@@ -1394,7 +1487,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [89, 86]
+    neighbors: [89, 86],
+    originalTreeId: 9455
   },
   {
     x: -2931.6,
@@ -1408,7 +1502,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [216, 33]
+    neighbors: [216, 33],
+    originalTreeId: 51133
   },
   {
     x: -2641.481489732213,
@@ -1422,7 +1517,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [100, 227, 98]
+    neighbors: [100, 227, 98],
+    originalTreeId: 13088
   },
   {
     x: -3221.7185102677868,
@@ -1436,7 +1532,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [33, 97, 100]
+    neighbors: [33, 97, 100],
+    originalTreeId: 63521
   },
   {
     x: -3221.7185102677868,
@@ -1450,7 +1547,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [97, 99]
+    neighbors: [97, 99],
+    originalTreeId: 37552
   },
   {
     x: -3266.6,
@@ -1464,7 +1562,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [95, 96]
+    neighbors: [95, 96],
+    originalTreeId: 43701
   },
   {
     x: -2596.6,
@@ -1478,7 +1577,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [94]
+    neighbors: [94],
+    originalTreeId: 22806
   },
   {
     x: -3099.1,
@@ -1498,7 +1598,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [96]
+    neighbors: [96],
+    originalTreeId: 26802
   },
   {
     x: -2931.6,
@@ -1512,7 +1613,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [95, 94]
+    neighbors: [95, 94],
+    originalTreeId: 4316
   },
   {
     x: -3071.296115413079,
@@ -1526,7 +1628,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [102, 104]
+    neighbors: [102, 104],
+    originalTreeId: 64742
   },
   {
     x: -2931.0,
@@ -1540,7 +1643,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [107, 101, 105]
+    neighbors: [107, 101, 105],
+    originalTreeId: 27852
   },
   {
     x: -2931.0,
@@ -1554,7 +1658,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [106, 104]
+    neighbors: [106, 104],
+    originalTreeId: 31134
   },
   {
     x: -3071.296115413079,
@@ -1568,7 +1673,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [103, 101]
+    neighbors: [103, 101],
+    originalTreeId: 39224
   },
   {
     x: -2790.703884586921,
@@ -1582,7 +1688,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [102, 106]
+    neighbors: [102, 106],
+    originalTreeId: 50518
   },
   {
     x: -2790.703884586921,
@@ -1596,7 +1703,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [105, 103]
+    neighbors: [105, 103],
+    originalTreeId: 43252
   },
   {
     x: -2931.0,
@@ -1610,7 +1718,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [62, 111, 102, 147]
+    neighbors: [62, 111, 102, 147],
+    originalTreeId: 18383
   },
   {
     x: -3308.659910457656,
@@ -1624,7 +1733,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: []
+    neighbors: [],
+    originalTreeId: 12428
   },
   {
     x: -2553.340089542344,
@@ -1638,7 +1748,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: []
+    neighbors: [],
+    originalTreeId: 46829
   },
   {
     x: -2790.703884586921,
@@ -1652,7 +1763,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [112, 111]
+    neighbors: [112, 111],
+    originalTreeId: 26007
   },
   {
     x: -2931.0,
@@ -1666,7 +1778,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [110, 107]
+    neighbors: [110, 107],
+    originalTreeId: 9816
   },
   {
     x: -2931.0,
@@ -1680,7 +1793,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [113, 110]
+    neighbors: [113, 110],
+    originalTreeId: 18189
   },
   {
     x: -3093.0,
@@ -1694,7 +1808,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [112]
+    neighbors: [112],
+    originalTreeId: 55126
   },
   {
     x: -2931.0,
@@ -1708,7 +1823,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [122, 120, 116]
+    neighbors: [122, 120, 116],
+    originalTreeId: 24653
   },
   {
     x: -2790.703884586921,
@@ -1722,7 +1838,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: []
+    neighbors: [],
+    originalTreeId: 47465
   },
   {
     x: -3177.5,
@@ -1736,7 +1853,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [114, 117]
+    neighbors: [114, 117],
+    originalTreeId: 51124
   },
   {
     x: -3394.268462047453,
@@ -1750,7 +1868,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [116, 118]
+    neighbors: [116, 118],
+    originalTreeId: 46977
   },
   {
     x: -3424.0,
@@ -1764,7 +1883,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [117]
+    neighbors: [117],
+    originalTreeId: 11112
   },
   {
     x: -2467.731537952547,
@@ -1778,7 +1898,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [120, 121]
+    neighbors: [120, 121],
+    originalTreeId: 34979
   },
   {
     x: -2684.5,
@@ -1792,7 +1913,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [114, 119]
+    neighbors: [114, 119],
+    originalTreeId: 35529
   },
   {
     x: -2438.0,
@@ -1818,7 +1940,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [119]
+    neighbors: [119],
+    originalTreeId: 56199
   },
   {
     x: -2931.0,
@@ -1832,7 +1955,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [66, 114, 141, 123, 78, 160]
+    neighbors: [66, 114, 141, 123, 78, 160],
+    originalTreeId: 5338
   },
   {
     x: -2931.0,
@@ -1846,7 +1970,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [122, 125, 124]
+    neighbors: [122, 125, 124],
+    originalTreeId: 27035
   },
   {
     x: -3071.296115413079,
@@ -1860,7 +1985,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [123, 127]
+    neighbors: [123, 127],
+    originalTreeId: 28752
   },
   {
     x: -2790.703884586921,
@@ -1874,7 +2000,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [128, 123]
+    neighbors: [128, 123],
+    originalTreeId: 47178
   },
   {
     x: -2931.0,
@@ -1888,7 +2015,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [128, 127]
+    neighbors: [128, 127],
+    originalTreeId: 54829
   },
   {
     x: -3071.296115413079,
@@ -1902,7 +2030,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [126, 124]
+    neighbors: [126, 124],
+    originalTreeId: 13917
   },
   {
     x: -2790.703884586921,
@@ -1916,7 +2045,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [125, 126]
+    neighbors: [125, 126],
+    originalTreeId: 57969
   },
   {
     x: -2931.0,
@@ -1930,7 +2060,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [133, 130]
+    neighbors: [133, 130],
+    originalTreeId: 37170
   },
   {
     x: -3071.296115413079,
@@ -1944,7 +2075,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [129, 131]
+    neighbors: [129, 131],
+    originalTreeId: 21051
   },
   {
     x: -2931.0,
@@ -1958,7 +2090,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [130, 132]
+    neighbors: [130, 132],
+    originalTreeId: 59436
   },
   {
     x: -2790.703884586921,
@@ -1972,7 +2105,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [131]
+    neighbors: [131],
+    originalTreeId: 16908
   },
   {
     x: -2931.0,
@@ -1986,7 +2120,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [57, 79, 135, 153, 129]
+    neighbors: [57, 79, 135, 153, 129],
+    originalTreeId: 35217
   },
   {
     x: -2083.31,
@@ -2000,7 +2135,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [139, 231, 136]
+    neighbors: [139, 231, 136],
+    originalTreeId: 27901
   },
   {
     x: -2585.81,
@@ -2014,7 +2150,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [139, 133, 137]
+    neighbors: [139, 133, 137],
+    originalTreeId: 22085
   },
   {
     x: -2128.191489732213,
@@ -2028,7 +2165,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [134, 138]
+    neighbors: [134, 138],
+    originalTreeId: 12036
   },
   {
     x: -2708.428510267787,
@@ -2042,7 +2180,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [135, 140]
+    neighbors: [135, 140],
+    originalTreeId: 38113
   },
   {
     x: -2250.81,
@@ -2062,7 +2201,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [136]
+    neighbors: [136],
+    originalTreeId: 11516
   },
   {
     x: -2250.81,
@@ -2076,7 +2216,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [134, 135]
+    neighbors: [134, 135],
+    originalTreeId: 17889
   },
   {
     x: -2753.31,
@@ -2096,7 +2237,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [137]
+    neighbors: [137],
+    originalTreeId: 12142
   },
   {
     x: -2197.57,
@@ -2110,7 +2252,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [192, 122]
+    neighbors: [192, 122],
+    originalTreeId: 7771
   },
   {
     x: -2196.5,
@@ -2124,7 +2267,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Scarabs'
       }
     ],
-    neighbors: [143, 145]
+    neighbors: [143, 145],
+    originalTreeId: 42038
   },
   {
     x: -2336.796115413079,
@@ -2138,7 +2282,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Scarabs'
       }
     ],
-    neighbors: [142, 146]
+    neighbors: [142, 146],
+    originalTreeId: 12875
   },
   {
     x: -2196.5,
@@ -2152,7 +2297,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Scarabs'
       }
     ],
-    neighbors: [146, 147]
+    neighbors: [146, 147],
+    originalTreeId: 47818
   },
   {
     x: -2056.203884586921,
@@ -2166,7 +2312,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Scarabs'
       }
     ],
-    neighbors: [142]
+    neighbors: [142],
+    originalTreeId: 27792
   },
   {
     x: -2336.796115413079,
@@ -2180,7 +2327,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Scarabs'
       }
     ],
-    neighbors: [143, 144]
+    neighbors: [143, 144],
+    originalTreeId: 31
   },
   {
     x: -2196.5,
@@ -2194,7 +2342,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [107, 144, 149, 204]
+    neighbors: [107, 144, 149, 204],
+    originalTreeId: 36820
   },
   {
     x: -2056.203884586921,
@@ -2208,7 +2357,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [151, 152]
+    neighbors: [151, 152],
+    originalTreeId: 34456
   },
   {
     x: -2196.5,
@@ -2222,7 +2372,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [147, 151]
+    neighbors: [147, 151],
+    originalTreeId: 34793
   },
   {
     x: -2336.796115413079,
@@ -2236,7 +2387,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [152]
+    neighbors: [152],
+    originalTreeId: 5568
   },
   {
     x: -2056.203884586921,
@@ -2250,7 +2402,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [149, 148]
+    neighbors: [149, 148],
+    originalTreeId: 2524
   },
   {
     x: -2196.5,
@@ -2264,7 +2417,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [148, 150]
+    neighbors: [148, 150],
+    originalTreeId: 61771
   },
   {
     x: -2196.35,
@@ -2278,7 +2432,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [169, 201, 133]
+    neighbors: [169, 201, 133],
+    originalTreeId: 32029
   },
   {
     x: -1989.15,
@@ -2292,7 +2447,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [157, 192]
+    neighbors: [157, 192],
+    originalTreeId: 41336
   },
   {
     x: -2313.15,
@@ -2306,7 +2462,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [158, 156]
+    neighbors: [158, 156],
+    originalTreeId: 63694
   },
   {
     x: -2232.15,
@@ -2320,7 +2477,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [155, 157]
+    neighbors: [155, 157],
+    originalTreeId: 20317
   },
   {
     x: -2070.15,
@@ -2334,7 +2492,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [156, 154]
+    neighbors: [156, 154],
+    originalTreeId: 26806
   },
   {
     x: -2151.15,
@@ -2348,7 +2507,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [155]
+    neighbors: [155],
+    originalTreeId: 22804
   },
   {
     x: -1907.6238845869211,
@@ -2362,7 +2522,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [162, 214]
+    neighbors: [162, 214],
+    originalTreeId: 49338
   },
   {
     x: -2188.216115413079,
@@ -2376,7 +2537,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [122, 162, 163]
+    neighbors: [122, 162, 163],
+    originalTreeId: 44471
   },
   {
     x: -2047.92,
@@ -2390,7 +2552,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [163]
+    neighbors: [163],
+    originalTreeId: 22695
   },
   {
     x: -2047.92,
@@ -2404,7 +2567,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [160, 159]
+    neighbors: [160, 159],
+    originalTreeId: 31414
   },
   {
     x: -2188.216115413079,
@@ -2418,10 +2582,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [160, 161]
+    neighbors: [160, 161],
+    originalTreeId: 2657
   },
   {
-    x: -1829.723884586921,
+    x: -1829.7238845869208,
     y: -2537.9,
     name: 'Additional Delirium Reward Chance',
     stats: [
@@ -2432,7 +2597,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [201, 165]
+    neighbors: [201, 165],
+    originalTreeId: 53193
   },
   {
     x: -1829.723884586921,
@@ -2446,7 +2612,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [164, 166]
+    neighbors: [164, 166],
+    originalTreeId: 23195
   },
   {
     x: -2110.316115413079,
@@ -2460,7 +2627,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [165, 167]
+    neighbors: [165, 167],
+    originalTreeId: 36458
   },
   {
     x: -2110.316115413079,
@@ -2474,7 +2642,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delirium'
       }
     ],
-    neighbors: [166]
+    neighbors: [166],
+    originalTreeId: 42605
   },
   {
     x: -1768.763884586921,
@@ -2488,7 +2657,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [170, 171]
+    neighbors: [170, 171],
+    originalTreeId: 30277
   },
   {
     x: -2049.356115413079,
@@ -2502,7 +2672,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [153, 171]
+    neighbors: [153, 171],
+    originalTreeId: 6171
   },
   {
     x: -1909.06,
@@ -2516,7 +2687,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [168]
+    neighbors: [168],
+    originalTreeId: 7382
   },
   {
     x: -1909.06,
@@ -2530,7 +2702,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [169, 168]
+    neighbors: [169, 168],
+    originalTreeId: 2249
   },
   {
     x: -1720.2938845869207,
@@ -2544,7 +2717,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [231, 174]
+    neighbors: [231, 174],
+    originalTreeId: 37091
   },
   {
     x: -1860.59,
@@ -2558,7 +2732,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [174, 175]
+    neighbors: [174, 175],
+    originalTreeId: 25215
   },
   {
     x: -1720.2938845869207,
@@ -2572,7 +2747,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [172, 173]
+    neighbors: [172, 173],
+    originalTreeId: 47881
   },
   {
     x: -2000.8861154130789,
@@ -2592,7 +2768,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [173]
+    neighbors: [173],
+    originalTreeId: 43261
   },
   {
     x: -2349.95,
@@ -2612,7 +2789,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [182]
+    neighbors: [182],
+    originalTreeId: 31031
   },
   {
     x: -2147.068510267787,
@@ -2626,7 +2804,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [178, 182]
+    neighbors: [178, 182],
+    originalTreeId: 25963
   },
   {
     x: -2024.4500000000003,
@@ -2646,7 +2825,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [177, 184]
+    neighbors: [177, 184],
+    originalTreeId: 121
   },
   {
     x: -1610.45,
@@ -2666,7 +2846,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [185]
+    neighbors: [185],
+    originalTreeId: 26910
   },
   {
     x: -1689.45,
@@ -2680,7 +2861,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [181, 183, 204]
+    neighbors: [181, 183, 204],
+    originalTreeId: 30019
   },
   {
     x: -1566.831489732213,
@@ -2694,7 +2876,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [185, 180]
+    neighbors: [185, 180],
+    originalTreeId: 42058
   },
   {
     x: -2191.95,
@@ -2708,7 +2891,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [177, 183, 176]
+    neighbors: [177, 183, 176],
+    originalTreeId: 36637
   },
   {
     x: -1856.95,
@@ -2722,7 +2906,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [180, 182]
+    neighbors: [180, 182],
+    originalTreeId: 64718
   },
   {
     x: -1856.95,
@@ -2736,7 +2921,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [178, 185]
+    neighbors: [178, 185],
+    originalTreeId: 31476
   },
   {
     x: -1689.45,
@@ -2750,7 +2936,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Synthesis'
       }
     ],
-    neighbors: [184, 179, 181]
+    neighbors: [184, 179, 181],
+    originalTreeId: 52473
   },
   {
     x: -1467.24,
@@ -2764,7 +2951,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [189, 192, 187]
+    neighbors: [189, 192, 187],
+    originalTreeId: 2075
   },
   {
     x: -1607.536115413079,
@@ -2778,7 +2966,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [186, 188]
+    neighbors: [186, 188],
+    originalTreeId: 55173
   },
   {
     x: -1607.5361154130792,
@@ -2792,7 +2981,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [187, 190]
+    neighbors: [187, 190],
+    originalTreeId: 25778
   },
   {
     x: -1326.9438845869208,
@@ -2806,7 +2996,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [186, 191]
+    neighbors: [186, 191],
+    originalTreeId: 55504
   },
   {
     x: -1467.24,
@@ -2826,7 +3017,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [188, 191]
+    neighbors: [188, 191],
+    originalTreeId: 57336
   },
   {
     x: -1326.9438845869208,
@@ -2840,7 +3032,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [189, 190]
+    neighbors: [189, 190],
+    originalTreeId: 2621
   },
   {
     x: -1467.23,
@@ -2854,7 +3047,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [154, 186, 217, 258, 264, 141]
+    neighbors: [154, 186, 217, 258, 264, 141],
+    originalTreeId: 13448
   },
   {
     x: -1465.71,
@@ -2868,10 +3062,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Vaal Side Areas'
       }
     ],
-    neighbors: [194, 217]
+    neighbors: [194, 217],
+    originalTreeId: 788
   },
   {
-    x: -1325.413884586921,
+    x: -1325.4138845869209,
     y: -4222.21,
     name: 'Vaal Side Area Chance',
     stats: [
@@ -2882,7 +3077,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Vaal Side Areas'
       }
     ],
-    neighbors: [193, 264, 196]
+    neighbors: [193, 264, 196],
+    originalTreeId: 54004
   },
   {
     x: -1465.71,
@@ -2902,7 +3098,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Vaal Side Areas'
       }
     ],
-    neighbors: [196]
+    neighbors: [196],
+    originalTreeId: 61918
   },
   {
     x: -1325.413884586921,
@@ -2916,7 +3113,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Vaal Side Areas'
       }
     ],
-    neighbors: [194, 195]
+    neighbors: [194, 195],
+    originalTreeId: 59610
   },
   {
     x: -1325.413884586921,
@@ -2930,10 +3128,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [199, 263, 198]
+    neighbors: [199, 263, 198],
+    originalTreeId: 53581
   },
   {
-    x: -1325.413884586921,
+    x: -1325.4138845869209,
     y: -3048.75,
     name: 'Imprisoned Monster Additional Essence Chance',
     stats: [
@@ -2944,7 +3143,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [197, 200]
+    neighbors: [197, 200],
+    originalTreeId: 34811
   },
   {
     x: -1465.71,
@@ -2958,7 +3158,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [227, 197]
+    neighbors: [227, 197],
+    originalTreeId: 52648
   },
   {
     x: -1465.71,
@@ -2972,7 +3173,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [198]
+    neighbors: [198],
+    originalTreeId: 26310
   },
   {
     x: -1465.71,
@@ -2986,7 +3188,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [164, 202, 233, 245, 263, 227, 153]
+    neighbors: [164, 202, 233, 245, 263, 227, 153],
+    originalTreeId: 37245
   },
   {
     x: -1465.71,
@@ -3000,7 +3203,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [203, 201]
+    neighbors: [203, 201],
+    originalTreeId: 12836
   },
   {
     x: -1465.71,
@@ -3014,7 +3218,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [202, 231]
+    neighbors: [202, 231],
+    originalTreeId: 27860
   },
   {
     x: -1464.45,
@@ -3028,7 +3233,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [147, 180, 215, 256, 234]
+    neighbors: [147, 180, 215, 256, 234],
+    originalTreeId: 46214
   },
   {
     x: -1526.29,
@@ -3054,7 +3260,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [208]
+    neighbors: [208],
+    originalTreeId: 2852
   },
   {
     x: -1526.29,
@@ -3068,7 +3275,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [209, 208]
+    neighbors: [209, 208],
+    originalTreeId: 158
   },
   {
     x: -1283.29,
@@ -3082,7 +3290,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [243, 209]
+    neighbors: [243, 209],
+    originalTreeId: 46439
   },
   {
     x: -1607.29,
@@ -3096,7 +3305,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [205, 206]
+    neighbors: [205, 206],
+    originalTreeId: 45964
   },
   {
     x: -1364.29,
@@ -3110,7 +3320,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [207, 206]
+    neighbors: [207, 206],
+    originalTreeId: 27343
   },
   {
     x: -1333.04,
@@ -3124,7 +3335,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [211, 213]
+    neighbors: [211, 213],
+    originalTreeId: 2811
   },
   {
     x: -1171.04,
@@ -3138,7 +3350,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [316, 210]
+    neighbors: [316, 210],
+    originalTreeId: 62989
   },
   {
     x: -1473.336115413079,
@@ -3158,7 +3371,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [213]
+    neighbors: [213],
+    originalTreeId: 4044
   },
   {
     x: -1473.336115413079,
@@ -3172,7 +3386,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [212, 210]
+    neighbors: [212, 210],
+    originalTreeId: 36791
   },
   {
     x: -1333.04,
@@ -3186,7 +3401,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [310, 159]
+    neighbors: [310, 159],
+    originalTreeId: 59361
   },
   {
     x: -1215.57,
@@ -3200,7 +3416,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [243, 204]
+    neighbors: [243, 204],
+    originalTreeId: 13284
   },
   {
     x: -2039.39,
@@ -3214,7 +3431,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [221, 227, 217, 93]
+    neighbors: [221, 227, 217, 93],
+    originalTreeId: 45563
   },
   {
     x: -1926.047491601635,
@@ -3228,7 +3446,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [193, 216, 192, 89]
+    neighbors: [193, 216, 192, 89],
+    originalTreeId: 57182
   },
   {
     x: -1025.89,
@@ -3242,7 +3461,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [222, 263, 225]
+    neighbors: [222, 263, 225],
+    originalTreeId: 53234
   },
   {
     x: -1483.508510267787,
@@ -3256,7 +3476,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [225, 221]
+    neighbors: [225, 221],
+    originalTreeId: 2647
   },
   {
     x: -1483.508510267787,
@@ -3270,7 +3491,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [221, 226]
+    neighbors: [221, 226],
+    originalTreeId: 41836
   },
   {
     x: -1528.39,
@@ -3284,10 +3506,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [219, 220, 216]
+    neighbors: [219, 220, 216],
+    originalTreeId: 32604
   },
   {
-    x: -903.2714897322131,
+    x: -903.271489732213,
     y: -3550.7,
     name: 'Additional Metamorph Sample Reward',
     stats: [
@@ -3298,7 +3521,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [223, 218]
+    neighbors: [223, 218],
+    originalTreeId: 13742
   },
   {
     x: -858.3900000000001,
@@ -3312,7 +3536,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [224, 222]
+    neighbors: [224, 222],
+    originalTreeId: 17558
   },
   {
     x: -903.2714897322132,
@@ -3326,7 +3551,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [223]
+    neighbors: [223],
+    originalTreeId: 51834
   },
   {
     x: -1360.89,
@@ -3340,7 +3566,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [218, 219]
+    neighbors: [218, 219],
+    originalTreeId: 26525
   },
   {
     x: -1193.39,
@@ -3360,7 +3587,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Metamorph'
       }
     ],
-    neighbors: [220]
+    neighbors: [220],
+    originalTreeId: 44249
   },
   {
     x: -1926.047491601635,
@@ -3374,7 +3602,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [199, 201, 216, 94]
+    neighbors: [199, 201, 216, 94],
+    originalTreeId: 51123
   },
   {
     x: -1256.57,
@@ -3388,7 +3617,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [229, 230]
+    neighbors: [229, 230],
+    originalTreeId: 8811
   },
   {
     x: -1035.2738845869208,
@@ -3402,7 +3632,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [4, 228]
+    neighbors: [4, 228],
+    originalTreeId: 22308
   },
   {
     x: -1315.8661154130791,
@@ -3416,7 +3647,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Bestiary'
       }
     ],
-    neighbors: [231, 228]
+    neighbors: [231, 228],
+    originalTreeId: 42456
   },
   {
     x: -1465.6885102677868,
@@ -3430,7 +3662,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [172, 203, 232, 134, 230]
+    neighbors: [172, 203, 232, 134, 230],
+    originalTreeId: 34244
   },
   {
     x: -1008.0699999999999,
@@ -3444,7 +3677,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [4, 231]
+    neighbors: [4, 231],
+    originalTreeId: 24555
   },
   {
     x: -1165.71,
@@ -3458,7 +3692,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [247, 201]
+    neighbors: [247, 201],
+    originalTreeId: 18958
   },
   {
     x: -1169.4561154130793,
@@ -3472,7 +3707,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [204, 237]
+    neighbors: [204, 237],
+    originalTreeId: 30508
   },
   {
     x: -888.863884586921,
@@ -3486,7 +3722,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [236, 237]
+    neighbors: [236, 237],
+    originalTreeId: 26314
   },
   {
     x: -1029.16,
@@ -3500,7 +3737,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [235]
+    neighbors: [235],
+    originalTreeId: 33418
   },
   {
     x: -1029.16,
@@ -3514,7 +3752,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [235, 234]
+    neighbors: [235, 234],
+    originalTreeId: 6032
   },
   {
     x: -1180.3400000000001,
@@ -3528,7 +3767,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [242, 239]
+    neighbors: [242, 239],
+    originalTreeId: 31951
   },
   {
     x: -1099.3400000000001,
@@ -3542,7 +3782,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [238, 240]
+    neighbors: [238, 240],
+    originalTreeId: 53417
   },
   {
     x: -937.34,
@@ -3556,7 +3797,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [239, 310]
+    neighbors: [239, 310],
+    originalTreeId: 59679
   },
   {
     x: -937.34,
@@ -3576,7 +3818,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [242]
+    neighbors: [242],
+    originalTreeId: 18466
   },
   {
     x: -1099.3400000000001,
@@ -3590,7 +3833,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [241, 238]
+    neighbors: [241, 238],
+    originalTreeId: 16933
   },
   {
     x: -989.285,
@@ -3604,7 +3848,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [207, 311, 215, 268]
+    neighbors: [207, 311, 215, 268],
+    originalTreeId: 3939
   },
   {
     x: -821.1188845869209,
@@ -3618,7 +3863,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [245, 246]
+    neighbors: [245, 246],
+    originalTreeId: 26293
   },
   {
     x: -1101.711115413079,
@@ -3632,7 +3878,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [244, 201]
+    neighbors: [244, 201],
+    originalTreeId: 54407
   },
   {
     x: -961.415,
@@ -3652,7 +3899,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [244]
+    neighbors: [244],
+    originalTreeId: 24609
   },
   {
     x: -928.855,
@@ -3666,7 +3914,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [249, 233]
+    neighbors: [249, 233],
+    originalTreeId: 38605
   },
   {
     x: -788.558884586921,
@@ -3680,7 +3929,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [3, 249]
+    neighbors: [3, 249],
+    originalTreeId: 11728
   },
   {
     x: -1069.151115413079,
@@ -3694,7 +3944,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [247, 248]
+    neighbors: [247, 248],
+    originalTreeId: 29387
   },
   {
     x: -1020.9911154130791,
@@ -3708,7 +3959,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [251, 254]
+    neighbors: [251, 254],
+    originalTreeId: 36257
   },
   {
     x: -1020.9911154130791,
@@ -3722,7 +3974,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [255, 250]
+    neighbors: [255, 250],
+    originalTreeId: 27446
   },
   {
     x: -740.398884586921,
@@ -3736,7 +3989,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [253, 255]
+    neighbors: [253, 255],
+    originalTreeId: 41442
   },
   {
     x: -740.398884586921,
@@ -3750,7 +4004,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [252, 254]
+    neighbors: [252, 254],
+    originalTreeId: 5473
   },
   {
     x: -880.695,
@@ -3764,7 +4019,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [253, 250]
+    neighbors: [253, 250],
+    originalTreeId: 37380
   },
   {
     x: -880.695,
@@ -3778,7 +4034,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Ritual'
       }
     ],
-    neighbors: [252, 251, 256]
+    neighbors: [252, 251, 256],
+    originalTreeId: 23772
   },
   {
     x: -880.535,
@@ -3792,7 +4049,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [255, 204, 279]
+    neighbors: [255, 204, 279],
+    originalTreeId: 22844
   },
   {
     x: -733.045,
@@ -3806,7 +4064,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [310, 261, 262]
+    neighbors: [310, 261, 262],
+    originalTreeId: 47794
   },
   {
     x: -976.045,
@@ -3820,7 +4079,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [259, 262, 192]
+    neighbors: [259, 262, 192],
+    originalTreeId: 49397
   },
   {
     x: -814.045,
@@ -3836,7 +4096,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [260, 258]
+    neighbors: [260, 258],
+    originalTreeId: 30292
   },
   {
     x: -814.045,
@@ -3852,7 +4113,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [259]
+    neighbors: [259],
+    originalTreeId: 36174
   },
   {
     x: -652.045,
@@ -3866,7 +4128,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [257]
+    neighbors: [257],
+    originalTreeId: 54944
   },
   {
     x: -895.0450000000001,
@@ -3880,7 +4143,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Incursion'
       }
     ],
-    neighbors: [257, 258]
+    neighbors: [257, 258],
+    originalTreeId: 7012
   },
   {
     x: -785.255,
@@ -3894,7 +4158,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [201, 284, 287, 197, 218]
+    neighbors: [201, 284, 287, 197, 218],
+    originalTreeId: 8132
   },
   {
     x: -734.225,
@@ -3908,7 +4173,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [194, 285, 286, 192]
+    neighbors: [194, 285, 286, 192],
+    originalTreeId: 28971
   },
   {
     x: -784.0362985522207,
@@ -3928,7 +4194,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [266]
+    neighbors: [266],
+    originalTreeId: 57366
   },
   {
     x: -588.485,
@@ -3942,7 +4209,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [265, 269]
+    neighbors: [265, 269],
+    originalTreeId: 43705
   },
   {
     x: -588.485,
@@ -3956,7 +4224,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [268, 269]
+    neighbors: [268, 269],
+    originalTreeId: 48348
   },
   {
     x: -784.0362985522207,
@@ -3970,7 +4239,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [243, 267]
+    neighbors: [243, 267],
+    originalTreeId: 33385
   },
   {
     x: -507.485,
@@ -3984,7 +4254,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Blight'
       }
     ],
-    neighbors: [266, 267]
+    neighbors: [266, 267],
+    originalTreeId: 60832
   },
   {
     x: -323.515,
@@ -3998,7 +4269,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [308, 273, 272]
+    neighbors: [308, 273, 272],
+    originalTreeId: 62184
   },
   {
     x: -566.515,
@@ -4012,7 +4284,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [273, 310]
+    neighbors: [273, 310],
+    originalTreeId: 5828
   },
   {
     x: -566.5150000000001,
@@ -4026,7 +4299,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [270]
+    neighbors: [270],
+    originalTreeId: 55696
   },
   {
     x: -404.515,
@@ -4040,7 +4314,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [270, 271]
+    neighbors: [270, 271],
+    originalTreeId: 19964
   },
   {
     x: -366.245,
@@ -4054,7 +4329,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [277, 275]
+    neighbors: [277, 275],
+    originalTreeId: 1135
   },
   {
     x: -587.5411154130791,
@@ -4068,7 +4344,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [274, 278, 311]
+    neighbors: [274, 278, 311],
+    originalTreeId: 17011
   },
   {
     x: -447.245,
@@ -4082,7 +4359,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [277, 278]
+    neighbors: [277, 278],
+    originalTreeId: 21304
   },
   {
     x: -306.94888458692094,
@@ -4102,7 +4380,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [276, 274]
+    neighbors: [276, 274],
+    originalTreeId: 30484
   },
   {
     x: -587.5411154130791,
@@ -4116,7 +4395,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Torment'
       }
     ],
-    neighbors: [276, 275]
+    neighbors: [276, 275],
+    originalTreeId: 39402
   },
   {
     x: -436.045,
@@ -4130,7 +4410,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [256, 357]
+    neighbors: [256, 357],
+    originalTreeId: 42882
   },
   {
     x: -267.32888458692094,
@@ -4144,7 +4425,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [281, 347]
+    neighbors: [281, 347],
+    originalTreeId: 60115
   },
   {
     x: -326.625,
@@ -4158,7 +4440,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [280, 283]
+    neighbors: [280, 283],
+    originalTreeId: 55685
   },
   {
     x: -547.9211154130791,
@@ -4178,7 +4461,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [283]
+    neighbors: [283],
+    originalTreeId: 11073
   },
   {
     x: -488.625,
@@ -4192,7 +4476,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [282, 281]
+    neighbors: [282, 281],
+    originalTreeId: 54072
   },
   {
     x: -390.675,
@@ -4206,7 +4491,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [334, 263]
+    neighbors: [334, 263],
+    originalTreeId: 36137
   },
   {
     x: -390.275,
@@ -4220,7 +4506,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [339, 264]
+    neighbors: [339, 264],
+    originalTreeId: 10473
   },
   {
     x: -373.815,
@@ -4234,7 +4521,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [297, 321, 264]
+    neighbors: [297, 321, 264],
+    originalTreeId: 42156
   },
   {
     x: -510.325,
@@ -4248,7 +4536,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [290, 263, 288]
+    neighbors: [290, 263, 288],
+    originalTreeId: 8555
   },
   {
     x: -429.32500000000005,
@@ -4257,7 +4546,8 @@ export const skillList: SkillNode[] = [
     stats: [
       { modType: '$AMOUNT% more Blueprints found in Areas', amount: 8, description: '8% more Blueprints found in Areas', modGroup: 'Heist' }
     ],
-    neighbors: [287, 289]
+    neighbors: [287, 289],
+    originalTreeId: 55736
   },
   {
     x: -267.325,
@@ -4271,7 +4561,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Heist'
       }
     ],
-    neighbors: [288]
+    neighbors: [288],
+    originalTreeId: 10961
   },
   {
     x: -267.325,
@@ -4285,10 +4576,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [287, 347]
+    neighbors: [287, 347],
+    originalTreeId: 41861
   },
   {
-    x: -142.77888458692092,
+    x: -142.7788845869209,
     y: -1027.6,
     name: 'Essence Rare Chance',
     stats: [
@@ -4299,7 +4591,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [292, 295, 2]
+    neighbors: [292, 295, 2],
+    originalTreeId: 52858
   },
   {
     x: -423.371115413079,
@@ -4313,7 +4606,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [294, 291, 3]
+    neighbors: [294, 291, 3],
+    originalTreeId: 45442
   },
   {
     x: -283.075,
@@ -4327,7 +4621,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [294, 295]
+    neighbors: [294, 295],
+    originalTreeId: 9419
   },
   {
     x: -423.37111541307905,
@@ -4341,7 +4636,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [293, 292]
+    neighbors: [293, 292],
+    originalTreeId: 929
   },
   {
     x: -142.77888458692092,
@@ -4355,7 +4651,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Essence'
       }
     ],
-    neighbors: [293, 291]
+    neighbors: [293, 291],
+    originalTreeId: 50905
   },
   {
     x: -142.10111541307907,
@@ -4375,7 +4672,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [297]
+    neighbors: [297],
+    originalTreeId: 22597
   },
   {
     x: -142.10111541307901,
@@ -4389,7 +4687,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [298, 296, 286]
+    neighbors: [298, 296, 286],
+    originalTreeId: 34841
   },
   {
     x: -1.8049999999999802,
@@ -4403,10 +4702,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [299, 297]
+    neighbors: [299, 297],
+    originalTreeId: 44048
   },
   {
-    x: 138.49111541307906,
+    x: 138.4911154130791,
     y: -5101.15,
     name: 'Strongbox Chance to be Reopenable ',
     stats: [
@@ -4417,7 +4717,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [300, 298, 378]
+    neighbors: [300, 298, 378],
+    originalTreeId: 39979
   },
   {
     x: 138.49111541307906,
@@ -4431,7 +4732,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [299]
+    neighbors: [299],
+    originalTreeId: 63738
   },
   {
     x: -0.575,
@@ -4445,7 +4747,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [302, 2]
+    neighbors: [302, 2],
+    originalTreeId: 33757
   },
   {
     x: -0.575,
@@ -4459,7 +4762,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [347, 301]
+    neighbors: [347, 301],
+    originalTreeId: 57739
   },
   {
     x: 161.625,
@@ -4479,7 +4783,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [305]
+    neighbors: [305],
+    originalTreeId: 57163
   },
   {
     x: -162.375,
@@ -4493,7 +4798,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [306, 305]
+    neighbors: [306, 305],
+    originalTreeId: 16510
   },
   {
     x: -81.37500000000001,
@@ -4507,7 +4813,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [304, 309, 303]
+    neighbors: [304, 309, 303],
+    originalTreeId: 59622
   },
   {
     x: -81.37500000000007,
@@ -4521,7 +4828,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [314, 304]
+    neighbors: [314, 304],
+    originalTreeId: 9449
   },
   {
     x: 70.63908311032398,
@@ -4541,7 +4849,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [308, 391, 309]
+    neighbors: [308, 391, 309],
+    originalTreeId: 54457
   },
   {
     x: -71.38908311032395,
@@ -4561,7 +4870,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [270, 309, 307]
+    neighbors: [270, 309, 307],
+    originalTreeId: 6340
   },
   {
     x: -0.375,
@@ -4581,7 +4891,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [305, 307, 308]
+    neighbors: [305, 307, 308],
+    originalTreeId: 24007
   },
   {
     x: -733.0324916016349,
@@ -4595,7 +4906,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [214, 240, 257, 271, 319, 316]
+    neighbors: [214, 240, 257, 271, 319, 316],
+    originalTreeId: 30402
   },
   {
     x: -733.032491601635,
@@ -4609,7 +4921,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [275, 316, 317, 243]
+    neighbors: [275, 316, 317, 243],
+    originalTreeId: 47914
   },
   {
     x: 732.282491601635,
@@ -4623,10 +4936,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [315, 318, 414, 388]
+    neighbors: [315, 318, 414, 388],
+    originalTreeId: 64969
   },
   {
-    x: 732.2824916016351,
+    x: 732.2824916016352,
     y: -6164.76,
     name: 'Item Quantity',
     stats: [
@@ -4637,7 +4951,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [315, 320, 392, 403, 416, 447]
+    neighbors: [315, 320, 392, 403, 416, 447],
+    originalTreeId: 25525
   },
   {
     x: -0.375,
@@ -4651,7 +4966,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [306, 317, 318]
+    neighbors: [306, 317, 318],
+    originalTreeId: 55997
   },
   {
     x: 845.625,
@@ -4665,7 +4981,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [312, 313, 444]
+    neighbors: [312, 313, 444],
+    originalTreeId: 44993
   },
   {
     x: -846.375,
@@ -4679,7 +4996,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [211, 310, 311]
+    neighbors: [211, 310, 311],
+    originalTreeId: 37420
   },
   {
     x: -423.3750000000004,
@@ -4693,7 +5011,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [311, 314]
+    neighbors: [311, 314],
+    originalTreeId: 14734
   },
   {
     x: 422.62499999999994,
@@ -4707,7 +5026,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [314, 312]
+    neighbors: [314, 312],
+    originalTreeId: 48296
   },
   {
     x: -423.3750000000001,
@@ -4721,7 +5041,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [321, 310]
+    neighbors: [321, 310],
+    originalTreeId: 34925
   },
   {
     x: 422.62499999999994,
@@ -4735,7 +5056,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [321, 313]
+    neighbors: [321, 313],
+    originalTreeId: 10448
   },
   {
     x: -0.3749999999998964,
@@ -4749,7 +5071,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [286, 322, 378, 320, 319]
+    neighbors: [286, 322, 378, 320, 319],
+    originalTreeId: 58767
   },
   {
     x: -0.3749999999999802,
@@ -4763,7 +5086,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [321, 324, 323]
+    neighbors: [321, 324, 323],
+    originalTreeId: 11386
   },
   {
     x: -140.671115413079,
@@ -4777,10 +5101,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [322, 326]
+    neighbors: [322, 326],
+    originalTreeId: 37452
   },
   {
-    x: 139.92111541307906,
+    x: 139.9211154130791,
     y: -5991.48,
     name: 'Exile Pair Chance',
     stats: [
@@ -4791,7 +5116,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [322, 325]
+    neighbors: [322, 325],
+    originalTreeId: 36488
   },
   {
     x: 139.92111541307906,
@@ -4805,7 +5131,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [324]
+    neighbors: [324],
+    originalTreeId: 33902
   },
   {
     x: -140.67111541307906,
@@ -4819,10 +5146,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rogue Exile'
       }
     ],
-    neighbors: [323]
+    neighbors: [323],
+    originalTreeId: 26414
   },
   {
-    x: 289.743510267787,
+    x: 289.74351026778703,
     y: -4442.71,
     name: 'Higher Map Tier Chance',
     stats: [
@@ -4833,7 +5161,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [331, 328]
+    neighbors: [331, 328],
+    originalTreeId: 23165
   },
   {
     x: 334.625,
@@ -4847,7 +5176,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [327, 329]
+    neighbors: [327, 329],
+    originalTreeId: 32888
   },
   {
     x: 289.7435102677869,
@@ -4867,7 +5197,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [328]
+    neighbors: [328],
+    originalTreeId: 61358
   },
   {
     x: -335.375,
@@ -4881,7 +5212,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [333, 332]
+    neighbors: [333, 332],
+    originalTreeId: 41865
   },
   {
     x: -0.374999999999959,
@@ -4895,7 +5227,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [339, 332, 327]
+    neighbors: [339, 332, 327],
+    originalTreeId: 59176
   },
   {
     x: -290.49351026778686,
@@ -4909,7 +5242,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [330, 331]
+    neighbors: [330, 331],
+    originalTreeId: 23991
   },
   {
     x: -290.4935102677869,
@@ -4941,7 +5275,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [330]
+    neighbors: [330],
+    originalTreeId: 6530
   },
   {
     x: -0.374999999999959,
@@ -4955,7 +5290,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [335, 341, 347, 380, 284]
+    neighbors: [335, 341, 347, 380, 284],
+    originalTreeId: 15967
   },
   {
     x: -167.87500000000003,
@@ -4969,7 +5305,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [338, 334]
+    neighbors: [338, 334],
+    originalTreeId: 38725
   },
   {
     x: -167.87500000000014,
@@ -4983,7 +5320,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [337, 339]
+    neighbors: [337, 339],
+    originalTreeId: 44546
   },
   {
     x: -290.4935102677869,
@@ -4997,7 +5335,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [346, 336]
+    neighbors: [346, 336],
+    originalTreeId: 47639
   },
   {
     x: -290.49351026778686,
@@ -5011,7 +5350,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [346, 335]
+    neighbors: [346, 335],
+    originalTreeId: 18876
   },
   {
     x: -0.375,
@@ -5025,7 +5365,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [336, 342, 344, 331, 285, 379]
+    neighbors: [336, 342, 344, 331, 285, 379],
+    originalTreeId: 58023
   },
   {
     x: 289.7435102677869,
@@ -5039,7 +5380,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [342, 345]
+    neighbors: [342, 345],
+    originalTreeId: 39128
   },
   {
     x: 167.12499999999997,
@@ -5053,7 +5395,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [343, 334]
+    neighbors: [343, 334],
+    originalTreeId: 2018
   },
   {
     x: 167.12499999999997,
@@ -5067,10 +5410,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [339, 340]
+    neighbors: [339, 340],
+    originalTreeId: 41999
   },
   {
-    x: 289.743510267787,
+    x: 289.74351026778703,
     y: -3550.7,
     name: 'Kirac Map Quality',
     stats: [
@@ -5081,7 +5425,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [345, 341]
+    neighbors: [345, 341],
+    originalTreeId: 18899
   },
   {
     x: -0.375,
@@ -5101,7 +5446,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [339]
+    neighbors: [339],
+    originalTreeId: 31655
   },
   {
     x: 334.625,
@@ -5127,7 +5473,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [340, 343]
+    neighbors: [340, 343],
+    originalTreeId: 25741
   },
   {
     x: -335.375,
@@ -5141,7 +5488,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [338, 337]
+    neighbors: [338, 337],
+    originalTreeId: 34087
   },
   {
     x: -0.375,
@@ -5155,7 +5503,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [280, 290, 375, 334, 382, 302]
+    neighbors: [280, 290, 375, 334, 382, 302],
+    originalTreeId: 10884
   },
   {
     x: 1.5250000000000603,
@@ -5169,7 +5518,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [350, 356, 353]
+    neighbors: [350, 356, 353],
+    originalTreeId: 13476
   },
   {
     x: 1.525,
@@ -5189,7 +5539,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [352, 351]
+    neighbors: [352, 351],
+    originalTreeId: 12651
   },
   {
     x: 116.0762985522207,
@@ -5203,7 +5554,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [351, 353, 355, 348]
+    neighbors: [351, 353, 355, 348],
+    originalTreeId: 18608
   },
   {
     x: 116.07629855222069,
@@ -5217,7 +5569,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [349, 355, 350, 352]
+    neighbors: [349, 355, 350, 352],
+    originalTreeId: 54110
   },
   {
     x: -113.02629855222072,
@@ -5231,7 +5584,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [351, 354, 349, 353]
+    neighbors: [351, 354, 349, 353],
+    originalTreeId: 61020
   },
   {
     x: -113.02629855222068,
@@ -5245,7 +5599,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [348, 352, 354, 350]
+    neighbors: [348, 352, 354, 350],
+    originalTreeId: 50090
   },
   {
     x: -491.475,
@@ -5271,7 +5626,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [353, 352]
+    neighbors: [353, 352],
+    originalTreeId: 60492
   },
   {
     x: 494.525,
@@ -5293,7 +5649,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [351, 350]
+    neighbors: [351, 350],
+    originalTreeId: 20079
   },
   {
     x: 1.525000000000081,
@@ -5307,7 +5664,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shaper & Elder'
       }
     ],
-    neighbors: [357, 348]
+    neighbors: [357, 348],
+    originalTreeId: 63758
   },
   {
     x: 1.525,
@@ -5321,7 +5679,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [363, 279, 385, 356]
+    neighbors: [363, 279, 385, 356],
+    originalTreeId: 64178
   },
   {
     x: -333.475,
@@ -5335,7 +5694,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [365, 364]
+    neighbors: [365, 364],
+    originalTreeId: 16444
   },
   {
     x: 1.525,
@@ -5351,7 +5711,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [364]
+    neighbors: [364],
+    originalTreeId: 18900
   },
   {
     x: 623.6015149602713,
@@ -5371,7 +5732,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [368]
+    neighbors: [368],
+    originalTreeId: 33917
   },
   {
     x: -620.5515149602713,
@@ -5391,7 +5753,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [366]
+    neighbors: [366],
+    originalTreeId: 60009
   },
   {
     x: 336.525,
@@ -5405,7 +5768,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [364, 367]
+    neighbors: [364, 367],
+    originalTreeId: 12302
   },
   {
     x: 1.525,
@@ -5419,7 +5783,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [364, 357]
+    neighbors: [364, 357],
+    originalTreeId: 58508
   },
   {
     x: 1.525,
@@ -5433,7 +5798,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [358, 359, 362, 363]
+    neighbors: [358, 359, 362, 363],
+    originalTreeId: 42332
   },
   {
     x: -288.5935102677869,
@@ -5447,7 +5813,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [366, 358]
+    neighbors: [366, 358],
+    originalTreeId: 59602
   },
   {
     x: -660.475,
@@ -5461,10 +5828,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [365, 361]
+    neighbors: [365, 361],
+    originalTreeId: 30365
   },
   {
-    x: 291.64351026778695,
+    x: 291.643510267787,
     y: -8081.459999999999,
     name: 'Maven Invitation Item Quantity',
     stats: [
@@ -5475,7 +5843,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [362, 368]
+    neighbors: [362, 368],
+    originalTreeId: 62212
   },
   {
     x: 663.525,
@@ -5489,7 +5858,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maven'
       }
     ],
-    neighbors: [367, 360]
+    neighbors: [367, 360],
+    originalTreeId: 49542
   },
   {
     x: 282.325,
@@ -5503,7 +5873,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [372, 373]
+    neighbors: [372, 373],
+    originalTreeId: 60117
   },
   {
     x: 142.02888458692098,
@@ -5517,10 +5888,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [371, 372, 2]
+    neighbors: [371, 372, 2],
+    originalTreeId: 35537
   },
   {
-    x: 422.62111541307905,
+    x: 422.6211154130791,
     y: -1027.48,
     name: 'Strongbox Additional Pack Chance',
     stats: [
@@ -5531,7 +5903,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [1, 373, 370]
+    neighbors: [1, 373, 370],
+    originalTreeId: 4800
   },
   {
     x: 142.02888458692092,
@@ -5545,7 +5918,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [369, 370]
+    neighbors: [369, 370],
+    originalTreeId: 29579
   },
   {
     x: 422.62111541307905,
@@ -5559,7 +5933,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [369, 371]
+    neighbors: [369, 371],
+    originalTreeId: 13373
   },
   {
     x: 510.435,
@@ -5573,7 +5948,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [375, 401, 377]
+    neighbors: [375, 401, 377],
+    originalTreeId: 2585
   },
   {
     x: 267.435,
@@ -5587,7 +5963,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [374, 347]
+    neighbors: [374, 347],
+    originalTreeId: 63744
   },
   {
     x: 267.43499999999995,
@@ -5601,7 +5978,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [377]
+    neighbors: [377],
+    originalTreeId: 20503
   },
   {
     x: 429.435,
@@ -5615,7 +5993,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [374, 376]
+    neighbors: [374, 376],
+    originalTreeId: 23769
   },
   {
     x: 376.235,
@@ -5629,7 +6008,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [299, 321, 400]
+    neighbors: [299, 321, 400],
+    originalTreeId: 62796
   },
   {
     x: 376.235,
@@ -5643,7 +6023,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [339, 400]
+    neighbors: [339, 400],
+    originalTreeId: 11915
   },
   {
     x: 376.235,
@@ -5657,7 +6038,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [401, 334]
+    neighbors: [401, 334],
+    originalTreeId: 23513
   },
   {
     x: 326.735,
@@ -5671,7 +6053,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rare Monsters'
       }
     ],
-    neighbors: [382, 384]
+    neighbors: [382, 384],
+    originalTreeId: 9959
   },
   {
     x: 267.43888458692095,
@@ -5685,7 +6068,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rare Monsters'
       }
     ],
-    neighbors: [347, 381]
+    neighbors: [347, 381],
+    originalTreeId: 16735
   },
   {
     x: 548.0311154130791,
@@ -5705,7 +6089,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rare Monsters'
       }
     ],
-    neighbors: [384]
+    neighbors: [384],
+    originalTreeId: 62839
   },
   {
     x: 488.735,
@@ -5719,7 +6104,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Rare Monsters'
       }
     ],
-    neighbors: [383, 381]
+    neighbors: [383, 381],
+    originalTreeId: 7540
   },
   {
     x: 435.675,
@@ -5733,7 +6119,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [357, 407]
+    neighbors: [357, 407],
+    originalTreeId: 60645
   },
   {
     x: 446.495,
@@ -5747,7 +6134,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [388, 390]
+    neighbors: [388, 390],
+    originalTreeId: 44380
   },
   {
     x: 527.495,
@@ -5761,7 +6149,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [388, 389]
+    neighbors: [388, 389],
+    originalTreeId: 26706
   },
   {
     x: 586.7911154130791,
@@ -5775,7 +6164,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [312, 387, 386]
+    neighbors: [312, 387, 386],
+    originalTreeId: 53322
   },
   {
     x: 306.198884586921,
@@ -5795,7 +6185,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [387, 390]
+    neighbors: [387, 390],
+    originalTreeId: 55783
   },
   {
     x: 306.19888458692094,
@@ -5809,7 +6200,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [386, 389]
+    neighbors: [386, 389],
+    originalTreeId: 33114
   },
   {
     x: 403.76499999999993,
@@ -5823,7 +6215,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [393, 394, 307]
+    neighbors: [393, 394, 307],
+    originalTreeId: 28202
   },
   {
     x: 646.765,
@@ -5837,7 +6230,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [313, 394]
+    neighbors: [313, 394],
+    originalTreeId: 51326
   },
   {
     x: 403.765,
@@ -5851,7 +6245,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [391]
+    neighbors: [391],
+    originalTreeId: 17015
   },
   {
     x: 565.765,
@@ -5865,7 +6260,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [392, 391]
+    neighbors: [392, 391],
+    originalTreeId: 45670
   },
   {
     x: 584.9549999999999,
@@ -5879,7 +6275,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [396, 397]
+    neighbors: [396, 397],
+    originalTreeId: 37696
   },
   {
     x: 503.95500000000004,
@@ -5893,7 +6290,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [399, 395]
+    neighbors: [399, 395],
+    originalTreeId: 42448
   },
   {
     x: 780.5062985522208,
@@ -5907,7 +6305,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [395]
+    neighbors: [395],
+    originalTreeId: 23692
   },
   {
     x: 780.5062985522208,
@@ -5921,7 +6320,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [414, 399]
+    neighbors: [414, 399],
+    originalTreeId: 7709
   },
   {
     x: 584.955,
@@ -5935,7 +6335,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [398, 396]
+    neighbors: [398, 396],
+    originalTreeId: 6526
   },
   {
     x: 732.285,
@@ -5949,7 +6350,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [378, 379, 455, 448]
+    neighbors: [378, 379, 455, 448],
+    originalTreeId: 32019
   },
   {
     x: 780.615,
@@ -5963,7 +6365,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [374, 459, 462, 431, 380]
+    neighbors: [374, 459, 462, 431, 380],
+    originalTreeId: 53410
   },
   {
     x: 975.285,
@@ -5977,7 +6380,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [448, 404, 406]
+    neighbors: [448, 404, 406],
+    originalTreeId: 18890
   },
   {
     x: 732.2849999999999,
@@ -5991,7 +6395,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [406, 313]
+    neighbors: [406, 313],
+    originalTreeId: 21410
   },
   {
     x: 813.285,
@@ -6005,7 +6410,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [402, 405]
+    neighbors: [402, 405],
+    originalTreeId: 25345
   },
   {
     x: 813.285,
@@ -6019,7 +6425,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [404]
+    neighbors: [404],
+    originalTreeId: 16333
   },
   {
     x: 894.285,
@@ -6033,7 +6440,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [402, 403]
+    neighbors: [402, 403],
+    originalTreeId: 56511
   },
   {
     x: 879.785,
@@ -6047,7 +6455,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [385, 465]
+    neighbors: [385, 465],
+    originalTreeId: 63460
   },
   {
     x: 786.2488845869209,
@@ -6061,7 +6470,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [1, 410]
+    neighbors: [1, 410],
+    originalTreeId: 2156
   },
   {
     x: 926.545,
@@ -6075,7 +6485,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [410, 436]
+    neighbors: [410, 436],
+    originalTreeId: 24403
   },
   {
     x: 1066.841115413079,
@@ -6089,7 +6500,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [408, 409]
+    neighbors: [408, 409],
+    originalTreeId: 29666
   },
   {
     x: 1098.6611154130792,
@@ -6103,7 +6515,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [462, 412]
+    neighbors: [462, 412],
+    originalTreeId: 28939
   },
   {
     x: 818.068884586921,
@@ -6117,7 +6530,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [411, 413]
+    neighbors: [411, 413],
+    originalTreeId: 65246
   },
   {
     x: 958.365,
@@ -6137,7 +6551,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [412]
+    neighbors: [412],
+    originalTreeId: 35608
   },
   {
     x: 987.825,
@@ -6151,7 +6566,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [398, 466, 312, 442]
+    neighbors: [398, 466, 312, 442],
+    originalTreeId: 26601
   },
   {
     x: 859.22,
@@ -6165,7 +6581,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [417, 416]
+    neighbors: [417, 416],
+    originalTreeId: 47692
   },
   {
     x: 940.2199999999999,
@@ -6179,7 +6596,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [313, 415, 418]
+    neighbors: [313, 415, 418],
+    originalTreeId: 61121
   },
   {
     x: 940.22,
@@ -6199,7 +6617,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [415]
+    neighbors: [415],
+    originalTreeId: 1928
   },
   {
     x: 1102.22,
@@ -6213,7 +6632,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [416, 419]
+    neighbors: [416, 419],
+    originalTreeId: 8645
   },
   {
     x: 1183.22,
@@ -6233,7 +6653,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [418]
+    neighbors: [418],
+    originalTreeId: 24679
   },
   {
     x: 882.673884586921,
@@ -6247,7 +6668,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [423, 422]
+    neighbors: [423, 422],
+    originalTreeId: 55477
   },
   {
     x: 1163.2661154130792,
@@ -6261,7 +6683,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [465, 423]
+    neighbors: [465, 423],
+    originalTreeId: 3810
   },
   {
     x: 1022.97,
@@ -6275,7 +6698,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [420]
+    neighbors: [420],
+    originalTreeId: 28029
   },
   {
     x: 1022.97,
@@ -6289,7 +6713,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Shrines'
       }
     ],
-    neighbors: [421, 420]
+    neighbors: [421, 420],
+    originalTreeId: 18432
   },
   {
     x: 1496.19,
@@ -6303,7 +6728,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [428, 434, 432]
+    neighbors: [428, 434, 432],
+    originalTreeId: 19883
   },
   {
     x: 871.0714897322132,
@@ -6317,7 +6743,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [431, 426]
+    neighbors: [431, 426],
+    originalTreeId: 58007
   },
   {
     x: 826.19,
@@ -6331,7 +6758,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [425, 429]
+    neighbors: [425, 429],
+    originalTreeId: 62435
   },
   {
     x: 1161.19,
@@ -6351,10 +6779,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [432]
+    neighbors: [432],
+    originalTreeId: 53175
   },
   {
-    x: 1451.308510267787,
+    x: 1451.3085102677871,
     y: -3550.7,
     name: 'Harvest Chance',
     stats: [
@@ -6365,7 +6794,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [424, 430]
+    neighbors: [424, 430],
+    originalTreeId: 22721
   },
   {
     x: 871.0714897322132,
@@ -6379,7 +6809,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [426]
+    neighbors: [426],
+    originalTreeId: 39276
   },
   {
     x: 1328.69,
@@ -6393,7 +6824,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [428, 431]
+    neighbors: [428, 431],
+    originalTreeId: 11226
   },
   {
     x: 993.69,
@@ -6407,7 +6839,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [401, 430, 425]
+    neighbors: [401, 430, 425],
+    originalTreeId: 50843
   },
   {
     x: 1451.308510267787,
@@ -6421,7 +6854,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [424, 427]
+    neighbors: [424, 427],
+    originalTreeId: 21895
   },
   {
     x: 1893.847491601635,
@@ -6435,7 +6869,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [434, 454, 448, 557]
+    neighbors: [434, 454, 448, 557],
+    originalTreeId: 8038
   },
   {
     x: 2007.19,
@@ -6449,7 +6884,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [424, 435, 554, 433]
+    neighbors: [424, 435, 554, 433],
+    originalTreeId: 50739
   },
   {
     x: 1893.8474916016353,
@@ -6463,7 +6899,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [458, 462, 434, 568]
+    neighbors: [458, 462, 434, 568],
+    originalTreeId: 60045
   },
   {
     x: 1162.66,
@@ -6477,7 +6914,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [409, 462]
+    neighbors: [409, 462],
+    originalTreeId: 15263
   },
   {
     x: 1032.243884586921,
@@ -6491,7 +6929,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [439, 0]
+    neighbors: [439, 0],
+    originalTreeId: 23241
   },
   {
     x: 1312.836115413079,
@@ -6505,7 +6944,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [441, 439]
+    neighbors: [441, 439],
+    originalTreeId: 22122
   },
   {
     x: 1253.54,
@@ -6519,7 +6959,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [438, 437]
+    neighbors: [438, 437],
+    originalTreeId: 45869
   },
   {
     x: 1005.0399999999998,
@@ -6533,7 +6974,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [441, 0]
+    neighbors: [441, 0],
+    originalTreeId: 3795
   },
   {
     x: 1462.6585102677868,
@@ -6547,7 +6989,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [440, 464, 477, 516, 438]
+    neighbors: [440, 464, 477, 516, 438],
+    originalTreeId: 58224
   },
   {
     x: 1215.49,
@@ -6561,7 +7004,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [414, 465]
+    neighbors: [414, 465],
+    originalTreeId: 12291
   },
   {
     x: 1472.586115413079,
@@ -6575,7 +7019,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [446, 445]
+    neighbors: [446, 445],
+    originalTreeId: 64104
   },
   {
     x: 1170.29,
@@ -6589,10 +7034,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [315, 446]
+    neighbors: [315, 446],
+    originalTreeId: 59224
   },
   {
-    x: 1472.586115413079,
+    x: 1472.5861154130791,
     y: -6508.44,
     name: 'Sulphite Infusion',
     stats: [
@@ -6615,7 +7061,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [443]
+    neighbors: [443],
+    originalTreeId: 2007
   },
   {
     x: 1332.29,
@@ -6629,7 +7076,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [444, 443]
+    neighbors: [444, 443],
+    originalTreeId: 29320
   },
   {
     x: 1332.29,
@@ -6643,7 +7091,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [313, 497]
+    neighbors: [313, 497],
+    originalTreeId: 22683
   },
   {
     x: 1460.39,
@@ -6657,7 +7106,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [400, 402, 433, 502, 514, 453]
+    neighbors: [400, 402, 433, 502, 514, 453],
+    originalTreeId: 6990
   },
   {
     x: 1320.893884586921,
@@ -6677,7 +7127,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [453]
+    neighbors: [453],
+    originalTreeId: 26020
   },
   {
     x: 1601.486115413079,
@@ -6691,10 +7142,11 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [452, 451]
+    neighbors: [452, 451],
+    originalTreeId: 49177
   },
   {
-    x: 1601.486115413079,
+    x: 1601.4861154130792,
     y: -5269.25,
     name: 'Abyss Chance',
     stats: [
@@ -6705,7 +7157,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [450, 453]
+    neighbors: [450, 453],
+    originalTreeId: 50249
   },
   {
     x: 1461.19,
@@ -6719,7 +7172,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [450]
+    neighbors: [450],
+    originalTreeId: 37319
   },
   {
     x: 1461.19,
@@ -6733,7 +7187,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [448, 451, 449]
+    neighbors: [448, 451, 449],
+    originalTreeId: 27394
   },
   {
     x: 1462.21,
@@ -6747,7 +7202,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Labyrinth'
       }
     ],
-    neighbors: [433, 455]
+    neighbors: [433, 455],
+    originalTreeId: 28705
   },
   {
     x: 1321.913884586921,
@@ -6761,7 +7217,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Labyrinth'
       }
     ],
-    neighbors: [454, 457, 400]
+    neighbors: [454, 457, 400],
+    originalTreeId: 6331
   },
   {
     x: 1462.21,
@@ -6781,7 +7238,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Labyrinth'
       }
     ],
-    neighbors: [457]
+    neighbors: [457],
+    originalTreeId: 39180
   },
   {
     x: 1321.913884586921,
@@ -6795,7 +7253,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Labyrinth'
       }
     ],
-    neighbors: [456, 455]
+    neighbors: [456, 455],
+    originalTreeId: 44997
   },
   {
     x: 1462.66,
@@ -6809,7 +7268,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [435, 459]
+    neighbors: [435, 459],
+    originalTreeId: 40521
   },
   {
     x: 1322.363884586921,
@@ -6823,7 +7283,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [458, 401, 461]
+    neighbors: [458, 401, 461],
+    originalTreeId: 51617
   },
   {
     x: 1462.66,
@@ -6837,7 +7298,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [461]
+    neighbors: [461],
+    originalTreeId: 49919
   },
   {
     x: 1322.3638845869211,
@@ -6851,7 +7313,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [459, 460]
+    neighbors: [459, 460],
+    originalTreeId: 64977
   },
   {
     x: 1462.66,
@@ -6865,7 +7328,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [411, 436, 463, 496, 515, 401, 435]
+    neighbors: [411, 436, 463, 496, 515, 401, 435],
+    originalTreeId: 17321
   },
   {
     x: 1462.66,
@@ -6879,7 +7343,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [464, 462]
+    neighbors: [464, 462],
+    originalTreeId: 29991
   },
   {
     x: 1462.66,
@@ -6893,7 +7358,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [463, 441]
+    neighbors: [463, 441],
+    originalTreeId: 46461
   },
   {
     x: 1465.09,
@@ -6907,7 +7373,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [421, 442, 513, 407, 485]
+    neighbors: [421, 442, 513, 407, 485],
+    originalTreeId: 6091
   },
   {
     x: 1319.66,
@@ -6921,7 +7388,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [469, 474, 468, 414]
+    neighbors: [469, 474, 468, 414],
+    originalTreeId: 20440
   },
   {
     x: 1944.778510267787,
@@ -6935,7 +7403,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [470]
+    neighbors: [470],
+    originalTreeId: 20321
   },
   {
     x: 1364.5414897322132,
@@ -6949,7 +7418,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [466, 472]
+    neighbors: [466, 472],
+    originalTreeId: 2552
   },
   {
     x: 1492.66,
@@ -6963,7 +7433,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [473, 466]
+    neighbors: [473, 466],
+    originalTreeId: 53328
   },
   {
     x: 1654.66,
@@ -6977,7 +7448,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [474, 467]
+    neighbors: [474, 467],
+    originalTreeId: 21499
   },
   {
     x: 1944.7785102677872,
@@ -6991,7 +7463,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [472]
+    neighbors: [472],
+    originalTreeId: 44063
   },
   {
     x: 1654.66,
@@ -7005,7 +7478,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [468, 471]
+    neighbors: [468, 471],
+    originalTreeId: 27721
   },
   {
     x: 1654.66,
@@ -7019,7 +7493,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [475, 469]
+    neighbors: [475, 469],
+    originalTreeId: 15938
   },
   {
     x: 1364.5414897322132,
@@ -7033,7 +7508,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [470, 466]
+    neighbors: [470, 466],
+    originalTreeId: 51429
   },
   {
     x: 1816.66,
@@ -7047,7 +7523,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Strongboxes'
       }
     ],
-    neighbors: [473]
+    neighbors: [473],
+    originalTreeId: 16180
   },
   {
     x: 1857.57,
@@ -7061,7 +7538,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [478, 479]
+    neighbors: [478, 479],
+    originalTreeId: 22530
   },
   {
     x: 1717.2738845869208,
@@ -7075,7 +7553,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [441, 479]
+    neighbors: [441, 479],
+    originalTreeId: 17523
   },
   {
     x: 1997.8661154130791,
@@ -7089,7 +7568,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [476]
+    neighbors: [476],
+    originalTreeId: 29688
   },
   {
     x: 1717.273884586921,
@@ -7103,7 +7583,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [477, 476]
+    neighbors: [477, 476],
+    originalTreeId: 35120
   },
   {
     x: 1567.681489732213,
@@ -7117,7 +7598,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [485, 487]
+    neighbors: [485, 487],
+    originalTreeId: 64516
   },
   {
     x: 1857.8,
@@ -7131,7 +7613,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [485, 488]
+    neighbors: [485, 488],
+    originalTreeId: 47855
   },
   {
     x: 2192.8,
@@ -7157,7 +7640,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [486]
+    neighbors: [486],
+    originalTreeId: 1243
   },
   {
     x: 1690.2999999999997,
@@ -7183,7 +7667,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [484]
+    neighbors: [484],
+    originalTreeId: 18476
   },
   {
     x: 1567.681489732213,
@@ -7197,7 +7682,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [487, 483]
+    neighbors: [487, 483],
+    originalTreeId: 33731
   },
   {
     x: 1690.3,
@@ -7211,7 +7697,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [465, 480, 481]
+    neighbors: [465, 480, 481],
+    originalTreeId: 24311
   },
   {
     x: 2147.918510267787,
@@ -7225,7 +7712,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [488, 482]
+    neighbors: [488, 482],
+    originalTreeId: 48696
   },
   {
     x: 1522.8,
@@ -7239,7 +7727,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [480, 484]
+    neighbors: [480, 484],
+    originalTreeId: 56680
   },
   {
     x: 2025.3,
@@ -7253,7 +7742,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Elderslayers'
       }
     ],
-    neighbors: [481, 486]
+    neighbors: [481, 486],
+    originalTreeId: 13773
   },
   {
     x: 2053.246115413079,
@@ -7267,7 +7757,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [515, 492]
+    neighbors: [515, 492],
+    originalTreeId: 50434
   },
   {
     x: 1772.6538845869209,
@@ -7281,7 +7772,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [492, 491]
+    neighbors: [492, 491],
+    originalTreeId: 11134
   },
   {
     x: 1912.95,
@@ -7295,7 +7787,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [490]
+    neighbors: [490],
+    originalTreeId: 56604
   },
   {
     x: 1912.95,
@@ -7309,7 +7802,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [489, 490]
+    neighbors: [489, 490],
+    originalTreeId: 58874
   },
   {
     x: 2107.236115413079,
@@ -7323,7 +7817,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [494, 495]
+    neighbors: [494, 495],
+    originalTreeId: 6201
   },
   {
     x: 1826.643884586921,
@@ -7337,7 +7832,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [496, 493]
+    neighbors: [496, 493],
+    originalTreeId: 28069
   },
   {
     x: 2107.236115413079,
@@ -7351,7 +7847,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [493]
+    neighbors: [493],
+    originalTreeId: 27774
   },
   {
     x: 1826.643884586921,
@@ -7365,7 +7862,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [494, 462]
+    neighbors: [494, 462],
+    originalTreeId: 20361
   },
   {
     x: 1911.843884586921,
@@ -7379,7 +7877,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [447, 500]
+    neighbors: [447, 500],
+    originalTreeId: 448
   },
   {
     x: 2192.436115413079,
@@ -7393,7 +7892,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [500, 534, 501]
+    neighbors: [500, 534, 501],
+    originalTreeId: 5553
   },
   {
     x: 2052.14,
@@ -7419,7 +7919,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [501]
+    neighbors: [501],
+    originalTreeId: 60106
   },
   {
     x: 2052.14,
@@ -7433,7 +7934,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [497, 498]
+    neighbors: [497, 498],
+    originalTreeId: 29404
   },
   {
     x: 2192.436115413079,
@@ -7447,7 +7949,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [498, 499]
+    neighbors: [498, 499],
+    originalTreeId: 4680
   },
   {
     x: 1981.38,
@@ -7461,7 +7964,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [448, 506, 507]
+    neighbors: [448, 506, 507],
+    originalTreeId: 46824
   },
   {
     x: 2224.38,
@@ -7475,7 +7979,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [507, 505]
+    neighbors: [507, 505],
+    originalTreeId: 7992
   },
   {
     x: 2224.38,
@@ -7489,7 +7994,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [505, 506]
+    neighbors: [505, 506],
+    originalTreeId: 58860
   },
   {
     x: 2305.38,
@@ -7515,7 +8021,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [503, 504]
+    neighbors: [503, 504],
+    originalTreeId: 17187
   },
   {
     x: 2062.38,
@@ -7529,7 +8036,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [504, 502]
+    neighbors: [504, 502],
+    originalTreeId: 44502
   },
   {
     x: 2062.38,
@@ -7543,7 +8051,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harbinger'
       }
     ],
-    neighbors: [502, 503]
+    neighbors: [502, 503],
+    originalTreeId: 25129
   },
   {
     x: 2192.44,
@@ -7557,7 +8066,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [512, 513]
+    neighbors: [512, 513],
+    originalTreeId: 17227
   },
   {
     x: 2332.736115413079,
@@ -7571,7 +8081,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [510, 512]
+    neighbors: [510, 512],
+    originalTreeId: 54630
   },
   {
     x: 2192.44,
@@ -7585,7 +8096,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [511, 509]
+    neighbors: [511, 509],
+    originalTreeId: 22499
   },
   {
     x: 2052.143884586921,
@@ -7599,7 +8111,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Sextants'
       }
     ],
-    neighbors: [510]
+    neighbors: [510],
+    originalTreeId: 30852
   },
   {
     x: 2332.736115413079,
@@ -7613,7 +8126,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [509, 508]
+    neighbors: [509, 508],
+    originalTreeId: 20537
   },
   {
     x: 2192.44,
@@ -7627,7 +8141,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [548, 465, 508]
+    neighbors: [548, 465, 508],
+    originalTreeId: 40286
   },
   {
     x: 2192.44,
@@ -7641,7 +8156,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [448, 534]
+    neighbors: [448, 534],
+    originalTreeId: 50686
   },
   {
     x: 2200.25,
@@ -7655,7 +8171,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [489, 553, 462]
+    neighbors: [489, 553, 462],
+    originalTreeId: 4321
   },
   {
     x: 2032.2399999999998,
@@ -7669,7 +8186,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [517, 441, 522]
+    neighbors: [517, 441, 522],
+    originalTreeId: 14918
   },
   {
     x: 2077.121489732213,
@@ -7683,7 +8201,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [516, 518]
+    neighbors: [516, 518],
+    originalTreeId: 58959
   },
   {
     x: 2199.74,
@@ -7697,7 +8216,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [517]
+    neighbors: [517],
+    originalTreeId: 49997
   },
   {
     x: 2657.3585102677866,
@@ -7711,7 +8231,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [520]
+    neighbors: [520],
+    originalTreeId: 48855
   },
   {
     x: 2534.74,
@@ -7725,7 +8246,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [519, 522, 553, 521]
+    neighbors: [519, 522, 553, 521],
+    originalTreeId: 25981
   },
   {
     x: 2702.24,
@@ -7745,7 +8267,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [520]
+    neighbors: [520],
+    originalTreeId: 21345
   },
   {
     x: 2199.74,
@@ -7759,7 +8282,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [516, 520]
+    neighbors: [516, 520],
+    originalTreeId: 32062
   },
   {
     x: 2611.88,
@@ -7779,7 +8303,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [526, 528]
+    neighbors: [526, 528],
+    originalTreeId: 32868
   },
   {
     x: 2684.56,
@@ -7793,7 +8318,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [532, 531]
+    neighbors: [532, 531],
+    originalTreeId: 22086
   },
   {
     x: 2769.88,
@@ -7813,7 +8339,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [526, 528]
+    neighbors: [526, 528],
+    originalTreeId: 45427
   },
   {
     x: 2927.88,
@@ -7827,7 +8354,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [573, 527, 571, 525, 523, 534]
+    neighbors: [573, 527, 571, 525, 523, 534],
+    originalTreeId: 33039
   },
   {
     x: 2927.88,
@@ -7847,7 +8375,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [526, 528]
+    neighbors: [526, 528],
+    originalTreeId: 17562
   },
   {
     x: 2927.88,
@@ -7861,7 +8390,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [523, 525, 527, 571, 573]
+    neighbors: [523, 525, 527, 571, 573],
+    originalTreeId: 33809
   },
   {
     x: 2927.88,
@@ -7875,7 +8405,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [548, 530, 531]
+    neighbors: [548, 530, 531],
+    originalTreeId: 13478
   },
   {
     x: 3096.4959306595547,
@@ -7889,7 +8420,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [529, 572]
+    neighbors: [529, 572],
+    originalTreeId: 7805
   },
   {
     x: 2759.264069340445,
@@ -7903,7 +8435,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [524, 529]
+    neighbors: [524, 529],
+    originalTreeId: 64758
   },
   {
     x: 2592.88,
@@ -7923,7 +8456,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [524]
+    neighbors: [524],
+    originalTreeId: 41926
   },
   {
     x: 3262.88,
@@ -7937,7 +8471,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [572]
+    neighbors: [572],
+    originalTreeId: 50744
   },
   {
     x: 2927.88,
@@ -7951,7 +8486,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [498, 514, 526, 581, 585, 540]
+    neighbors: [498, 514, 526, 581, 585, 540],
+    originalTreeId: 27093
   },
   {
     x: 3095.38,
@@ -7965,7 +8501,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [543, 536]
+    neighbors: [543, 536],
+    originalTreeId: 28772
   },
   {
     x: 2760.38,
@@ -7979,7 +8516,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [535, 539]
+    neighbors: [535, 539],
+    originalTreeId: 1339
   },
   {
     x: 2637.7614897322132,
@@ -7999,7 +8537,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [538, 540]
+    neighbors: [538, 540],
+    originalTreeId: 64505
   },
   {
     x: 2592.88,
@@ -8019,7 +8558,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [539, 537]
+    neighbors: [539, 537],
+    originalTreeId: 43885
   },
   {
     x: 2637.7614897322132,
@@ -8051,7 +8591,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [536, 538]
+    neighbors: [536, 538],
+    originalTreeId: 57769
   },
   {
     x: 2927.88,
@@ -8071,7 +8612,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [534, 537, 542]
+    neighbors: [534, 537, 542],
+    originalTreeId: 56014
   },
   {
     x: 3262.88,
@@ -8091,7 +8633,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [542, 543]
+    neighbors: [542, 543],
+    originalTreeId: 44642
   },
   {
     x: 3217.998510267787,
@@ -8111,7 +8654,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [540, 541]
+    neighbors: [540, 541],
+    originalTreeId: 54832
   },
   {
     x: 3217.998510267787,
@@ -8131,7 +8675,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [541, 535]
+    neighbors: [541, 535],
+    originalTreeId: 64464
   },
   {
     x: 2928.33,
@@ -8145,7 +8690,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [547, 546]
+    neighbors: [547, 546],
+    originalTreeId: 3885
   },
   {
     x: 2928.33,
@@ -8159,7 +8705,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [546, 548]
+    neighbors: [546, 548],
+    originalTreeId: 46920
   },
   {
     x: 2788.033884586921,
@@ -8173,7 +8720,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [544, 545]
+    neighbors: [544, 545],
+    originalTreeId: 61076
   },
   {
     x: 3068.626115413079,
@@ -8187,7 +8735,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [544]
+    neighbors: [544],
+    originalTreeId: 33361
   },
   {
     x: 2928.33,
@@ -8201,7 +8750,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [513, 545, 579, 529]
+    neighbors: [513, 545, 579, 529],
+    originalTreeId: 40327
   },
   {
     x: 2929.76,
@@ -8215,7 +8765,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [552, 551]
+    neighbors: [552, 551],
+    originalTreeId: 9178
   },
   {
     x: 2929.76,
@@ -8229,7 +8780,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [551, 553]
+    neighbors: [551, 553],
+    originalTreeId: 22125
   },
   {
     x: 2767.76,
@@ -8243,7 +8795,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [549, 550]
+    neighbors: [549, 550],
+    originalTreeId: 17089
   },
   {
     x: 3091.76,
@@ -8257,7 +8810,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Harvest'
       }
     ],
-    neighbors: [549]
+    neighbors: [549],
+    originalTreeId: 54874
   },
   {
     x: 2929.76,
@@ -8271,7 +8825,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [597, 520, 574, 550, 515]
+    neighbors: [597, 520, 574, 550, 515],
+    originalTreeId: 55454
   },
   {
     x: 2930.84,
@@ -8285,7 +8840,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [617, 434]
+    neighbors: [617, 434],
+    originalTreeId: 33684
   },
   {
     x: 3220.9685102677868,
@@ -8305,7 +8861,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [563, 562]
+    neighbors: [563, 562],
+    originalTreeId: 42414
   },
   {
     x: 3220.9685102677868,
@@ -8319,7 +8876,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [561, 617, 563]
+    neighbors: [561, 617, 563],
+    originalTreeId: 44058
   },
   {
     x: 2640.731489732213,
@@ -8333,7 +8891,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [433, 559, 561]
+    neighbors: [433, 559, 561],
+    originalTreeId: 59286
   },
   {
     x: 2763.35,
@@ -8347,7 +8906,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [562, 560]
+    neighbors: [562, 560],
+    originalTreeId: 4489
   },
   {
     x: 2595.85,
@@ -8361,7 +8921,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [560, 557]
+    neighbors: [560, 557],
+    originalTreeId: 47572
   },
   {
     x: 2640.731489732213,
@@ -8381,7 +8942,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [558, 559]
+    neighbors: [558, 559],
+    originalTreeId: 42276
   },
   {
     x: 2930.85,
@@ -8395,7 +8957,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [557, 556]
+    neighbors: [557, 556],
+    originalTreeId: 54109
   },
   {
     x: 3098.35,
@@ -8409,7 +8972,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [555, 558]
+    neighbors: [555, 558],
+    originalTreeId: 9726
   },
   {
     x: 3265.85,
@@ -8423,7 +8987,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Expedition'
       }
     ],
-    neighbors: [556, 555]
+    neighbors: [556, 555],
+    originalTreeId: 63058
   },
   {
     x: 2930.85,
@@ -8437,7 +9002,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [568, 567]
+    neighbors: [568, 567],
+    originalTreeId: 26785
   },
   {
     x: 3265.85,
@@ -8451,7 +9017,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [566, 567]
+    neighbors: [566, 567],
+    originalTreeId: 53673
   },
   {
     x: 3220.9685102677868,
@@ -8465,7 +9032,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [569, 565]
+    neighbors: [569, 565],
+    originalTreeId: 60489
   },
   {
     x: 3220.9685102677868,
@@ -8479,7 +9047,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [564, 565, 617]
+    neighbors: [564, 565, 617],
+    originalTreeId: 31233
   },
   {
     x: 2640.731489732213,
@@ -8493,7 +9062,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [435, 570, 564]
+    neighbors: [435, 570, 564],
+    originalTreeId: 58807
   },
   {
     x: 3098.35,
@@ -8513,7 +9083,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [566]
+    neighbors: [566],
+    originalTreeId: 24904
   },
   {
     x: 2595.85,
@@ -8539,7 +9110,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Delve'
       }
     ],
-    neighbors: [568]
+    neighbors: [568],
+    originalTreeId: 12390
   },
   {
     x: 3085.88,
@@ -8559,7 +9131,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [526, 528]
+    neighbors: [526, 528],
+    originalTreeId: 59124
   },
   {
     x: 3172.63,
@@ -8573,7 +9146,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [530, 533]
+    neighbors: [530, 533],
+    originalTreeId: 62316
   },
   {
     x: 3243.88,
@@ -8593,7 +9167,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [526, 528]
+    neighbors: [526, 528],
+    originalTreeId: 58918
   },
   {
     x: 3184.373884586921,
@@ -8607,7 +9182,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [553, 575]
+    neighbors: [553, 575],
+    originalTreeId: 16355
   },
   {
     x: 3184.373884586921,
@@ -8621,7 +9197,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [574, 576]
+    neighbors: [574, 576],
+    originalTreeId: 39283
   },
   {
     x: 3324.67,
@@ -8635,7 +9212,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [575, 577]
+    neighbors: [575, 577],
+    originalTreeId: 34872
   },
   {
     x: 3464.966115413079,
@@ -8655,7 +9233,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Kirac'
       }
     ],
-    neighbors: [576]
+    neighbors: [576],
+    originalTreeId: 48960
   },
   {
     x: 3509.9,
@@ -8671,7 +9250,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [589, 591]
+    neighbors: [589, 591],
+    originalTreeId: 41397
   },
   {
     x: 3657.28,
@@ -8685,7 +9265,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [614, 548, 589]
+    neighbors: [614, 548, 589],
+    originalTreeId: 20866
   },
   {
     x: 3576.28,
@@ -8699,7 +9280,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [584, 581]
+    neighbors: [584, 581],
+    originalTreeId: 52881
   },
   {
     x: 3495.28,
@@ -8713,7 +9295,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [580, 534]
+    neighbors: [580, 534],
+    originalTreeId: 23539
   },
   {
     x: 3738.28,
@@ -8727,7 +9310,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [583, 584]
+    neighbors: [583, 584],
+    originalTreeId: 46589
   },
   {
     x: 3819.28,
@@ -8741,7 +9325,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [615, 582]
+    neighbors: [615, 582],
+    originalTreeId: 24106
   },
   {
     x: 3657.28,
@@ -8763,7 +9348,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [582, 580]
+    neighbors: [582, 580],
+    originalTreeId: 28157
   },
   {
     x: 3657.29,
@@ -8777,7 +9363,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [534, 614]
+    neighbors: [534, 614],
+    originalTreeId: 12341
   },
   {
     x: 3824.9,
@@ -8793,7 +9380,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [594, 588]
+    neighbors: [594, 588],
+    originalTreeId: 2826
   },
   {
     x: 3367.2814897322132,
@@ -8809,7 +9397,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [590, 593]
+    neighbors: [590, 593],
+    originalTreeId: 26688
   },
   {
     x: 3947.518510267787,
@@ -8825,7 +9414,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [586, 595]
+    neighbors: [586, 595],
+    originalTreeId: 5908
   },
   {
     x: 3657.4,
@@ -8841,7 +9431,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [579, 578, 603]
+    neighbors: [579, 578, 603],
+    originalTreeId: 19039
   },
   {
     x: 3489.9,
@@ -8857,7 +9448,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [594, 587]
+    neighbors: [594, 587],
+    originalTreeId: 14447
   },
   {
     x: 3367.2814897322132,
@@ -8873,7 +9465,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [578, 593]
+    neighbors: [578, 593],
+    originalTreeId: 48743
   },
   {
     x: 3947.518510267787,
@@ -8889,7 +9482,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [595, 603]
+    neighbors: [595, 603],
+    originalTreeId: 2111
   },
   {
     x: 3322.4,
@@ -8903,7 +9497,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [587, 591]
+    neighbors: [587, 591],
+    originalTreeId: 8182
   },
   {
     x: 3657.4,
@@ -8923,7 +9518,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [590, 586]
+    neighbors: [590, 586],
+    originalTreeId: 4506
   },
   {
     x: 3992.4,
@@ -8937,7 +9533,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [588, 592]
+    neighbors: [588, 592],
+    originalTreeId: 41053
   },
   {
     x: 3514.94,
@@ -8951,7 +9548,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [598, 597]
+    neighbors: [598, 597],
+    originalTreeId: 57835
   },
   {
     x: 3392.321489732213,
@@ -8965,7 +9563,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [553, 596, 601]
+    neighbors: [553, 596, 601],
+    originalTreeId: 38317
   },
   {
     x: 3972.558510267787,
@@ -8979,7 +9578,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [600, 619, 596]
+    neighbors: [600, 619, 596],
+    originalTreeId: 43900
   },
   {
     x: 3972.558510267787,
@@ -8999,7 +9599,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [600]
+    neighbors: [600],
+    originalTreeId: 55885
   },
   {
     x: 4017.44,
@@ -9013,7 +9614,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [599, 598]
+    neighbors: [599, 598],
+    originalTreeId: 38851
   },
   {
     x: 3514.94,
@@ -9027,7 +9629,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [597, 602]
+    neighbors: [597, 602],
+    originalTreeId: 36093
   },
   {
     x: 3682.44,
@@ -9047,7 +9650,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [601]
+    neighbors: [601],
+    originalTreeId: 58101
   },
   {
     x: 3804.9,
@@ -9063,7 +9667,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Eater of Worlds'
       }
     ],
-    neighbors: [589, 592]
+    neighbors: [589, 592],
+    originalTreeId: 3296
   },
   {
     x: 3991.38,
@@ -9077,7 +9682,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [606, 614]
+    neighbors: [606, 614],
+    originalTreeId: 12188
   },
   {
     x: 3667.38,
@@ -9091,7 +9697,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [606, 607]
+    neighbors: [606, 607],
+    originalTreeId: 47051
   },
   {
     x: 3748.38,
@@ -9105,7 +9712,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [604, 605]
+    neighbors: [604, 605],
+    originalTreeId: 39313
   },
   {
     x: 3748.38,
@@ -9119,7 +9727,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Abyss'
       }
     ],
-    neighbors: [605]
+    neighbors: [605],
+    originalTreeId: 37033
   },
   {
     x: 3891.28,
@@ -9133,7 +9742,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [609, 612]
+    neighbors: [609, 612],
+    originalTreeId: 55070
   },
   {
     x: 4053.28,
@@ -9147,7 +9757,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [618, 608, 610]
+    neighbors: [618, 608, 610],
+    originalTreeId: 62053
   },
   {
     x: 4134.280000000001,
@@ -9161,7 +9772,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [609, 613]
+    neighbors: [609, 613],
+    originalTreeId: 25676
   },
   {
     x: 3891.28,
@@ -9175,7 +9787,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [613, 612]
+    neighbors: [613, 612],
+    originalTreeId: 15023
   },
   {
     x: 3810.28,
@@ -9195,7 +9808,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [608, 611]
+    neighbors: [608, 611],
+    originalTreeId: 64252
   },
   {
     x: 4053.28,
@@ -9215,7 +9829,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Legion'
       }
     ],
-    neighbors: [610, 611]
+    neighbors: [610, 611],
+    originalTreeId: 9866
   },
   {
     x: 4395.38,
@@ -9229,7 +9844,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [585, 604, 630, 579, 615]
+    neighbors: [585, 604, 630, 579, 615],
+    originalTreeId: 50896
   },
   {
     x: 4395.38,
@@ -9243,7 +9859,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [583, 614, 616, 635]
+    neighbors: [583, 614, 616, 635],
+    originalTreeId: 23246
   },
   {
     x: 4395.38,
@@ -9257,7 +9874,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [618, 615]
+    neighbors: [618, 615],
+    originalTreeId: 47052
   },
   {
     x: 3551.09,
@@ -9271,7 +9889,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [556, 567, 620, 623, 554, 621]
+    neighbors: [556, 567, 620, 623, 554, 621],
+    originalTreeId: 11223
   },
   {
     x: 4397.09,
@@ -9285,7 +9904,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [621, 638, 609, 616]
+    neighbors: [621, 638, 609, 616],
+    originalTreeId: 29605
   },
   {
     x: 3974.09,
@@ -9299,7 +9919,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [598, 620]
+    neighbors: [598, 620],
+    originalTreeId: 62099
   },
   {
     x: 3664.4325083983654,
@@ -9313,7 +9934,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [619, 617]
+    neighbors: [619, 617],
+    originalTreeId: 24699
   },
   {
     x: 3798.877663116181,
@@ -9327,7 +9949,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Maps'
       }
     ],
-    neighbors: [617, 618]
+    neighbors: [617, 618],
+    originalTreeId: 206
   },
   {
     x: 4733.42,
@@ -9347,7 +9970,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [625, 628, 624, 626, 627]
+    neighbors: [625, 628, 624, 626, 627],
+    originalTreeId: 37316
   },
   {
     x: 3905.42,
@@ -9361,7 +9985,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [617, 624, 626, 627, 628, 625]
+    neighbors: [617, 624, 626, 627, 628, 625],
+    originalTreeId: 29971
   },
   {
     x: 4398.42,
@@ -9381,7 +10006,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [622, 623]
+    neighbors: [622, 623],
+    originalTreeId: 4358
   },
   {
     x: 4398.42,
@@ -9401,7 +10027,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [623, 622]
+    neighbors: [623, 622],
+    originalTreeId: 27663
   },
   {
     x: 4398.42,
@@ -9421,7 +10048,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [622, 623]
+    neighbors: [622, 623],
+    originalTreeId: 54596
   },
   {
     x: 4398.42,
@@ -9441,7 +10069,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [622, 623]
+    neighbors: [622, 623],
+    originalTreeId: 32691
   },
   {
     x: 4891.42,
@@ -9461,7 +10090,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [622, 623]
+    neighbors: [622, 623],
+    originalTreeId: 60691
   },
   {
     x: 5014.38,
@@ -9475,7 +10105,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [631, 632]
+    neighbors: [631, 632],
+    originalTreeId: 42714
   },
   {
     x: 4690.38,
@@ -9489,7 +10120,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [614, 633]
+    neighbors: [614, 633],
+    originalTreeId: 41838
   },
   {
     x: 4852.38,
@@ -9521,7 +10153,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [629]
+    neighbors: [629],
+    originalTreeId: 22697
   },
   {
     x: 4933.38,
@@ -9535,7 +10168,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [629, 633]
+    neighbors: [629, 633],
+    originalTreeId: 1299
   },
   {
     x: 4771.38,
@@ -9549,7 +10183,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Breach'
       }
     ],
-    neighbors: [630, 632]
+    neighbors: [630, 632],
+    originalTreeId: 37591
   },
   {
     x: 4933.38,
@@ -9563,7 +10198,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [635, 637]
+    neighbors: [635, 637],
+    originalTreeId: 6126
   },
   {
     x: 4690.38,
@@ -9577,7 +10213,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [634, 615]
+    neighbors: [634, 615],
+    originalTreeId: 47966
   },
   {
     x: 4933.38,
@@ -9597,7 +10234,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [637]
+    neighbors: [637],
+    originalTreeId: 42360
   },
   {
     x: 5014.38,
@@ -9611,7 +10249,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Map Boss'
       }
     ],
-    neighbors: [634, 636]
+    neighbors: [634, 636],
+    originalTreeId: 24344
   },
   {
     x: 4692.09,
@@ -9625,7 +10264,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [639, 618]
+    neighbors: [639, 618],
+    originalTreeId: 57077
   },
   {
     x: 4935.09,
@@ -9639,7 +10279,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [638, 641]
+    neighbors: [638, 641],
+    originalTreeId: 61353
   },
   {
     x: 4935.09,
@@ -9653,7 +10294,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [641]
+    neighbors: [641],
+    originalTreeId: 55438
   },
   {
     x: 5016.09,
@@ -9667,7 +10309,8 @@ export const skillList: SkillNode[] = [
         modGroup: 'Betrayal'
       }
     ],
-    neighbors: [639, 640]
+    neighbors: [639, 640],
+    originalTreeId: 46634
   }
 ]
 
